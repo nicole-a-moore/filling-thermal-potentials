@@ -1,4 +1,4 @@
-# filling-thermal-potentials
+# Living up to thermal potentials
 Figures:
 - [Thermal ranges](https://github.com/Sunday-Lab/filling-thermal-potentials/tree/master/figures/range-plots) 
 
