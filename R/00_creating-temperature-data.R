@@ -2,6 +2,10 @@ library(ncdf4)
 library(tidyverse)
 library(raster)
 library(evobiR)
+library(sf)
+#library(devtools)
+#install_github("adamlilith/enmSdm")
+library(enmSdm1)
 select <- dplyr::select
 
 
@@ -121,11 +125,8 @@ mean_max <- readRDS("/Volumes/SundayLab/temperature-data/terrestrial/mean_max.rd
 
 ## create temperature set matricies and lists to store data in  
 ## add columns for temps species with cold and hot dormancy
-## vary # months and start time for sensitivity analysis 
-mean_max_new <- array(dim = c(360, 180, 365))
-mean_min_new <- array(dim = c(360, 180, 365))
-final_max <- list()
-final_min <- list()
+mean_max_new <- mean_min_new <- array(dim = c(360, 180, 365))
+final_max <- final_min <- list()
 
 element = 1
 row = 1
@@ -145,23 +146,40 @@ while(row < nrow(mean_max) + 1) {
     max <- max(mean_max_new[row, col,], na.rm=TRUE)
     min <- min(mean_min_new[row, col,], na.rm=TRUE)
     
+    ## get mean temp over the 30 days before and after to min and max temps:
+    max_index2 <- first(which(mean_max_new[row, col,] == max))
+    min_index2 <- first(which(mean_min_new[row, col,] == min))
+    
+    acc_max <- append(mean_max_new[row, col,], mean_max_new[row, col,1:183]) 
+    acc_min <- append(mean_min_new[row, col,], mean_min_new[row, col,1:183]) 
+    max_index1 <- ifelse(max_index2 - 30 < 0, max_index2-30+183, max_index2-30)
+    min_index1 <- ifelse(min_index2 - 30 < 0, min_index2-30+183, min_index2-30)
+    
+    if (!is.infinite(max) & !is.infinite(min)) {
+      acc_max <- mean(acc_max[max_index1:max_index2], na.rm = TRUE)
+      acc_min <- mean(acc_min[min_index1:min_index2], na.rm = TRUE)
+    } 
+    else {
+      acc_max = acc_min = NA
+    }
+  
     ## create df for temps and add column for month and month index
     daily_highs <- data.frame(day = c(1:365), temp = mean_max_new[row, col,], 
                               month = factor(c(rep("Jan", 31),
-                                        rep("Feb", 28),
-                                        rep("Mar", 31),
-                                        rep("Apr", 30),
-                                        rep("May", 31),
-                                        rep("Jun", 30),
-                                        rep("Jul", 31),
-                                        rep("Aug", 31),
-                                        rep("Sep", 30),
-                                        rep("Oct", 31),
-                                        rep("Nov", 30),
-                                        rep("Dec", 31)), levels = c("Jan", "Feb", "Mar",
-                                                                    "Apr", "May", "Jun",
-                                                                    "Jul", "Aug", "Sep", 
-                                                                    "Oct", "Nov", "Dec")), 
+                                               rep("Feb", 28),
+                                               rep("Mar", 31),
+                                               rep("Apr", 30),
+                                               rep("May", 31),
+                                               rep("Jun", 30),
+                                               rep("Jul", 31),
+                                               rep("Aug", 31),
+                                               rep("Sep", 30),
+                                               rep("Oct", 31),
+                                               rep("Nov", 30),
+                                               rep("Dec", 31)), levels = c("Jan", "Feb", "Mar",
+                                                                           "Apr", "May", "Jun",
+                                                                           "Jul", "Aug", "Sep", 
+                                                                           "Oct", "Nov", "Dec")), 
                               month_index = c(rep(1, 31),
                                               rep(2, 28),
                                               rep(3, 31),
@@ -244,8 +262,28 @@ while(row < nrow(mean_max) + 1) {
       select(temp) %>%
       max()
     
-    final_max[[element]] <- c(lat[col], long[row], max, h_d_max_high, c_d_max_high)
-    final_min[[element]] <- c(lat[col], long[row],  min, c_d_min_low, h_d_min_low)
+    ## calculate mean temp before this extreme:
+    max_index2 <- first(which(mean_max_new[row, col,] == h_d_max_high))
+    min_index2 <- first(which(mean_min_new[row, col,] == c_d_min_low))
+    
+    acc_max_dormancy <- append(mean_max_new[row, col,], mean_max_new[row, col,1:26]) 
+    acc_min_dormancy <- append(mean_min_new[row, col,], mean_min_new[row, col,1:26]) 
+    max_index1 <- ifelse(max_index2 - 3 < 0, max_index2-3+26, max_index2-3)
+    min_index1 <- ifelse(min_index2 - 3 < 0, min_index2-3+26, min_index2-3)
+    
+    if (!is.infinite(max) & !is.infinite(min)) {
+      acc_max_dormancy <- mean(acc_max_dormancy[max_index1:max_index2], na.rm = TRUE)
+      acc_min_dormancy <- mean(acc_min_dormancy[min_index1:min_index2], na.rm = TRUE)
+    } 
+    else {
+      acc_max_dormancy = acc_min_dormancy = NA
+    }
+    
+    
+    final_max[[element]] <- c(lat[col], long[row], max, h_d_max_high, c_d_max_high, 
+                              acc_max, acc_max_dormancy)
+    final_min[[element]] <- c(lat[col], long[row],  min, c_d_min_low, h_d_min_low, 
+                              acc_min,acc_min_dormancy)
     
     element = element + 1
     col = col + 1
@@ -254,16 +292,20 @@ while(row < nrow(mean_max) + 1) {
 }
 
 final_max <- data.frame(do.call(rbind, final_max), stringsAsFactors = FALSE) 
-colnames(final_max) = c("latitude", "longitude", "seasonal_high_temp",
-                        "hot_dormancy_6mo", "cold_dormancy_6mo")
+colnames(final_max) <- c("latitude", "longitude", "seasonal_high_temp",
+                         "hot_dormancy_6mo", "cold_dormancy_6mo", "hot_acc_temp",
+                         "hot_acc_temp_dormancy")
 final_max <- filter(final_max, !is.infinite(seasonal_high_temp)) %>%
-  select(longitude, latitude, seasonal_high_temp, hot_dormancy_6mo, cold_dormancy_6mo)
+  select(longitude, latitude, seasonal_high_temp, hot_dormancy_6mo, cold_dormancy_6mo, 
+         hot_acc_temp, hot_acc_temp_dormancy)
 
 final_min <- data.frame(do.call(rbind, final_min), stringsAsFactors = FALSE) 
-colnames(final_min) = c("latitude", "longitude", "seasonal_low_temp",
-                        "cold_dormancy_6mo", 'hot_dormancy_6mo')
+colnames(final_min) <- c("latitude", "longitude", "seasonal_low_temp",
+                         "cold_dormancy_6mo", 'hot_dormancy_6mo', "cold_acc_temp", 
+                         "cold_acc_temp_dormancy")
 final_min <- filter(final_min, !is.infinite(seasonal_low_temp)) %>%
-  select(longitude, latitude, seasonal_low_temp, cold_dormancy_6mo, hot_dormancy_6mo)
+  select(longitude, latitude, seasonal_low_temp, cold_dormancy_6mo, hot_dormancy_6mo, cold_acc_temp, 
+         cold_acc_temp_dormancy)
 
 
 ## save data:
@@ -321,12 +363,10 @@ sst_second <- ncvar_get(ncfile_second, "sst")
 nc_close(ncfile_first)
 nc_close(ncfile_second)
 
-max_weekly_mean <- list()
-min_weekly_mean <- list()
+max_weekly_mean <- min_weekly_mean <- list()
 
 ## loop through each element (unique pairs of row x column)
-element = 1
-row =  1
+element = row = 1
 while (row < nrow(sst_first) + 1) {
   col = 1
   while (col < ncol(sst_first) + 1) {
@@ -350,6 +390,17 @@ while (row < nrow(sst_first) + 1) {
       ## get maximum weekly mean temperature and minimum weekly mean temperature for cell
       max <- max(lt_weekly_means[row, col,], na.rm=TRUE)
       min <- min(lt_weekly_means[row, col,], na.rm=TRUE)
+      
+      ## get mean temp over the 30 days before and after to min and max temps:
+      max_index2 <- first(which(lt_weekly_means[row, col,] == max))
+      min_index2 <- first(which(lt_weekly_means[row, col,] == min))
+      
+      acc_max <- append(lt_weekly_means[row, col,], lt_weekly_means[row, col,1:26]) 
+      acc_min <- append(lt_weekly_means[row, col,], lt_weekly_means[row, col,1:26]) 
+      max_index1 <- ifelse(max_index2 - 3 < 0, max_index2-3+26, max_index2-3)
+      min_index1 <- ifelse(min_index2 - 3 < 0, min_index2-3+26, min_index2-3)
+      acc_max <- mean(acc_max[max_index1:max_index2], na.rm = TRUE)
+      acc_min <- mean(acc_min[min_index1:min_index2], na.rm = TRUE)
       
       ## create df for temps, create 'circular' data frame
       weekly_temps <- data.frame(week = c(1:52), temp = lt_weekly_means[row, col,]) %>%
@@ -407,8 +458,21 @@ while (row < nrow(sst_first) + 1) {
         select(temp) %>%
         max()
       
-      max_weekly_mean[[element]] <- c(lat[col], long[row], max, h_d_max_high, c_d_max_high)
-      min_weekly_mean[[element]] <- c(lat[col], long[row],  min, c_d_min_low, h_d_min_low)
+      ## calculate mean temp before this extreme:
+      max_index2 <- first(which(lt_weekly_means[row, col,] == h_d_max_high))
+      min_index2 <- first(which(lt_weekly_means[row, col,] == c_d_min_low))
+      
+      acc_max_dormancy <- append(lt_weekly_means[row, col,], lt_weekly_means[row, col,1:26]) 
+      acc_min_dormancy <- append(lt_weekly_means[row, col,], lt_weekly_means[row, col,1:26]) 
+      max_index1 <- ifelse(max_index2 - 3 < 0, max_index2-3+26, max_index2-3)
+      min_index1 <- ifelse(min_index2 - 3 < 0, min_index2-3+26, min_index2-3)
+      acc_max_dormancy <- mean(acc_max_dormancy[max_index1:max_index2], na.rm = TRUE)
+      acc_min_dormancy <- mean(acc_min_dormancy[min_index1:min_index2], na.rm = TRUE)
+      
+      max_weekly_mean[[element]] <- c(lat[col], long[row], max, h_d_max_high, c_d_max_high, 
+                                      acc_max, acc_max_dormancy)
+      min_weekly_mean[[element]] <- c(lat[col], long[row],  min, c_d_min_low, h_d_min_low, 
+                                      acc_min, acc_min_dormancy)
       
       element = element + 1
       col = col + 1
@@ -418,29 +482,49 @@ while (row < nrow(sst_first) + 1) {
 }
 
 max_weekly_mean <- data.frame(do.call(rbind, max_weekly_mean), stringsAsFactors = FALSE) 
-colnames(max_weekly_mean) = c("latitude", "longitude", "seasonal_high_temp", 
-                              "hot_dormancy_6mo", "cold_dormancy_6mo")
+colnames(max_weekly_mean) <- c("latitude", "longitude", "seasonal_high_temp", 
+                               "hot_dormancy_6mo", "cold_dormancy_6mo",
+                               "hot_acc_temp", "hot_acc_temp_dormancy")
 max_weekly_mean <- mutate(max_weekly_mean, longitude = ifelse(longitude < 180, longitude,
                                                               longitude - 360)) %>%
-  select(longitude, latitude, seasonal_high_temp, hot_dormancy_6mo, cold_dormancy_6mo)
+  select(longitude, latitude, seasonal_high_temp, hot_dormancy_6mo, cold_dormancy_6mo, 
+         hot_acc_temp, hot_acc_temp_dormancy)
 
 min_weekly_mean <- data.frame(do.call(rbind, min_weekly_mean), stringsAsFactors = FALSE) 
-colnames(min_weekly_mean) = c("latitude", "longitude", "seasonal_low_temp",
-                              "cold_dormancy_6mo", "hot_dormancy_6mo")
+colnames(min_weekly_mean) <- c("latitude", "longitude", "seasonal_low_temp",
+                               "cold_dormancy_6mo", "hot_dormancy_6mo", 
+                               "cold_acc_temp", "cold_acc_temp_dormancy")
 min_weekly_mean <- mutate(min_weekly_mean, longitude = ifelse(longitude < 180, longitude, 
                                                               longitude - 360)) %>%
-  select(longitude, latitude, seasonal_low_temp, cold_dormancy_6mo, hot_dormancy_6mo)
-  
+  select(longitude, latitude, seasonal_low_temp, cold_dormancy_6mo, hot_dormancy_6mo, 
+         cold_acc_temp, cold_acc_temp_dormancy)
+
 
 
 ## save these datasets as seasonal high and low temps
 write.csv(max_weekly_mean, "data-processed/marine_seasonal-max-temps_6mo.csv", row.names = FALSE)
 write.csv(min_weekly_mean, "data-processed/marine_seasonal-min-temps_6mo.csv", row.names = FALSE)
 
+## Bio-ORACLE temperature sets:
+tmin_dmax <- raster("/Volumes/SundayLab/temperature-data/marine/Present.Benthic.Max.Depth.Temperature.Lt.min.tif")
+tmin_dmin <- raster("/Volumes/SundayLab/temperature-data/marine/Present.Benthic.Min.Depth.Temperature.Lt.min.tif")
+
+ttest <- tmin_dmax <= tmin_dmin ## ok, so max depth here means deepest depth 
+## want tmin at deepest (max) depth and tmax at shallowest (min) depth
+
+tmax_dmin <- raster("/Volumes/SundayLab/temperature-data/marine/Present.Benthic.Min.Depth.Temperature.Lt.max.tif") 
+
+## resample to 1 deg x 1 deg resolution:
+tmin_dmax <- aggregate(tmin_dmax, fact = 12, fun = min, na.rm = TRUE)
+tmax_dmin <- aggregate(tmax_dmin, fact = 12, fun = max, na.rm = TRUE)
+
+## write out:
+writeRaster(tmin_dmax, "data-processed/marine_min-at-max-depth.tif")
+writeRaster(tmax_dmin, "data-processed/marine_max-at-min-depth.tif")
 
 
 ####################################################################################
-#####                       SEASONAL TEMPERATURE RASTERS                      ######
+#####            MARINE & TERRESTRIAL SEASONAL TEMPERATURE RASTERS            ######
 ####################################################################################
 r <- raster(xmn=-180, xmx=180, ymn=-90, ymx=90, 
             crs=CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs+ towgs84=0,0,0"),
@@ -451,107 +535,186 @@ terr_seasonal_high <- read.csv("data-processed/terrestrial_seasonal-max-temps_6m
 terr_seasonal_low <- read.csv("data-processed/terrestrial_seasonal-min-temps_6mo-dormancy.csv")
 
 ## rasterize:
-raster_terr_high <- rasterize(terr_seasonal_high[, 1:2], r, terr_seasonal_high[,3:5], fun=mean) 
+raster_terr_high <- rasterize(terr_seasonal_high[, 1:2], r, terr_seasonal_high[,3:7], fun=mean) 
 raster_terr_high[is.infinite(raster_terr_high)] <- NA
-names(raster_terr_high) <- c("seasonal_high_temp", "hot_dormancy_6mo", "cold_dormancy_6mo")
+names(raster_terr_high) <- c("seasonal_high_temp", "hot_dormancy_6mo", "cold_dormancy_6mo", 
+                             "hot_acc_temp", "hot_acc_temp_dormancy")
 ##plot(raster_terr_high, asp = 1)
 
-raster_terr_low <- rasterize(terr_seasonal_low[, 1:2], r, terr_seasonal_low[,3:5], fun=mean)
+raster_terr_low <- rasterize(terr_seasonal_low[, 1:2], r, terr_seasonal_low[,3:7], fun=mean)
 raster_terr_low[is.infinite(raster_terr_low)] <- NA
-names(raster_terr_low) <-  c("seasonal_low_temp", "cold_dormancy_6mo", "hot_dormancy_6mo")
+names(raster_terr_low) <-  c("seasonal_low_temp", "cold_dormancy_6mo", "hot_dormancy_6mo", 
+                             "cold_acc_temp", "cold_acc_temp_dormancy")
 ##plot(raster_terr_low, asp = 1)
+
+## restrict by zoogeographical realms:
+cmec <- read_sf("data-raw/CMEC regions & realms/newRealms.shp")
+
+# simplify the object to make it 'usable'
+cmec <- cmec %>% 
+  st_simplify(dTolerance = 0.01) %>% 
+  group_by(Realm) %>% 
+  summarise()
+
+## rasterize using Adam's function:
+rast <- raster(xmn=-180, xmx=180, ymn=-90, ymx=90, 
+               crs=CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs+ towgs84=0,0,0"),
+               res = 1, vals = 1)
+
+source("R/shp2rast.R") 
+for (i in 1:nrow(cmec)) {
+  cur <- cmec[i,]
+  shp <- as_Spatial(cur)
+  
+  if (i==1) {
+    zoo_rast <- shp2rast(shp = shp, rast = rast) 
+    zoo_rast[!is.na(zoo_rast)] = i
+  }
+  else {
+    temp <- shp2rast(shp = shp, rast = rast)
+    temp[!is.na(temp)] = i
+    zoo_rast <- addLayer(zoo_rast, temp)
+  }
+}
+
+mosaic <- zoo_rast[[1]]
+for (i in 1:nlayers(zoo_rast)-1) {
+  mosaic <- mosaic(mosaic, zoo_rast[[i+1]], fun = min)
+}
+plot(mosaic)
+
+## get rid of cells in realm that there is no temperature data for:
+#plot(!is.na(mosaic) & is.na(raster_terr_high[[1]])) # get rid of these 
+
+mosaic <- mask(raster_terr_high[[1]], mosaic)
+
+raster_terr_high_zoo <- mask(raster_terr_high, mosaic)
+raster_terr_low_zoo <- mask(raster_terr_low, mosaic)
+
 ## write out:
-writeRaster(raster_terr_low, "./data-processed/raster_terr_low.grd", 
+writeRaster(raster_terr_low_zoo, "data-processed/raster_terr_low.grd", 
             overwrite = TRUE, format = "raster")
-writeRaster(raster_terr_high, "./data-processed/raster_terr_high.grd", 
+writeRaster(raster_terr_high_zoo, "data-processed/raster_terr_high.grd", 
             overwrite = TRUE, format = "raster")
 
 ## write out mask layer for use in restricting realized ranges:
-raster_terr_mask <- raster_terr_low
+raster_terr_mask <- raster_terr_high_zoo
 raster_terr_mask[!is.na(raster_terr_mask)] = 1
 ##plot(raster_terr_mask, asp = 1)
-writeRaster(raster_terr_mask, "./data-processed/raster_terr_mask.grd", 
+writeRaster(raster_terr_mask, "data-processed/raster_terr_mask.grd", 
             overwrite = TRUE, format = "raster")
+
+## write out new version of temp data, excluding cells outside of realm data:
+terr_seasonal_high_zoo <- as.data.frame(rasterToPoints(raster_terr_high_zoo))
+terr_seasonal_low_zoo <- as.data.frame(rasterToPoints(raster_terr_low_zoo))
+names(terr_seasonal_high_zoo)[1:2] <- names(terr_seasonal_low_zoo)[1:2] <- c("longitude", "latitude")
+write.csv(terr_seasonal_high_zoo, 
+          "data-processed/terrestrial_seasonal-max-temps_6mo-dormancy_zoo.csv", row.names = FALSE)
+write.csv(terr_seasonal_low_zoo, 
+          "data-processed/terrestrial_seasonal-min-temps_6mo-dormancy_zoo.csv", row.names = FALSE)
 
 ## read in seasonal high and low temp data:
 marine_seasonal_high <- read.csv("data-processed/marine_seasonal-max-temps_6mo.csv") 
 marine_seasonal_low <- read.csv("data-processed/marine_seasonal-min-temps_6mo.csv")
 
 ## rasterize:
-raster_marine_high <- rasterize(marine_seasonal_high[, 1:2], r, marine_seasonal_high[,3:5], fun=mean)
+raster_marine_high <- rasterize(marine_seasonal_high[, 1:2], r, marine_seasonal_high[,3:7], fun=mean)
 raster_marine_high[is.infinite(raster_marine_high)] <- NA
 names(raster_marine_high) <-  names(raster_terr_high) 
 ##plot(raster_marine_high[[2]], asp = 1)
 
-raster_marine_low <- rasterize(marine_seasonal_low[, 1:2], r, marine_seasonal_low[,3:5], fun=mean)
+raster_marine_low <- rasterize(marine_seasonal_low[, 1:2], r, marine_seasonal_low[,3:7], fun=mean)
 raster_marine_low[is.infinite(raster_marine_low)] <- NA
 names(raster_marine_low) <- names(raster_terr_low) 
 ##plot(raster_marine_low, asp = 1)
-## write out:
-writeRaster(raster_marine_low, "./data-processed/raster_marine_low.grd", 
-            overwrite = TRUE, format = "raster")
-writeRaster(raster_marine_high, "./data-processed/raster_marine_high.grd", 
-            overwrite = TRUE, format = "raster")
 
 ## write out mask layer for use in restricting realized ranges:
 raster_marine_mask <- raster_marine_low
 raster_marine_mask[!is.na(raster_marine_mask)] = 1
 ##plot(raster_marine_mask, asp = 1)
-writeRaster(raster_marine_mask[[1]], "./data-processed/raster_marine_mask.grd", 
+writeRaster(raster_marine_mask[[1]], "data-processed/raster_marine_mask.grd", 
+            overwrite = TRUE, format = "raster")
+
+## read in temps at min and max depths:
+tmin_dmax <- raster("data-processed/marine_min-at-max-depth.tif")
+tmax_dmin <- raster("data-processed/marine_max-at-min-depth.tif")
+## mask by other marine data to stay consistent:
+tmin_dmax <- mask(tmin_dmax, raster_marine_mask[[1]])
+tmax_dmin <- mask(tmax_dmin, raster_marine_mask[[1]])
+## add to temps:
+raster_marine_high <- addLayer(raster_marine_high, tmax_dmin)
+names(raster_marine_high)[6] <- "ltmax_at_min_depth"
+raster_marine_low <- addLayer(raster_marine_low, tmin_dmax)
+names(raster_marine_low)[6] <- "ltmin_at_max_depth"
+
+## write out:
+writeRaster(raster_marine_low, "data-processed/raster_marine_low.grd", 
+            overwrite = TRUE, format = "raster")
+writeRaster(raster_marine_high, "data-processed/raster_marine_high.grd", 
             overwrite = TRUE, format = "raster")
 
 
-## create intertidal temperature data:
-## create polygon representing the edge of land:
-land <- raster_terr_high 
-land[is.infinite(land)] = NA 
-land[land > 0 | land < 0] <- 1
+####################################################################################
+#####             CREATING INTERTIDAL SEASONAL TEMPERATURE RASTERS            ######
+####################################################################################
 
-polygon <- land %>%
-  rasterToPolygons(., dissolve = TRUE) %>% 
+## restrict intertidal species to continental shelf around land masses:
+bath <- raster("./data-processed/bathymetric-layers/raster_200mdepth_mask.grd")
+
+## clump and turn into polygons 
+cs_clumps <- bath %>%
+  clump(., directions = 8) %>%
+  rasterToPolygons(., dissolve = TRUE) %>%
   st_as_sf()
-smooth <- smoothr::smooth(polygon, method = "ksmooth", smoothness = 10) 
+plot(cs_clumps)
+
+## buffer land by 1 cell:
+t_poly <- raster_terr_high[[1]]
+t_poly[!is.na(t_poly)] <- 1
+t_poly <- t_poly %>%
+  rasterToPolygons(., dissolve = TRUE) %>%
+  st_as_sf()
+smooth <- smoothr::smooth(t_poly, method = "ksmooth", smoothness = 10) 
 st_crs(smooth) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs+ towgs84=0,0,0")
 ## plot(st_geometry(smooth), axes = TRUE) 
 
-## create buffer around intertidal area into sea and onto land
-buffer_sea <- st_buffer(smooth, dist = 1)
-buffer_land <- st_buffer(smooth, dist = -1)
-##plot(st_geometry(buffer_sea))
-##plot(st_geometry(buffer_land))
+buffer_land <- st_buffer(smooth, dist = 1)
+plot(buffer_land)
 
-## subset temperature data to include only temperatures in buffer 
-intertidal_sea_high <- raster_marine_high %>%
-  mask(., buffer_sea) 
+## filter out clumps that don't intersect with the terrestrial mask:
+intersects <- st_intersects(cs_clumps, buffer_land, sparse = FALSE)[,]
+intersects <- filter(cs_clumps, intersects == TRUE)
+plot(intersects)
 
-intertidal_land_high <- raster_terr_high %>%
-  mask(., buffer_land, inverse = TRUE)
+## get temps within these areas:
+raster_marine_low <- stack("data-processed/raster_marine_low.grd")
+raster_marine_high <- stack("data-processed/raster_marine_high.grd")
+raster_terr_low <- stack("data-processed/raster_terr_low.grd")
+raster_terr_high <- stack("data-processed/raster_terr_high.grd")
 
-intertidal_sea_low <- raster_marine_low %>%
-  mask(., buffer_sea) 
+# merge marine and terr temps, giving priority to SST in cells with both 
+raster_intertidal_low <- merge(raster_marine_low[[1:5]], raster_terr_low[[1:5]]) 
+names(raster_intertidal_low) <- names(raster_marine_low)[1:5]
+raster_intertidal_high <- merge(raster_marine_high[[1:5]], raster_terr_high[[1:5]])
+names(raster_intertidal_high) <- names(raster_marine_high)[1:5]
 
-intertidal_land_low <- raster_terr_low %>%
-  mask(., buffer_land, inverse = TRUE)
+# mask by intertidal coninental shelf areas:
+raster_intertidal_low <- mask(raster_intertidal_low, intersects)
+raster_intertidal_high <- mask(raster_intertidal_high, intersects)
+plot(raster_intertidal_low)
+plot(raster_intertidal_high)
 
-## combine land and sea temperatures, giving priority to sea temperatures 
-raster_intertidal_high <- merge(intertidal_sea_high, intertidal_land_high)
-raster_intertidal_low <- merge(intertidal_sea_low, intertidal_land_low)
-names(raster_intertidal_high) <-names(raster_terr_high) 
-names(raster_intertidal_low) <- names(raster_terr_low) 
-##plot(raster_intertidal_high[[2]])
-##plot(raster_intertidal_low)
 ## write out:
-writeRaster(raster_intertidal_low, "./data-processed/raster_intertidal_low.grd", 
+writeRaster(raster_intertidal_low, "data-processed/raster_intertidal_low.grd", 
             overwrite = TRUE, format = "raster")
-writeRaster(raster_intertidal_high, "./data-processed/raster_intertidal_high.grd", 
+writeRaster(raster_intertidal_high, "data-processed/raster_intertidal_high.grd", 
             overwrite = TRUE, format = "raster")
-
 
 ## write out mask layer for use in restricting realized ranges:
 raster_intertidal_mask <- raster_intertidal_low
 raster_intertidal_mask[!is.na(raster_intertidal_mask)] = 1
-##plot(raster_intertidal_mask, asp = 1)
-writeRaster(raster_intertidal_mask[[1]], "./data-processed/raster_intertidal_mask.grd", 
+##plot(raster_intertidal_mask[[1]], asp = 1)
+writeRaster(raster_intertidal_mask[[1]], "data-processed/raster_intertidal_mask.grd", 
             overwrite = TRUE, format = "raster")
 
 
@@ -581,7 +744,7 @@ elev_dif <- aggregate(elev_dif, fact = 12, fun = mean, na.rm = TRUE)
 ##plot(elev_dif, asp = 1)
 
 ## crop raster to include only terrestrial areas using the terrestrial mask
-t_mask <- raster("./data-processed/raster_terr_mask.grd")
+t_mask <- raster("data-processed/raster_terr_mask.grd")
 elev_dif <- extend(elev_dif, t_mask) ## extend to same extent as temperature data 
 elev_dif <- mask(elev_dif, t_mask) ## masks temps outside of the terrestrial mask 
 ##plot(elev_dif, asp = 1)
@@ -590,14 +753,14 @@ elev_dif <- mask(elev_dif, t_mask) ## masks temps outside of the terrestrial mas
 elev_df <- data.frame(rasterToPoints(elev_dif))
 colnames(elev_df) <- c("longitude", "latitude", "elev_dif")
 
-write.csv(elev_df, "./data-processed/xyz_elev_diff.csv", row.names = FALSE)
-elev_df <- read.csv("./data-processed/xyz_elev_diff.csv")
+write.csv(elev_df, "data-processed/xyz_elev_diff.csv", row.names = FALSE)
+elev_df <- read.csv("data-processed/xyz_elev_diff.csv")
 
 #############################################################################
 ## create new set of minimum temperatures at lowest elevation in each cell ##
 #############################################################################
 ## read in terrestrial min temps 
-terr_min <- read.csv("data-processed/terrestrial_seasonal-min-temps_6mo-dormancy.csv")
+terr_min <- read.csv("data-processed/terrestrial_seasonal-min-temps_6mo-dormancy_zoo.csv")
 
 ## merge data by geographic coordinates
 terr_min <- left_join(terr_min, elev_df, by = c("latitude", "longitude"))
@@ -608,10 +771,10 @@ terr_min <- terr_min %>%
   mutate(low_at_min_elev = ifelse(elev_dif == 0, seasonal_low_temp, 
                                   seasonal_low_temp + elev_dif*0.0055)) %>%
   mutate(low_elev_x_cold_dormancy = ifelse(elev_dif == 0, cold_dormancy_6mo, 
-                                      cold_dormancy_6mo + elev_dif*0.0055)) %>%
+                                           cold_dormancy_6mo + elev_dif*0.0055)) %>%
   mutate(low_elev_x_hot_dormancy = ifelse(elev_dif == 0, hot_dormancy_6mo, 
-                                      hot_dormancy_6mo + elev_dif*0.0055)) 
-  
+                                          hot_dormancy_6mo + elev_dif*0.0055)) 
+
 
 ## plot the difference in temperatures between mean/min elev within cells:
 terr_min %>%
@@ -632,7 +795,7 @@ terr_min <- terr_min %>%
   select(-elev_dif)
 
 ## write to file
-write.csv(terr_min, "data-processed/terrestrial_seasonal-min-temps_dormancy-and-elev.csv",
+write.csv(terr_min, "data-processed/terrestrial_seasonal-min-temps_dormancy-and-elev_zoo.csv",
           row.names = FALSE)
 
 ## add layer to terrestrial low temperature raster
@@ -641,12 +804,8 @@ raster_terr_low[is.infinite(raster_terr_low)] <- NA
 #plot(raster_terr_low, asp = 1)
 
 ## write to raster file
-writeRaster(raster_terr_low, "./data-processed/raster_terr_low.grd", 
+writeRaster(raster_terr_low, "data-processed/raster_terr_low.grd", 
             overwrite = TRUE, format = "raster")
-
-
-
-
 
 
 
@@ -684,3 +843,62 @@ length(which(max_weekly_mean$seasonal_high_temp <= max_weekly_mean$hot_dormancy_
 length(which(max_weekly_mean$seasonal_high_temp <= max_weekly_mean$hot_dormancy_6mo + 5))
 
 
+
+
+
+
+## create intertidal temperature data:
+## create polygon representing the edge of land:
+land <- raster_terr_high 
+land[is.infinite(land)] = NA 
+land[land > 0 | land < 0] <- 1
+
+polygon <- land %>%
+  rasterToPolygons(., dissolve = TRUE) %>% 
+  st_as_sf()
+smooth <- smoothr::smooth(polygon, method = "ksmooth", smoothness = 10) 
+st_crs(smooth) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs+ towgs84=0,0,0")
+## plot(st_geometry(smooth), axes = TRUE) 
+
+## create buffer around intertidal area into sea and onto land
+buffer_sea <- st_buffer(smooth, dist = 1)
+buffer_land <- st_buffer(smooth, dist = -1)
+##plot(st_geometry(buffer_sea))
+##plot(st_geometry(buffer_land))
+
+## subset temperature data to include only temperatures in buffer 
+intertidal_sea_high <- raster_marine_high %>%
+  mask(., buffer_sea) 
+
+intertidal_land_high <- raster_terr_high %>%
+  mask(., buffer_land, inverse = TRUE) 
+
+intertidal_sea_low <- raster_marine_low %>%
+  mask(., buffer_sea) 
+
+intertidal_land_low <- raster_terr_low %>%
+  mask(., buffer_land, inverse = TRUE)
+
+high_temp <- addLayer(intertidal_land_high, intertidal_land_high$seasonal_high_temp)
+low_temp <- addLayer(intertidal_land_low, intertidal_land_low$seasonal_low_temp)
+
+## combine land and sea temperatures, giving priority to sea temperatures 
+raster_intertidal_high <- merge(intertidal_sea_high, high_temp)
+raster_intertidal_low <- merge(intertidal_sea_low, low_temp)
+names(raster_intertidal_high) <- names(raster_marine_high) 
+names(raster_intertidal_low) <- names(raster_marine_low) 
+##plot(raster_intertidal_high[[4]])
+##plot(raster_intertidal_low)
+## write out:
+writeRaster(raster_intertidal_low, "data-processed/raster_intertidal_low.grd", 
+            overwrite = TRUE, format = "raster")
+writeRaster(raster_intertidal_high, "data-processed/raster_intertidal_high.grd", 
+            overwrite = TRUE, format = "raster")
+
+
+## write out mask layer for use in restricting realized ranges:
+raster_intertidal_mask <- raster_intertidal_low
+raster_intertidal_mask[!is.na(raster_intertidal_mask)] = 1
+##plot(raster_intertidal_mask, asp = 1)
+writeRaster(raster_intertidal_mask[[1]], "data-processed/raster_intertidal_mask.grd", 
+            overwrite = TRUE, format = "raster")

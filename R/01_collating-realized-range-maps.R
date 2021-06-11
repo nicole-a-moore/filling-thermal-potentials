@@ -4,22 +4,74 @@ library(rgdal)
 library(sf)
 library(rnaturalearth)
 library(latticeExtra)
+library(taxize)
+library(plyr)
 
 thermal_limits <- read_csv("data-raw/globtherm_full_dataset_2019.csv") %>%
   filter(thermy == "ectotherm")
 
 ## do a bit of cleaning
-thermal_species <- unique(paste(thermal_limits$Genus, thermal_limits$Species, sep = " "))
-thermal_species[which(str_detect(thermal_species, "<ca>") == TRUE)] <- c("Apeltes quadracus", 
-                                                                         "Aulacomya atra",
-                                                                         "Cyprinella spiloptera",
-                                                                         "Trachemys scripta")
-
 thermal_limits$Genus[which(str_detect(thermal_limits$Genus, "<ca>") == TRUE)] <- "Trachemys"
-thermal_limits$Species[which(str_detect(thermal_limits$Species, "<ca>") == TRUE)] <- c("quadracus", "atra",
-                                                                                       "spiloptera", "spiloptera")
+thermal_limits$Species[which(str_detect(thermal_limits$Species, "<ca>") == TRUE)] <- c("quadracus", "atra","spiloptera", "spiloptera")
+thermal_limits$Species[which(str_detect(thermal_limits$Species, "parvulus_parvulus") == TRUE)] <- "parvulus"
 thermal_limits$genus_species <- paste(thermal_limits$Genus, thermal_limits$Species, sep = "_") 
 
+thermal_species <- unique(paste(thermal_limits$Genus, thermal_limits$Species, sep = " "))
+
+## get a list of species synonyms and the most taxonomically correct names:
+taxa_tt <- data.frame(binomial = thermal_species)
+tsn_search_tt <- get_tsn(as.character(taxa_tt$binomial), accepted = FALSE)
+#saveRDS(tsn_search_tt, "data-processed/tsn_search_tt.rds")
+tsn_search_tt <- readRDS("data-processed/tsn_search_tt.rds")
+
+tsns_tt <- data.frame(tsn_search_tt)
+tsns_tt$binomial <- taxa_tt$binomial
+
+found <- tsns_tt %>%
+  subset(match == "found")  ## found  spp
+
+## get synonyms:
+syns <- synonyms(tsn_search_tt)
+#saveRDS(syns, "data-processed/syns_tt.rds")
+syns <- readRDS("data-processed/syns_tt.rds")
+
+syns_df <- ldply(syns, data.frame) %>%
+  select(-c(1:2))
+syns_df <- left_join(syns_df, found, by = c("sub_tsn" = "ids")) %>%
+  filter(!is.na(sub_tsn)) %>%
+  select(binomial, everything())
+
+## add back species that were not found: 
+not_found <- tsns_tt %>%
+  subset(match == "not found") 
+
+no_syn <- tsns_tt %>%
+  subset(match == "found") %>%
+  filter(!ids %in% syns_df$sub_tsn)
+  
+syns_df <- bind_rows(syns_df, no_syn) %>% 
+  select(-class, -ids) %>%
+  bind_rows(., not_found) %>%
+  mutate(acc_name = ifelse(is.na(acc_name), as.character(binomial), as.character(acc_name)))
+
+names <- syns_df %>%
+  select(binomial, acc_name) %>%
+  filter(!duplicated(.))
+
+## save to reference correct names later:
+write.csv(names, "data-processed/globtherm_taxize-key.csv", row.names = FALSE)
+
+## add column for corrected name:
+thermal_limits$temp <- paste(thermal_limits$Genus, thermal_limits$Species, sep = " ")
+thermal_limits <- left_join(thermal_limits, names, 
+                            by = c("temp" = "binomial"))
+
+colnames(names)[1] = "thermal_species"
+
+thermal_limits <- thermal_limits %>%
+  select(-temp)
+
+write.csv(thermal_limits, "data-processed/globtherm_taxized.csv", row.names = FALSE)
 
 
 ####################################################
@@ -34,77 +86,56 @@ orders <- c("Clupeiformes")
 families_overlap <- families[which(families %in% thermal_limits$Family)]
 classes_overlap <- classes[which(classes %in% thermal_limits$Class)]
 orders_overlap <- orders[which(orders %in% thermal_limits$Order)]
-
 ## download sets that include: "Blenniidae", "Tetraodontidae", "Sparidae", "Labridae","Chondrichthyes", "Clupeiformes"
 
 ## sort through downloaded range maps, filter out species we do not have in thermal tolerance data
-amphibs_all <- st_read("/Volumes/SundayLab/IUCN/AMPHIBIANS/AMPHIBIANS.shp")
-amphibs <- thermal_species[which(thermal_species %in% amphibs_all$binomial)]
-
-amphibs_overlap <- amphibs_all %>%
-  filter(binomial %in% amphibs)
-rm(amphibs_all,amphibs)
-
-blennies_all <- st_read("/Volumes/SundayLab/IUCN/BLENNIES/BLENNIES.shp")
-blennies <- thermal_species[which(thermal_species %in% blennies_all$binomial)]
-
-blennies_overlap <- blennies_all %>%
-  filter(binomial %in% blennies)
-rm(blennies_all,blennies)
-
-clups_all <- st_read("/Volumes/SundayLab/IUCN/CLUPEIFORMES/CLUPEIFORMES.shp")
-clups <- thermal_species[which(thermal_species %in% clups_all$binomial)]
-
-clups_overlap <- clups_all %>%
-  filter(binomial %in% clups)
-rm(clups_all,clups)
-
-puff_all <- st_read("/Volumes/SundayLab/IUCN/PUFFERFISH/PUFFERFISH.shp")
-puff <- thermal_species[which(thermal_species %in% puff_all$binomial)]
-
-puff_overlap <- puff_all %>%
-  filter(binomial %in% puff)
-rm(puff_all,puff)
-
-reptiles_all <- st_read("/Volumes/SundayLab/IUCN/REPTILES/REPTILES.shp")
-reptiles <- thermal_species[which(thermal_species %in% reptiles_all$binomial)]
-
-reptiles_overlap <- reptiles_all %>%
-  filter(binomial %in% reptiles)
-rm(reptiles_all,reptiles)
-
-seabream_all <- st_read("/Volumes/SundayLab/IUCN/SEABREAMS_PORGIES_PICARELS/SEABREAMS_PORGIES_PICARELS.shp")
-seabream <- thermal_species[which(thermal_species %in% seabream_all$binomial)]
-
-seabream_overlap <- seabream_all %>%
-  filter(binomial %in% seabream)
-rm(seabream_all,seabream)
-
-sharks_all <- st_read("/Volumes/SundayLab/IUCN/SHARKS_RAYS_CHIMAERAS/SHARKS_RAYS_CHIMAERAS.shp")
-sharks <- thermal_species[which(thermal_species %in% sharks_all$binomial)]
-
-sharks_overlap <- sharks_all %>%
-  filter(binomial %in% sharks)
-rm(sharks_all,sharks)
-
-wrasses_all <- st_read("/Volumes/SundayLab/IUCN/WRASSES_PARROTFISHES/WRASSES_PARROTFISHES.shp")
-wrasses <- thermal_species[which(thermal_species %in% wrasses_all$binomial)]
-
-wrasses_overlap <- wrasses_all %>%
-  filter(binomial %in% wrasses)
-rm(wrasses_all,wrasses)
-
-
-## combine and filter out non-resident ranges:
-combined <- rbind(amphibs_overlap, blennies_overlap, clups_overlap, puff_overlap, 
-                  reptiles_overlap, seabream_overlap, sharks_overlap, wrasses_overlap) 
+files <- c("/Volumes/SundayLab/IUCN/AMPHIBIANS/AMPHIBIANS.shp", 
+           "/Volumes/SundayLab/IUCN/BLENNIES/BLENNIES.shp",
+           "/Volumes/SundayLab/IUCN/CLUPEIFORMES/CLUPEIFORMES.shp",
+           "/Volumes/SundayLab/IUCN/PUFFERFISH/PUFFERFISH.shp",
+           "/Volumes/SundayLab/IUCN/REPTILES/REPTILES.shp",
+           "/Volumes/SundayLab/IUCN/SEABREAMS_PORGIES_PICARELS/SEABREAMS_PORGIES_PICARELS.shp",
+           "/Volumes/SundayLab/IUCN/SHARKS_RAYS_CHIMAERAS/SHARKS_RAYS_CHIMAERAS.shp",
+           "/Volumes/SundayLab/IUCN/WRASSES_PARROTFISHES/WRASSES_PARROTFISHES.shp")
+i = 1
+while (i < length(files) + 1) {
+  all_spp <- st_read(files[i])
+  
+  spp <- thermal_species[which(thermal_species %in% all_spp$binomial)]
+  overlap <- all_spp %>%
+    filter(binomial %in% spp)
+  
+  # look for iucn range names listed under synonyms
+  spp_syns <- syns_df[which(syns_df$syn_name %in% all_spp$binomial),] %>%
+    mutate(species = binomial) %>%
+    select(syn_name, species) %>%
+    filter(!duplicated(.))
+  
+  # change iucn range name from the synonym to its name in the thermal tolerance data 
+  overlap_syns <- all_spp %>%
+    filter(binomial %in% spp_syns$syn_name) %>%
+    left_join(., spp_syns, by = c("binomial" = "syn_name")) %>%
+    mutate(binomial = species) %>%
+    select(-species)
+  
+  ##combine:
+  if (i == 1) {
+    IUCN <- rbind(overlap, overlap_syns)
+  }
+  else {
+    IUCN <- rbind(IUCN, overlap, overlap_syns)
+  } 
+  
+  i = i + 1
+}
 
 ## collect same ID number (species) into one MULTIPOLYGON:
-combined <- aggregate(combined, list(combined$id_no), function(x) x[1])
+IUCN <- aggregate(IUCN, list(IUCN$id_no), function(x) x[1]) ## 322 ranges
 
 ## write out to file:
-st_write(combined, "/Volumes/SundayLab/IUCN/FILTERED/IUCN-ectotherms.shp", driver = "ESRI Shapefile", 
+st_write(IUCN, "/Volumes/SundayLab/IUCN/FILTERED/IUCN-ectotherms.shp", driver = "ESRI Shapefile", 
          append = FALSE)
+
 
 # ## plot one:
 # one_amphib <- filter(combined, binomial == "Eurycea bislineata")
@@ -133,120 +164,115 @@ st_write(combined, "/Volumes/SundayLab/IUCN/FILTERED/IUCN-ectotherms.shp", drive
 ## read in ranges:
 GARD <- st_read("data-raw/GARD1.1_dissolved_ranges/modeled_reptiles.shp")
 
-## check for species we have thermal limits for:
-meiri_ol <- GARD$Binomial[which(GARD$Binomial %in% thermal_species)] ## 287
+## remove species with IUCN ranges since GARD took ranges from IUCN when available
+IUCN <- st_read("/Volumes/SundayLab/IUCN/FILTERED/IUCN-ectotherms.shp")
+GARD <- GARD[which(!GARD$Binomial %in% IUCN$binomial),]
 
-## taxize and check again:
-library(taxize)
+## look for GARD species in synonym database: 
+syns_gard <- syns_df[which(syns_df$syn_name %in% GARD$Binomial),] %>%
+  select(syn_name, binomial)
+perfmatch_gard <- syns_df[which(syns_df$binomial %in% GARD$Binomial),] %>%
+  select(binomial) %>%
+  filter(!duplicated(.))
 
-## meiri species:
-taxa <- GARD$Binomial
-taxa1 <- data.frame(binomial = taxa[1:5000])
-tsn_search1 <- get_tsn(as.character(taxa1$binomial), accepted = FALSE) ## find tsn for each unique taxa
-#saveRDS(tsn_search1, "data-processed/tsn_search1_meiri.rds")
-tsn_search1 <- readRDS("data-processed/tsn_search1_meiri.rds")
+GARD_syns <- left_join(syns_gard, GARD, by = c("syn_name" = "Binomial")) %>%
+  mutate(binomial = ifelse(!is.na(binomial), as.character(binomial), as.character(Binomial))) %>%
+  select(-syn_name)
 
-taxa2 <- data.frame(binomial = taxa[5001:7828])
-tsn_search2 <- get_tsn(as.character(taxa2$binomial), accepted = FALSE) 
-#saveRDS(tsn_search2, "data-processed/tsn_search2_meiri.rds")
-tsn_search2 <- readRDS("data-processed/tsn_search2_meiri.rds")
+GARD_perfmatch <- left_join(perfmatch_gard, GARD, by = c("binomial" = "Binomial")) 
 
-## check out weirdo Python genus
-## throws error from taxize
-
-taxa3 <- data.frame(binomial = taxa[7839:10064])
-tsn_search3 <- get_tsn(as.character(taxa3$binomial), accepted = FALSE) 
-#saveRDS(tsn_search3, "data-processed/tsn_search3_meiri.rds")
-tsn_search3 <- readRDS("data-processed/tsn_search3_meiri.rds")
-
-## combine:
-tsns1 <- data.frame(tsn_search1)
-tsns2 <- data.frame(tsn_search2)
-tsns3 <- data.frame(tsn_search3)
-empty <- tsns3[1:10,] 
-empty[1:10,] <- NA
-
-tsns <- rbind(tsns1, tsns2, empty, tsns3)
-tsns$binomial <- taxa
-#saveRDS(tsns, "data-processed/tsn_search_meiri.rds")
-
-found <- tsns %>%
-  subset(match == "found")  ## found 7400/10064 spp
-
-report <- lapply(found$ids, itis_acceptname)
-report_df <- data.frame(matrix(unlist(report), nrow=7400, byrow=T), stringsAsFactors=FALSE)
-#saveRDS(report_df, "data-processed/report_df.rds")
-report_df <- readRDS("data-processed/report_df.rds")
-
-found <- found %>%
-  mutate(genus_species_corrected = report_df$X2)
-
-merged <- left_join(tsns, found) 
-
-merged <- merged %>%
-  mutate(og_name = binomial) %>%
-  mutate(binomial = ifelse(!is.na(merged$genus_species_corrected), as.character(.$genus_species_corrected),
-                           as.character(.$binomial)))
-
-## thermal limit species:
-taxa_tt <- data.frame(binomial = as.character(thermal_species), stringsAsFactors = FALSE)
-tsn_search_tt <- get_tsn(as.character(taxa_tt$binomial), accepted = FALSE)
-#saveRDS(tsn_search_tt, "data-processed/tsn_search_tt.rds")
-tsn_search_tt <- readRDS("data-processed/tsn_search_tt.rds")
-
-tsns_tt <- data.frame(tsn_search_tt)
-tsns_tt$binomial <- taxa_tt$binomial
-
-found <- tsns_tt %>%
-  subset(match == "found")  ## found  spp
-
-report <- lapply(found$ids, itis_acceptname)
-report_df_tt <- data.frame(matrix(unlist(report), nrow=681, byrow=T), stringsAsFactors=FALSE)
-#saveRDS(report_df_tt, "data-processed/report_df_tt.rds")
-report_df_tt <- readRDS("data-processed/report_df_tt.rds")
-
-found <- found %>%
-  mutate(genus_species_corrected = report_df_tt$X2)
-
-merged_tt <- left_join(tsns_tt, found) 
-
-merged_tt <- merged_tt %>%
-  mutate(rangetherm_names = binomial) %>%
-  mutate(binomial = ifelse(!is.na(merged_tt$genus_species_corrected), as.character(.$genus_species_corrected),
-                           as.character(.$binomial)))
-
-## check again:
-meiri_ol_tt <- GARD$Binomial[which(merged$binomial %in% merged_tt$binomial)] ## 304
-length(which(meiri_ol %in% meiri_ol_tt)) ## okay - all previous species found did not get an updated name 
-
-## Liolaemus kriegi and Liolaemus ceii are same species - have two ranges in GARD
-## same with two other species
-## for now, leave it
-
-## yay! 304 extra species 
-## for now, go with names in rangetherm for simplicity sake
-inner <- inner_join(merged, merged_tt, by = "binomial")
-GARD_ol <- GARD[which(merged$binomial %in% inner$binomial),]
-GARD_ol$Binomial <- inner$rangetherm_names
+GARD_ol <- rbind(GARD_syns, GARD_perfmatch) %>% 
+  select(binomial, geometry) ## 57 ranges!
 
 ## write: 
 st_write(GARD_ol, "/Volumes/SundayLab/GARD/GARD_ol.shp", driver = "ESRI Shapefile", 
          append = FALSE)
 
 
-##########################################################
-##              ERROR CHECKING GBIF RANGES              ##
-##########################################################
-GBIF <- st_read("/Volumes/SundayLab/polygons/Filtered occurences ectotherm animals_020817.shp")
+## NOTE:
+## Liolaemus kriegi and Liolaemus ceii are same species - have two ranges in GARD
+## same with two other species
+## for now, leave it
 
-## fix species name mistakes:
+
+
+##########################################################
+##                     GBIF RANGES                      ##
+##########################################################
+GBIF_og <- st_read("/Volumes/SundayLab/polygons/Filtered occurences ectotherm animals_020817.shp")
+
+# get species synonyms from files:
+path = "data-raw/dropbox filtered occurrences for sWEEP/Filtered occurences ectotherm animals 16 12 31 copy/"
+files <- list.files(path, pattern="*.csv")
+filenames <- paste(path, files, sep="/")
+
+syn_match <- data.frame(filenames = str_split_fixed(files, "\\.", n=2)[,1])
+
+i = 1 
+og_names <- c()
+while (i < length(filenames)+1) {
+  cur <- read.csv(filenames[i]) 
+  
+  og_names <- append(og_names, as.character(cur$species[1]))
+  
+  i = i + 1
+}
+
+syn_match$og_names <- og_names
+
+## fix species name mistakes in range file:
+GBIF <- GBIF_og 
 GBIF$species <- as.character(GBIF$species)
 GBIF$species[which(GBIF$species == "Clubiona triviali")] <- "Clubiona trivialis"
 
-GBIF <- GBIF[GBIF$species %in% thermal_species, ] ## get rid of species not in thermal ectotherm data
+## replace species names in range file with the names originally used for their filenames
+rearranged <- data.frame(species = GBIF$species)
+rearranged <- left_join(rearranged, syn_match, by = c("species" = "og_names")) %>%
+  mutate(filenames = ifelse(is.na(filenames), as.character(species), as.character(filenames)))
+GBIF$species <- rearranged$filenames
 
-## save new version:
-st_write(GBIF, "/Volumes/SundayLab/polygons/gbif_error-checked.shp", append = FALSE)
+## look for GBIF species in synonym database: 
+syns_gbif <- syns_df[which(syns_df$syn_name %in% GBIF$species),] %>%
+  select(syn_name, binomial)
+perfmatch_gbif <- syns_df[which(syns_df$binomial %in% GBIF$species),] %>%
+  select(binomial) %>%
+  filter(!duplicated(.))
+
+GBIF_syns <- left_join(syns_gbif, GBIF, by = c("syn_name" = "species")) %>%
+  mutate(binomial = ifelse(!is.na(binomial), as.character(binomial), as.character(species))) %>%
+  select(-syn_name)
+GBIF_perfmatch <- left_join(perfmatch_gbif, GBIF, by = c("binomial" = "species")) 
+
+which(GBIF_syns$binomial %in% GBIF_perfmatch$binomial) ## oh -- all syns were also in gbif as correct name, so do not add twice!
+
+## merge to add column with corrected name:
+GBIF_ol <- GBIF_perfmatch %>% 
+  select(binomial, geometry) ## 234 ranges!
+
+
+## Note: some GBIF species go missing here because they do not have thermal limits
+## should not happen - look into why they are not in globtherm data
+## Norops should be Anolis 
+missing <- GBIF$species[which(!GBIF$species %in% GBIF_ol$binomial)]
+GBIF_missing <- GBIF[which(!GBIF$species %in% GBIF_ol$binomial), ]
+
+GBIF_missing$single_i <- str_replace_all(missing, "ii", "i")
+
+i_gbif <- syns_df[which(syns_df$binomial %in% GBIF_missing$single_i),] %>%
+  select(binomial) %>%
+  filter(!duplicated(.))
+
+GBIF_i <- GBIF_missing[which(GBIF_missing$single_i %in% i_gbif$binomial),] %>%
+  mutate(binomial = single_i) %>%
+  select(binomial, geometry) %>%
+  as.data.frame(.)
+
+## merge
+GBIF_ol <- rbind(GBIF_ol, GBIF_i)  ## 240 ranges!
+GBIF_missing <- GBIF_missing[which(!GBIF_missing$single_i %in% GBIF_i$binomial),] 
+GBIF_missing$species ## 17 still missing
+
+st_write(GBIF_ol, "/Volumes/SundayLab/polygons/gbif_error-checked.shp", append = FALSE)
 
 
 
@@ -254,16 +280,9 @@ st_write(GBIF, "/Volumes/SundayLab/polygons/gbif_error-checked.shp", append = FA
 ##          combining GBIF, GARD and IUCN ranges        ##
 ##########################################################
 IUCN <- st_read("/Volumes/SundayLab/IUCN/FILTERED/IUCN-ectotherms.shp") %>%
-  select(binomial, geometry) %>%
-  rename(species = binomial) 
-GBIF <- st_read("/Volumes/SundayLab/polygons/gbif_error-checked.shp")
-GARD <- st_read("/Volumes/SundayLab/GARD/GARD_ol.shp") %>%
-  select(Binomial, geometry) %>%
-  rename(species = Binomial) 
-
-crs(IUCN)
-crs(GBIF)
-crs(GARD)
+  select(binomial, geometry)
+GBIF <- st_read("/Volumes/SundayLab/polygons/gbif_error-checked.shp") 
+GARD <- st_read("/Volumes/SundayLab/GARD/GARD_ol.shp") 
 
 ## add source column to identify which ranges are from GBIF vs which are from IUCN:
 GBIF$source <- "GBIF"
@@ -271,33 +290,26 @@ IUCN$source <- "IUCN"
 GARD$source <- "GARD"
 
 ## combine:
-realized_ranges <- rbind(IUCN, GBIF, GARD) ## okay, we have 830 ectotherm ranges (but really 827)
+realized_ranges <- rbind(IUCN, GBIF, GARD) %>%
+  dplyr::rename("species" = binomial) ## okay, we have 623 ectotherm ranges
 
 
 
 ## taking inventory of unique and overlapping species:
 ######################################################
-length(unique(realized_ranges$species)) ## 478 unique species 
-length(which(duplicated(realized_ranges$species))) ## 352 are duplicated
-## 140 have only one range source 
-dup <- realized_ranges$species[which(duplicated(realized_ranges$species))]
+length(unique(realized_ranges$species)) ## 491 unique species 
+length(which(duplicated(realized_ranges$species))) ## 128 are duplicated
 
-df <- data.frame(species = realized_ranges$species, source = realized_ranges$source) %>%
-  count(species) 
+df <- count(realized_ranges$species) 
 
-tally_of_ol <- df %>%
-  count(n)
+length(which(df$freq == 1)) # 367 spp have 3 ranges 
+length(which(df$freq == 2)) # 121 spp have 2 ranges 
+length(which(df$freq == 3)) # 2 spp have 3 ranges 
+length(which(df$freq == 4)) # 1 sp has 4 ranges 
 
-length(unique(IUCN$species)) ## 310
-length(unique(GBIF$species)) ## 216
-length(unique(GARD$species)) ## 301 - 3 not unique bc taxonomy (GARD$species[which(duplicated(GARD$species))] )
-
-
-## write new thermal limits database with only species that we have ranges for 
-thermal_limits_new <- thermal_limits[paste(thermal_limits$Genus, thermal_limits$Species, sep = " ") %in% realized_ranges$species,]
-length(unique(thermal_limits_new$genus_species)) ## 478
-
-write.csv(thermal_limits_new, "data-processed/thermal-limits_ectotherms-with-ranges_GARD.csv", row.names = FALSE)
+length(unique(IUCN$binomial)) ## 319 spp
+length(unique(GBIF$binomial)) ## 240 spp
+length(unique(GARD$binomial)) ## 56 spp 
 
 
 
@@ -305,44 +317,80 @@ write.csv(thermal_limits_new, "data-processed/thermal-limits_ectotherms-with-ran
 ##########################################################
 ##          adding information to realized ranges       ##
 ##########################################################
-## add extra information to realized ranges about realm, which hemisphere species is in, whether realized range crosses the equator
+## add extra information to realized ranges about realm, which hemisphere species is in, whether realized range crosses the equator, latitudinal midpoint, geographic area 
 
-## split into equator-crossers, northern hemisphere and southern hemisphere ranges:
-equator <- st_linestring(rbind(c(-180, 0), c(180, 0)))
-n_hemi <- st_polygon(list(matrix(c(-180,0,-180,90,180,90,180,0,-180,0),ncol=2, byrow=TRUE)))
-s_hemi <- st_polygon(list(matrix(c(-180,-90,-180,0,180,0,180,-90,-180,-90),ncol=2, byrow=TRUE)))
-
-equator_check <- st_intersects(realized_ranges, equator, sparse = FALSE)[,]
-does_not <- filter(realized_ranges, equator_check == FALSE)
-
-in_north <- st_intersects(does_not, n_hemi, sparse = FALSE)[,]
-in_south <- st_intersects(does_not, s_hemi, sparse = FALSE)[,]
-
-in_both <- filter(does_not, in_north == TRUE & in_south == TRUE)
-## only one in the north and south, mostly in the north so consider to be in_north for now
-
-## create sf object for ranges with information about hemisphere:
-northern_ranges <- filter(does_not, in_north == TRUE) %>%
-  mutate(hemisphere = "N")
-
-southern_ranges <- filter(does_not, in_north == FALSE & in_south == TRUE) %>%
-  mutate(hemisphere = "S")
-
-crosses_equator <- filter(realized_ranges, equator_check == TRUE) %>%
-  mutate(hemisphere = "EQUATOR")
+# ## split into equator-crossers, northern hemisphere and southern hemisphere ranges:
+# equator <- st_linestring(rbind(c(-180, 0), c(180, 0)))
+# n_hemi <- st_polygon(list(matrix(c(-180,0,-180,90,180,90,180,0,-180,0),ncol=2, byrow=TRUE)))
+# s_hemi <- st_polygon(list(matrix(c(-180,-90,-180,0,180,0,180,-90,-180,-90),ncol=2, byrow=TRUE)))
+# 
+# equator_check <- st_intersects(realized_ranges, equator, sparse = FALSE)[,]
+# does_not <- filter(realized_ranges, equator_check == FALSE)
+# 
+# in_north <- st_intersects(does_not, n_hemi, sparse = FALSE)[,]
+# in_south <- st_intersects(does_not, s_hemi, sparse = FALSE)[,]
+# 
+# in_both <- filter(does_not, in_north == TRUE & in_south == TRUE)
+# ## only one in the north and south, mostly in the north so consider to be in_north for now
+# 
+# ## create sf object for ranges with information about hemisphere:
+# northern_ranges <- filter(does_not, in_north == TRUE) %>%
+#   mutate(hemisphere = "N")
+# 
+# southern_ranges <- filter(does_not, in_north == FALSE & in_south == TRUE) %>%
+#   mutate(hemisphere = "S")
+# 
+# crosses_equator <- filter(realized_ranges, equator_check == TRUE) %>%
+#   mutate(hemisphere = "EQUATOR")
 
 realms <- thermal_limits %>%
   select(genus_species, realm) %>%
+  mutate(species = str_replace_all(genus_species, "_", " ")) %>%
+  select(-genus_species) %>%
   filter(!duplicated(.))
+# realized_ranges <- rbind(northern_ranges, southern_ranges, crosses_equator) 
 
-realized_ranges <- rbind(northern_ranges, southern_ranges, crosses_equator) %>%
-  left_join(realized_ranges, realms, by = c("species" = "genus_species"))
+
+realized_ranges <-  merge(realized_ranges, realms, by = "species")
+
+## calculate latitudinal midpoint and geographic area:
+realized_ranges <- realized_ranges %>%
+  mutate(range_area_km2 = round(units::set_units(st_area(.), km^2), digits = 0)) 
+
+## get bbox extents to approximate lat midpoint:
+bbox <- as.data.frame(do.call("rbind", lapply(st_geometry(realized_ranges), st_bbox)))
+lat_mp <- (bbox$ymin + bbox$ymax)/2
+realized_ranges$lat_mp <- lat_mp
+
+## investigate ranges that are duplicated:
+rr <- realized_ranges
+rr$range_id <- paste(rr$species, rr$source, sep = "_")
+dups <- rr[rr$range_id %in% rr$range_id[which(duplicated(rr$range_id))], ] # 4 spp have two ranges from the same source
+
+## Anolis lemurinus - keep larger (sec)
+## Crotalus atrox - keep larger (first)
+## Liolaemus fitzingerii - keep larger (sec)
+## Liolaemus kriegi - keep larger (sec) 
+
+dups <- dups[c(2,3,5,8),]
+dups <- select(dups, -range_id)
+
+realized_ranges <- realized_ranges %>%
+  filter(!species %in% dups$species) %>%
+  rbind(., dups)
+
+## get rid of Freshwater spp:
+realized_ranges <- filter(realized_ranges, realm != "Freshwater")
+
 
 st_write(realized_ranges, "data-processed/realized-ranges_unsplit.shp", append = FALSE)
+##NOTE: some range areas too large to write 
 
+## write new thermal limits database with only species that we have ranges for 
+thermal_limits_new <- thermal_limits[paste(thermal_limits$Genus, thermal_limits$Species, sep = " ") %in% realized_ranges$species,]
+length(unique(thermal_limits_new$genus_species)) ## 474
 
-
-
+write.csv(thermal_limits_new, "data-processed/thermal-limits_ectotherms-with-ranges_taxized.csv", row.names = FALSE)
 
 ##########################################################
 ##                 investigating overlap                ##

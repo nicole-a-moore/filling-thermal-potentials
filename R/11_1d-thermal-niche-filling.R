@@ -5,7 +5,7 @@ library(tidyverse)
 ###################################################
 ##                 read in data                  ##
 ###################################################
-thermal_limits <- read.csv("data-processed/thermal-limits_ectotherms-with-ranges.csv") %>%
+thermal_limits <- read.csv("data-processed/thermal-limits_ectotherms-with-ranges_taxized.csv") %>%
   mutate(genus_species = paste(Genus, Species, sep = " "))
 
 
@@ -73,13 +73,136 @@ niche_lims_reg <- extract_niche_limits(r_niches, p_niches, thermal_limits, type 
 filling_reg <- calculate_filling(niche_lims_reg)
 
 
+###################################################
+##          operative temperatures               ##
+###################################################
+niche_Te_best <- read.csv("./data-processed/thermal-niche/niche_Te_best.csv")
+
+## split potnetial and realized
+r_niches <- niche_Te_best %>%
+  filter(type == 'realized_Te_best')
+p_niches <- niche_Te_best %>%
+  filter(type == 'potential_Te_best')
+
+niche_lims_Te_best <- extract_niche_limits(r_niches, p_niches, thermal_limits, type = "Te_best")
+
+filling_Te_best <- calculate_filling(niche_lims_Te_best)
+
+
+niche_Te_worst <- read.csv("./data-processed/thermal-niche/niche_Te_worst.csv")
+
+## split potential and realized
+r_niches <- niche_Te_worst %>%
+  filter(type == 'realized_Te_worst')
+p_niches <- niche_Te_worst %>%
+  filter(type == 'potential_Te_worst')
+
+niche_lims_Te_worst <- extract_niche_limits(r_niches, p_niches, thermal_limits, type = "Te_worst")
+
+filling_Te_worst <- calculate_filling(niche_lims_Te_worst)
+
+### create version that uses maximum temperatures in the shade but assumes species are thermoregulating to Tpref 
+
+## read in Tpref data:
+tpref <- read.csv("data-processed/Tpref_clean.csv")
+
+## subset niches to only species we have Tpref for
+niche_lims_Te_worst_sub <- niche_lims_Te_worst %>%
+  mutate(genus_species = paste(str_split_fixed(range, "\\_", n=3)[,1], 
+                               str_split_fixed(range, "\\_", n=3)[,2], sep = "_")) %>%
+  filter(genus_species %in% tpref$genus_species)
+
+niche_lims_Te_best_sub <- niche_lims_Te_best %>%
+  mutate(genus_species = paste(str_split_fixed(range, "\\_", n=3)[,1], 
+                               str_split_fixed(range, "\\_", n=3)[,2], sep = "_")) %>%
+  filter(genus_species %in% tpref$genus_species)
+
+## merge with tpref data:
+niche_lims_Te_best_sub <- left_join(niche_lims_Te_best_sub, tpref) %>%
+  filter(!is.infinite(r_niche_upper))
+
+## get max Te sun
+maxTesun <- niche_lims_Te_worst_sub %>%
+  select(range, r_niche_upper) %>%
+  rename('max_Te_sun' = r_niche_upper) %>%
+  unique()
+  
+niche_lims_tpref <- left_join(niche_lims_Te_best_sub, maxTesun)
+
+## we are going to adjust r niche upper and p niche upper 
+niche_lims_tpref <- niche_lims_tpref %>%
+  # If Tpref > max Te shade, assume animal’s body temperature is Tpref 
+  mutate(r_niche_upper = ifelse(Tpref > r_niche_upper, Tpref, r_niche_upper)) %>%
+  mutate(p_niche_upper = ifelse(Tpref > p_niche_upper, Tpref, p_niche_upper)) %>%
+  # If Tpref > max Te sun, assume animal’s body temperature is max Te sun 
+  mutate(r_niche_upper = ifelse(Tpref > max_Te_sun, max_Te_sun, r_niche_upper)) %>%
+  mutate(p_niche_upper = ifelse(Tpref > max_Te_sun, max_Te_sun, p_niche_upper))
+  
+View(niche_lims_tpref)
+
+## how many unique species do we have tpref for ?
+length(unique(niche_lims_tpref$genus_species))
+## 99
+## how many ranges had niche limits that changed?
+changed <- niche_lims_tpref[which(niche_lims_tpref$r_niche_upper_tpref != 
+                                    niche_lims_tpref$r_niche_upper),]
+## 32 ranges have a niche limit that changed
+length(unique(changed$genus_species)) # 27 spp changed
+## in how many ranges was Tpref > max Te shade?
+length(which(niche_lims_tpref$r_niche_upper_tpref == niche_lims_tpref$Tpref))
+## 31 
+## in how many ranges was Tpref > max Te sun?
+length(which(niche_lims_tpref$Tpref > niche_lims_tpref$max_Te_sun))
+## 1 
+ggplot(tpref, aes(x = Tpref)) + geom_histogram()
+
+filling_Te_tpref <- calculate_filling(niche_lims_tpref)
+filling_Te_tpref <- filling_Te_tpref[,-c(11:17)]
+filling_Te_tpref$type = "Te_tpref"
 
 ###################################################
 ##         exporting data for analysis           ##
 ###################################################
-filling_all <- rbind(filling_reg, filling_elev, filling_dormancy, filling_elev_x_dormancy)
+#filling_all <- rbind(filling_reg, filling_elev, filling_dormancy, filling_elev_x_dormancy) 
+filling_all <- rbind(filling_elev_x_dormancy, filling_Te_best, filling_Te_tpref) %>%
+  mutate(realm = ifelse(realm == "terrestrial", "Terrestrial", 
+                        ifelse(realm == "marine", "Marine",
+                               ifelse(realm == "intertidal", "Intertidal", as.character(realm)))))
+
+## add realized range latitudinal midpoint and geographic area:
+realized_ranges <- st_read("data-processed/realized-ranges_unsplit.shp")
+realized_ranges$range <- paste(str_replace_all(realized_ranges$species, " ", "_"), 
+                               realized_ranges$source, sep = "_") 
+
+colnames(realized_ranges)[4] <- "range_area_km2"
+
+filling_all <- left_join(filling_all, realized_ranges, by = c("range", "realm")) %>%
+  select(-geometry)
 
 write.csv(filling_all, "data-processed/thermal-niche/thermal-niche-filling-metrics.csv", row.names = FALSE)
+
+
+### make plot of tpref and max Te shade across latitude:
+across_lat <- left_join(niche_lims_Te_best_sub, maxTesun) %>%
+  calculate_filling(.) %>%
+  mutate(realm = "Terrestrial") %>%
+  left_join(., realized_ranges,  by = c("range", "realm")) %>%
+  select(-geometry)
+
+across_lat %>%
+  ggplot(., aes(x = lat_mp, y = Tpref)) + geom_point()
+
+across_lat %>%
+  gather(key = "tpref_or_Te", value = "val", c(Tpref, r_niche_upper)) %>%
+  ggplot(., aes(x = lat_mp, y = val, col = tpref_or_Te)) + geom_point()
+
+across_lat %>%
+  gather(key = "tpref_or_Te", value = "val", c(Tpref, r_niche_upper)) %>%
+  ggplot(., aes(x = lat_mp, y = val, col = tpref_or_Te)) + geom_point() + 
+  geom_smooth(method = "lm") +
+  labs(y = "Temperature (°C)",  x = "Realized range latitudinal midpoint (°N)", colour = '') + 
+  scale_color_discrete(labels = c("max Te shade", "Tpref"))
+
 
 
 ###################################################
@@ -131,8 +254,8 @@ extract_niche_limits <- function(r_niches, p_niches, thermal_limits, type) {
     r_lower <- min(rniche$temps, na.rm = TRUE)
     p_upper <- max(pniche$temps, na.rm = TRUE)
     p_lower <- min(pniche$temps, na.rm = TRUE)
-    
-    ## add to df:
+  
+     ## add to df:
     if (range == 1) {
       niche_lims <- data.frame(range = range_id, 
                                type = type,
