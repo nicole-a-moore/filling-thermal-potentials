@@ -1,0 +1,873 @@
+﻿Family,species,mean annual temeprature,mean body temperature,mean seasonal temperature,activity period,latitudinal centroid,maximum body mass,mean female mass,hatchling mass,basis of female mass estimate,insular endemic?,Activity time,substrate,diet,reproduction,Red List status,Population trend,mean body temperature,body temperatrue references
+Agamidae,Acanthocercus atricollis,20.3,39.8,20.3,all,-15.0,2.09,1.59,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.8,Curry-Lindahl 1979
+Agamidae,Acanthocercus yemensis,20.6,29.0,20.6,all,15.8,1.78,1.56,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,29.0,Al-Johany 1995
+Agamidae,Agama agama,24.9,35.9,24.9,all,10.0,1.91,1.23,-0.19,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.9,"Muchlinski et al. 1995, Bowker 1984"
+Agamidae,Agama atra,16.2,37.9,19.4,oct_apr,-30.0,1.82,1.20,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,37.9,Curry-Lindahl 1979
+Agamidae,Agama hispida,16.5,36.4,19.8,oct_apr,-31.0,1.76,1.35,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,36.4,"Huey and Pianka 2007, Pianka 1986, Curry-Lindahl 1979, Huey and Pianka 1977"
+Agamidae,Agama planiceps,20.1,39.8,20.1,all,-20.1,1.90,1.19,0.00,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,39.8,Curry-Lindahl 1979
+Agamidae,Amphibolurus muricatus,15.5,35.4,18.0,oct_apr,-32.0,1.67,1.24,-0.19,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.4,Greer 1989
+Agamidae,Caimanops amphiboluroides,21.1,36.6,26.2,oct_apr,-27.0,1.29,0.94,0.31,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.6,"Pianka 1986, Greer 1989"
+Agamidae,Calotes calotes,25.5,26.7,25.5,all,16.0,1.82,1.43,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,26.7,Meek et al. 2005
+Agamidae,Calotes liocephalus,24.2,22.9,24.2,all,7.3,1.37,1.18,-0.43,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,EN,NA,22.9,Meek et al. 2005
+Agamidae,Calotes liolepis,23.5,30.0,23.5,all,6.8,1.37,0.87,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.0,Meek et al. 2005
+Agamidae,Calotes versicolor,21.5,30.9,21.5,all,23.0,1.91,1.18,-0.58,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.9,Meek et al. 2005
+Agamidae,Ceratophora tennentii,23.8,21.6,23.8,all,7.4,1.23,0.93,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,EN,NA,21.6,"de Silva et al. 2005, Meek et al. 2005"
+Agamidae,Chlamydosaurus kingii,24.8,34.8,24.8,all,-18.0,2.79,2.40,0.21,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,34.8,Christian and Bedford 1995
+Agamidae,Cophotis ceylanica,20.8,26.7,20.8,all,6.9,0.84,0.70,-0.95,female SVL,yes,Diurnal,air,Carnivorous,Viviparous,NE,NE,26.7,Meek et al. 2005
+Agamidae,Ctenophorus caudicinctus,24.6,34.0,24.6,all,-21.0,1.39,0.84,-0.59,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.0,"Light et al. 1966, Huey and Pianka 2007, Bradshaw and Main 1968, Melville and Schulte 2001, Greer 1989, Heatwole and Taylor 1987, Curry-Lindahl 1979, Licht et al. 1966"
+Agamidae,Ctenophorus clayi,22.1,36.6,29.1,oct_apr,-25.0,0.65,0.20,-0.53,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.6,"Huey and Pianka 2007, Pianka 1986, Greer 1989"
+Agamidae,Ctenophorus fordi,18.2,37.0,21.1,oct_apr,-31.0,0.65,0.50,-0.56,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.0,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Agamidae,Ctenophorus isolepis,23.0,40.5,28.1,oct_apr,-24.0,1.12,0.69,-0.43,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,40.5,"Pianka 1971, Pianka 1986, Melville and Schulte 2001, Greer 1989, Heatwole and Taylor 1987"
+Agamidae,Ctenophorus maculosus,20.0,38.4,24.6,oct_apr,-30.0,0.90,0.65,-0.35,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,38.4,"Mitchell 1973, Heatwole and Taylor 1987"
+Agamidae,Ctenophorus nuchalis,22.2,39.8,27.0,oct_apr,-25.0,1.69,1.18,-0.05,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,39.8,"Light et al. 1966, Huey and Pianka 2007, Bradshaw and Main 1968, MacMillen et al. 1989, Pianka 1986, Melville and Schulte 2001, Greer 1989, Heatwole and Taylor 1987, Curry-Lindahl 1979, Licht et al. 1966"
+Agamidae,Ctenophorus ornatus,17.9,38.1,21.2,oct_apr,-31.0,1.30,1.07,-0.03,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,38.1,"Bradshaw and Main 1968, Greer 1989, Heatwole and Taylor 1987 give a range 28.8-39.6 but do not provide a mean so I ignore it, Licht et al. 1966, "
+Agamidae,Ctenophorus pictus,19.1,34.2,20.8,oct_apr,-30.0,0.99,0.63,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.2,"Melville and Schulte 2001, Heatwole and Taylor 1987"
+Agamidae,Ctenophorus reticulatus,20.9,35.5,24.4,oct_apr,-27.0,1.47,0.88,-0.38,female SVL,no,Diurnal,earth,Omnivorous,Oviparous,NE,NE,35.5,"Light et al. 1966, Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987, Curry-Lindahl 1979, Licht et al. 1966"
+Agamidae,Ctenophorus scutulatus,20.1,38.9,23.4,oct_apr,-28.0,1.56,1.16,-0.19,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.9,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Agamidae,Ctenophorus vadnappa,17.9,37.2,22.5,oct_apr,-31.0,1.23,1.16,NA,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.2,Greer 1989
+Agamidae,Diporiphora bilineata,25.1,44.3,25.1,all,-16.0,0.90,0.56,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,44.3,"Bradshaw and Main 1968, Heatwole and Taylor 1987"
+Agamidae,Diporiphora winneckei,22.9,35.3,28.9,oct_apr,-25.0,0.90,0.80,-0.71,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.3,"Pianka 1986, Melville and Schulte 2001, Greer 1989, Heatwole and Taylor 1987"
+Agamidae,Draco volans,23.9,29.3,23.9,all,-2.0,1.32,1.04,-0.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.3,"Avery 1982, Alcala 1966"
+Agamidae,Gonocephalus liogaster,26.2,25.7,26.2,all,3.0,1.87,1.54,-0.09,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.7,"Inger 1959, Brattstrom 1965"
+Agamidae,Hypsilurus spinipes,16.3,19.0,19.5,oct_apr,-31.0,1.73,1.58,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,19.0,Rummery et al. 1995
+Agamidae,Istiurus lesueurii,18.5,29.4,21.5,oct_apr,-27.0,2.78,2.31,0.42,female SVL,no,Diurnal,water,Omnivorous,Oviparous,NE,NE,29.4,Heatwole and Taylor 1987
+Agamidae,Japalura polygonata,20.8,29.5,23.0,mar_sep,24.0,1.08,0.63,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.5,"Tanaka 1986, Rummery et al. 1995"
+Agamidae,Laudakia caucasia,14.7,29.0,20.1,mar_sep,35.0,1.97,1.53,0.13,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,29.0,Arakelyan et al. 2011
+Agamidae,Laudakia nupta,19.44,27.2,24.3,mar_sep,30.0,2.10,1.81,0.28,female SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,27.2,Anderson 1963
+Agamidae,Laudakia stellio,15.8,33.8,19.9,mar_sep,35.0,2.77,1.45,-0.15,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,33.8,"Hertz et al. 1983, Hertz and Nevo 1981, Meiri, own data"
+Agamidae,Lophognathus gilberti,24.3,33.7,24.3,all,-21.0,1.77,1.11,-0.33,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.7,Melville and Schlute 2001
+Agamidae,Lophognathus longirostris,23.4,35.4,23.4,all,-23.0,1.55,1.15,-0.38,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.4,"Light et al. 1966, Huey and Pianka 2007, Pianka 1986, Melville and Schulte 2001, Greer 1989, Heatwole and Taylor 1987, Curry-Lindahl 1979"
+Agamidae,Lophognathus temporalis,27.1,30.6,27.1,all,-13.0,1.93,1.19,0.05,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.6,Blouin-Demers and Nadeau 2005
+Agamidae,Lyriocephalus scutatus,24.8,27.5,24.8,all,7.0,2.19,1.57,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NT,unknown,27.5,Meek et al. 2005
+Agamidae,Moloch horridus,22.0,32.9,25.7,oct_apr,-25.0,1.64,1.29,-0.07,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.9,"Light et al. 1966, Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987, Curry-Lindahl 1979"
+Agamidae,Otocryptis wiegmanni,22.6,26.1,22.6,all,6.8,1.07,0.53,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,26.1,Meek et al. 2005
+Agamidae,Phrynocephalus helioscopus,7.8,37.1,17.1,apr_aug,45.0,0.90,0.40,-0.92,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,37.1,"Clemann et al. 2008, Ulmasov et al. 1999"
+Agamidae,Phrynocephalus interscapularis,13.5,36.7,20.5,mar_sep,41.0,0.21,-0.15,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.7,"Clemann et al. 2008, Ulmasov et al. 1999"
+Agamidae,Phrynocephalus mystaceus,10.8,32.3,18.0,mar_sep,43.0,1.65,0.93,-0.23,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.3,Clemann et al. 2008
+Agamidae,Phrynocephalus persicus,11.3,38.0,16.2,mar_sep,36.0,0.67,0.33,-0.59,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,stable,38.0,Arakelyan et al. 2011
+Agamidae,Phrynocephalus przewalskii,2.8,33.5,10.4,mar_sep,41.0,1.23,0.65,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.5,Xu and Yang 1995
+Agamidae,Phrynocephalus raddei,15.2,42.5,21.3,mar_sep,38.0,0.65,0.43,-0.53,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,42.5,Ulmasov et al. 1992
+Agamidae,Phrynocephalus theobaldi,1.1,32.0,7.0,mar_sep,34.0,0.62,0.44,-0.46,female SVL,no,Diurnal,air,Omnivorous,Viviparous,LC,unknown,32.0,Schleich and Kastle 2002
+Agamidae,Physignathus cocincinus,20.2,28.4,20.2,all,22.0,2.59,1.97,0.31,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,28.4,Meek 1999
+Agamidae,Pogona barbata,17.7,31.6,19.6,oct_apr,-30.0,2.59,2.04,-0.03,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,31.6,"Blouin-Demers and Nadeau 2005, Michael and Lindenmayer 2010, Greer 1989, Heatwole and Taylor 1987"
+Agamidae,Pogona minima,19.8,34.3,22.7,oct_apr,-29.0,2.00,1.62,0.12,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.3,"Bradshaw and Main 1968, Greer 1989, Heatwole and Taylor 1987, Licht et al. 1966, Light et al. 1966"
+Agamidae,Pogona minor,22.7,34.0,27.7,oct_apr,-24.0,2.08,1.47,-0.05,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.0,"Huey and Pianka 2007, Bradshaw and Main 1968, Pianka 1986, Heatwole and Taylor 1987, Light et al. 1966"
+Agamidae,Pogona vitticeps,20.6,34.6,24.4,oct_apr,-27.0,2.59,2.12,0.13,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.6,"MacMillen et al. 1989, Melville and Schulte 2001, Greer 1989"
+Agamidae,Pseudotrapelus sinaitus,22.1,39.0,25.4,mar_sep,25.0,1.50,1.09,-0.23,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,39.0,"Hertz and Nevo 1981, Meiri, own data"
+Agamidae,Sitana ponticeriana,21.2,34.4,24.6,mar_sep,24.0,1.09,0.53,-1.16,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.4,Rao 1998
+Agamidae,Trapelus agilis,15.9,38,24.9,mar_sep,36.0,1.57,1.00,-0.28,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38,Anderson 1963
+Agamidae,Trapelus mutabilis,22.5,35.8,26.1,mar_sep,26.0,1.36,0.96,-0.23,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.8,"Schleich et al. 1996, Hertz and Nevo 1981 (as pallida): 38.5, Meiri, own data"
+Agamidae,Trapelus ruderatus,16.0,37.9,20.7,mar_sep,34.0,1.77,1.01,-0.38,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,37.9,"Hertz and Nevo 1981 (as pallida), Meiri, own data, Anderson 1963 as Agama persica"
+Agamidae,Trapelus sanguinolentus,9.7,35.4,17.3,mar_sep,43.0,2.21,1.15,-0.28,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.4,Clemann et al. 2008
+Agamidae,Trapelus savignii,20.2,36.0,23.0,mar_sep,31.0,1.65,0.91,-0.19,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,decreasing,36.0,"Hertz and Nevo 1981, Hertz et al. 1983, Meiri, own data"
+Agamidae,Tympanocryptis centralis,23.7,35.1,23.7,all,-21.7,0.57,0.57,-0.65,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.1,Melville and Schlute 2001
+Agamidae,Tympanocryptis lineata,21.3,36.4,22.9,oct_apr,-26.0,0.93,0.56,-0.65,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.4,"MacMillen et al. 1989, Greer 1989"
+Agamidae,Uromastyx acanthinura,21.7,38.0,25.7,mar_sep,27.0,3.22,2.39,0.45,female SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,38.0,Schleich et al. 1996
+Agamidae,Uromastyx aegyptia,22.1,38.0,25.9,mar_sep,27.0,3.28,2.92,0.67,female SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,38.0,Rappeport 1974
+Agamidae,Uromastyx loricata,22.46,43.2,27.4,mar_sep,32.0,2.79,2.41,0.62,female SVL,no,Diurnal,air,Herbivorous,Oviparous,LC,unknown,43.2,Anderson 1963
+Amphisbaenidae,Amphisbaena alba,22.9,25.0,22.9,all,-13.0,3.01,2.21,0.18,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,LC,unknown,25.0,Abe and Johansen 1987
+Amphisbaenidae,Amphisbaena mertensii,20.8,22.4,20.8,all,-23.0,1.82,1.63,-0.52,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,NE,NE,22.4,"Abe 1984, Hailey and Elliot 1995"
+Amphisbaenidae,Zygaspis quadrifrons,20.7,23.8,20.7,all,-19.0,0.93,0.27,-1.52,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,NE,NE,23.8,Hailey and Elliot 1995
+Anguidae,Anguis cephallonica,15.7,29.0,18.9,mar_sep,37.0,1.21,0.64,0.04,mean species SVL,no,Diurnal,air,Carnivorous,Viviparous,NT,decreasing,29.0,"Panayiotis Pafilis, own data"
+Anguidae,Anguis fragilis,7.6,24.3,14.4,apr_aug,52.0,1.46,0.96,-0.40,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,24.3,"Galan and Salvador 2006, Brown and Roberts 2008, Hailey and Elliot 1995"
+Anguidae,Barisia imbricata,17.1,26.6,17.1,all,23.0,1.89,1.34,-0.67,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,26.6,"Contreras-Lozano et al. 2010, Dixon and Lemos-Espinal 2010"
+Anguidae,Celestus badius,26.4,31.8,26.4,all,18.0,1.25,1.21,NA,mean species SVL,yes,Diurnal,air,Carnivorous,Viviparous,NE,NE,31.8,"Henderson and Powell 2009, Powell 1999"
+Anguidae,Diploglossus lessonae,24.1,32.3,24.1,all,-7.0,1.92,1.77,NA,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,unknown,32.3,Vitt 1995
+Anguidae,Diploglossus millepunctatus,25.2,27.5,25.2,all,4.0,2.75,1.80,0.54,mean species SVL,yes,Diurnal,air,Carnivorous,Viviparous,NE,NE,27.5,"Avery 1982, Kiester 1975"
+Anguidae,Elgaria coerulea,6.8,21.2,11.8,apr_aug,46.0,1.66,1.11,-0.60,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,21.2,"Vitt 1974, Stewart 1984, Brattstrom 1965"
+Anguidae,Elgaria multicarinata,12.7,24.6,16.9,mar_sep,39.0,2.07,1.47,-0.53,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,LC,decreasing,24.6,"Jones and Lovich 2009, Brattstrom 1965, Kingsbury 1995"
+Anguidae,Elgaria panamintina,16.4,23.0,22.1,mar_sep,36.0,1.83,1.31,NA,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,VU,decreasing,23.0,Mahrdt and Beaman 2002
+Anguidae,Mesaspis monticola,20.6,23.7,20.6,all,9.0,1.00,0.75,-0.90,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,23.7,Savage 2002
+Anguidae,Ophisaurus attenuatus,16.4,31.3,22.3,mar_sep,34.0,1.67,1.26,-0.19,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,31.3,"Brattstrom 1965, Fitch 1956"
+Anguidae,Ophisaurus koellikeri,16.2,18.0,20.2,mar_sep,33.0,1.39,1.33,0.08,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,18.0,Schleich et al. 1996
+Anguidae,Ophisaurus ventralis,18.9,23.0,23.0,mar_sep,31.0,1.51,1.18,-0.38,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,LC,stable,23.0,Kamel and Gatten 1983
+Anguidae,Pseudopus apodus,11.8,25.5,16.8,mar_sep,40.0,2.53,2.20,0.62,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.5,"Meek 1986, Meiri, own data"
+Anniellidae,Anniella pulchra,15.4,21.8,18.4,mar_sep,35.0,0.98,0.60,-0.40,female SVL,no,Cathemeral,earth,Carnivorous,Viviparous,LC,decreasing,21.8,"Avery 1982, Hailey and Elliot 1995, Brattstrom 1965"
+Bipedidae,Bipes biporus,21.2,27.6,23.0,mar_sep,26.0,1.15,0.75,-0.11,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,stable,27.6,Papenfuss 1982
+Bipedidae,Bipes canaliculatus,26.2,29.9,26.2,all,18.0,1.15,0.93,-0.06,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,stable,29.9,Papenfuss 1982
+Bipedidae,Bipes tridactylus,25.3,30.8,25.3,all,17.0,0.63,0.34,-0.62,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,LC,stable,30.8,Papenfuss 1982
+Blanidae,Blanus cinereus,13.9,22.8,17.4,mar_sep,39.0,1.22,0.62,-0.39,female SVL,no,Diurnal,earth,Omnivorous,Oviparous,LC,stable,22.8,"Hailey and Elliot 1995, Lopez 2009 "
+Carphodactylidae,Nephrurus laevissimus,20.7,23.8,22.2,oct_apr,-27.0,1.18,0.79,-0.15,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,23.8,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Carphodactylidae,Nephrurus levis,22.2,19.2,27.3,oct_apr,-25.0,1.30,0.91,-0.07,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,unknown,19.2,"Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Carphodactylidae,Nephrurus vertebralis,21.8,24.1,25.4,oct_apr,-26.0,1.18,0.98,-0.02,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,24.1,"Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Carphodactylidae,Underwoodisaurus milii,17.8,18.5,20.5,oct_apr,-31.0,1.40,0.97,-0.03,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,18.5,"Greer 1989, Werner and Whitaker 1978, Angilletta and Werner 1998, Heatwole and Taylor 1987"
+Chamaeleonidae,Bradypodion pumilum,15.9,27.2,18.1,oct_apr,-34.0,1.40,1.06,-0.45,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,27.2,"Andrews 2008, Avery 1982, Dimaki et al. 2000"
+Chamaeleonidae,Chamaeleo africanus,26.3,22.8,26.3,all,16.0,2.17,1.86,-0.10,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,22.8,Dimaki et al. 2000
+Chamaeleonidae,Chamaeleo chamaeleon,17.7,27.9,21.0,mar_sep,32.0,1.98,1.54,-0.15,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,27.9,"Dimaki et al. 2000, Cuadrado 2010, Andrews 2008, Meiri, own data"
+Chamaeleonidae,Chamaeleo dilepis,21.7,31.6,21.7,all,-14.0,2.14,1.47,0.02,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,31.6,"Andrews 2008, Brattstrom 1965, Dimaki et al. 2000"
+Chamaeleonidae,Chamaeleo namaquensis,17.9,31.5,20.6,oct_apr,-25.0,1.91,1.58,-0.13,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,31.5,"Brattstrom 196, Tilbury 2010, Avery 1982, Dimaki et al. 2000"
+Chamaeleonidae,Furcifer pardalis,24.3,31.7,24.3,all,-15.0,2.43,1.77,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,31.7,Andrews 2008
+Chamaeleonidae,Trioceros bitaeniatus,18.6,28.9,18.6,all,-0.7,2.16,1.12,-0.40,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,28.9,Andrews 2008
+Chamaeleonidae,Trioceros ellioti,19.6,32.3,19.6,all,-1.2,1.33,1.25,-0.20,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.3,Andrews 2008
+Chamaeleonidae,Trioceros hoehnelii,16.2,26.9,16.2,all,-0.2,1.47,1.10,-0.30,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,26.9,"Andrews 2008, Hebrard et al. 1982"
+Chamaeleonidae,Trioceros jacksonii,17.9,30.4,17.9,all,-0.6,1.96,1.42,-0.25,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,30.4,Andrews 2008
+Chamaeleonidae,Trioceros schubotzi,4.7,22.2,4.7,all,-0.2,1.15,0.98,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,22.2,Andrews 2008
+Cordylidae,Cordylus cordylus,15.8,24.2,18.5,oct_apr,-33.0,1.43,0.95,-0.21,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,24.2,Clusella-Trullas et al. 2009
+Cordylidae,Cordylus jonesii,20.6,33.5,20.6,all,-22.0,1.30,0.93,-0.08,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,33.5,Bauwens et al. 1999
+Cordylidae,Cordylus macropholis,17.1,28.9,19.3,oct_apr,-32.0,1.02,0.79,-0.08,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,28.9,"Truter 2011, Bauwens et al. 1999"
+Cordylidae,Cordylus niger,17.4,23.6,19.4,oct_apr,-34.0,1.30,0.97,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,23.6,Clusella-Trullas et al. 2009
+Cordylidae,Cordylus oelofseni,15.9,20.6,18.8,oct_apr,-33.0,0.85,0.78,0.00,female mass,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,20.6,Clusella-Trullas et al. 2009
+Cordylidae,Cordylus vittifer,17.6,32.1,20.3,oct_apr,-26.0,1.35,1.19,0.41,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.1,Bauwens et al. 1999
+Cordylidae,Ouroborus cataphractus,16.8,29.6,19.9,oct_apr,-31.0,1.77,1.52,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,VU,not specified,29.6,"Muchlinski et al. 1995, Truter 2011"
+Cordylidae,Platysaurus intermedius,20.2,28.8,20.2,all,-21.0,1.83,1.06,-0.42,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,28.8,Lailvaux et al. 2003
+Cordylidae,Pseudocordylus melanotus,14.7,27.6,17.7,oct_apr,-28.0,2.07,1.45,0.04,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,27.6,McConnachie et al. 2009
+Corytophanidae,Basiliscus basiliscus,24.6,27.8,24.6,all,8.0,2.74,2.11,0.16,female SVL,no,Diurnal,water,Omnivorous,Oviparous,NE,NE,27.8,Savage 2002
+Corytophanidae,Basiliscus plumifrons,24.9,31.7,24.9,all,13.0,2.74,1.77,0.11,female SVL,no,Diurnal,water,Omnivorous,Oviparous,NE,NE,31.7,Hirth 1965
+Corytophanidae,Basiliscus vittatus,24.6,36.2,24.6,all,16.0,2.60,1.68,0.07,female SVL,no,Diurnal,water,Omnivorous,Oviparous,NE,NE,36.2,"Savage 2002, Hirth 1963, Hirth 1965"
+Crotaphytidae,Crotaphytus collaris,15.0,36.8,19.5,mar_sep,33.0,1.83,1.31,0.05,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.8,"Muchlinski et al. 1995, Werner and Whitaker 1978, Degenhardt et al. 1996, Fitch 1956, Brattstrom 1965"
+Crotaphytidae,Crotaphytus dickersonae,21.8,36.9,25.4,mar_sep,29.2,1.66,1.14,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.9,Plasman et al. 2007
+Crotaphytidae,Gambelia sila,15.3,38.6,19.4,mar_sep,36.0,1.77,1.42,0.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,38.6,"Curry-Lindahl 1979, Brattstrom 1965"
+Crotaphytidae,Gambelia wislizenii,13.5,38.1,19.6,mar_sep,36.0,1.99,1.58,0.23,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,38.1,"Huey and Pianka 2007, Pianka 1986, Degenhardt et al. 1996, Cunningham 1966, Brattstrom 1965"
+Diplodactylidae,Amalosia rhombifer,25.3,26.1,25.3,all,-17.0,0.98,0.32,-0.96,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,26.1,Greer 1989
+Diplodactylidae,Diplodactylus conspicillatus,22.9,31.0,27.3,oct_apr,-24.0,0.71,0.51,-0.53,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,31.0,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Diplodactylidae,Diplodactylus galeatus,21.3,36.7,26.3,oct_apr,-26.0,0.49,0.37,NA,mean species SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,36.7,Heatwole and Taylor 1987
+Diplodactylidae,Diplodactylus granariensis,18.7,20.9,21.0,oct_apr,-30.0,0.85,0.56,-0.70,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,20.9,Greer 1989
+Diplodactylidae,Diplodactylus pulcher,20.8,27.8,23.7,oct_apr,-28.0,0.65,0.36,-0.45,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.8,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Diplodactylidae,Diplodactylus tessellatus,21.1,25.0,25.1,oct_apr,-27.0,0.56,0.47,-0.64,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.0,Henle 1990
+Diplodactylidae,Diplodactylus vittatus,14.2,20.9,20.4,oct_apr,-30.1,0.60,0.34,NA,mean species SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,20.9,Werner and Whitaker 1978
+Diplodactylidae,Hesperoedura reticulata,16.5,22.5,13.8,oct_apr,-33.0,0.83,0.70,-0.48,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,22.5,"How and Kitchener 1983, Kitchener et al. 1988"
+Diplodactylidae,Hoplodactylus duvaucelii,14.9,15.0,17.4,oct_apr,-36.2,1.89,1.53,0.00,female SVL,yes,Nocturnal,air,Omnivorous,Viviparous,LR/lc,not specified,15.0,"Werner and Whitaker 1978, Cree 1994"
+Diplodactylidae,Lucasium damaeum,19.6,24.2,22.7,oct_apr,-29.0,0.55,0.45,-0.70,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,24.2,"Pianka 1986, Greer 1989"
+Diplodactylidae,Lucasium steindachneri,21.5,16.8,24.9,oct_apr,-25.0,0.59,0.42,-0.48,mean species mass,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,16.8,Greer 1989
+Diplodactylidae,Lucasium stenodactylum,23.8,27.1,23.8,all,-23.0,0.66,0.45,-0.56,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.1,Huey and Pianka 2007
+Diplodactylidae,Naultinus manukanus,10.2,23.8,12.6,oct_apr,-42.0,1.00,0.88,-0.05,female SVL,yes,Diurnal,air,Carnivorous,Viviparous,DD,unknown,23.8,Werner and Whitaker 1978
+Diplodactylidae,Naultinus rudis,9.0,29.6,11.7,oct_apr,-41.8,0.85,0.73,NA,mean species SVL,yes,Diurnal,air,NA,Viviparous,LR/lc,not specified,29.6,Werner and Whitaker 1978
+Diplodactylidae,Naultinus stellatus,10.1,22.9,12.6,oct_apr,-41.3,0.98,0.71,NA,mean species SVL,yes,Diurnal,air,Carnivorous,Viviparous,NE,NE,22.9,Werner and Whitaker 1978
+Diplodactylidae,Oedura marmorata,23.6,25.4,23.6,all,-23.0,1.40,1.22,0.01,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.4,"Greer 1989, Heatwole and Taylor 1987"
+Diplodactylidae,Oedura tryoni,18.4,21.8,20.9,oct_apr,-28.0,1.09,0.98,-0.09,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,21.8,Heatwole and Taylor 1987
+Diplodactylidae,Rhynchoedura ornata,22.3,30.7,26.3,oct_apr,-25.0,0.54,0.30,-0.56,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,30.7,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Diplodactylidae,Strophurus ciliaris,24.1,26.2,24.1,all,-23.0,1.12,0.86,-0.29,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,unknown,26.2,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Diplodactylidae,Strophurus elderi,21.7,27.2,26.0,oct_apr,-26.0,0.34,0.19,-0.88,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.2,"Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Diplodactylidae,Strophurus spinigerus,18.4,19.6,21.0,oct_apr,-32.0,0.97,0.63,-0.67,female SVL,no,Nocturnal,air,Omnivorous,Oviparous,NE,NE,19.6,"Greer 1989, Heatwole and Taylor 1987, Angilletta and Werner 1998"
+Diplodactylidae,Strophurus strophurus,22.3,25.3,28.3,oct_apr,-26.0,0.92,0.73,-0.43,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.3,"Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Diplodactylidae,Woodworthia maculatus,13.3,19.7,16.1,oct_apr,-39.0,1.12,0.67,-0.64,female SVL,yes,Nocturnal,air,Omnivorous,Viviparous,NE,NE,19.7,"Cree and Hare 2010, Cree 1994, Werner and Whitaker 1978, Rock and Cree 2008, Blouin-Demers and Nadeau 2005"
+Eublepharidae,Coleonyx brevis,19.1,27.6,23.7,mar_sep,29.0,0.74,0.42,-0.77,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,27.6,"Degenhardt et al. 1996, Huey et al. 1989, Avery 1982, Brattstrom 1965"
+Eublepharidae,Coleonyx mitratus,25.2,25.3,25.2,all,13.0,1.27,0.93,-0.13,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.3,Savage 2002
+Eublepharidae,Coleonyx reticulatus,19.3,28.0,22.7,mar_sep,28.0,1.22,1.12,0.01,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,28.0,Jones and Lovich 2009
+Eublepharidae,Coleonyx variegatus,18.5,26.1,22.6,mar_sep,32.0,0.94,0.58,-0.51,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,26.1,"Pianka 1986, Werner and Whitaker 1978, Degenhardt et al. 1996, Werner 1976, Huey et al. 1989, Cunningham 1966, Brattstrom 1965"
+Eublepharidae,Eublepharis angramainyu,20.5,33.5,25.8,mar_sep,34.0,2.06,1.96,1.16,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,DD,decreasing,33.5,"Werner and Whitaker 1978, Avery 1982"
+Eublepharidae,Goniurosaurus kuroiwae,22.2,26.0,24.5,mar_sep,27.0,1.31,1.12,-0.26,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,EN,unknown,26.0,Werner et al. 2006
+Gekkoninae,Alsophylax pipiens,4.3,25.2,15.4,apr_aug,47.0,0.23,-0.02,-0.84,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,25.2,Litvinov 2007
+Gekkoninae,Bunopus spatalurus,24.0,35.0,24.0,all,20.0,0.85,0.57,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,35.0,Avery 1982
+Gekkoninae,Bunopus tuberculatus,20.3,30.0,24.8,mar_sep,28.0,0.71,0.16,-0.62,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,LC,stable,30.0,Arnold 1984
+Gekkoninae,Chondrodactylus angulifer,17.6,25.6,21.1,oct_apr,-27.0,1.43,1.00,0.12,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,unknown,25.6,"Huey and Pianka 2007, Pianka 1986, Werner and Whitaker 1978, Brattstrom 1965"
+Gekkoninae,Chondrodactylus bibronii,16.8,29.8,20.2,oct_apr,-31.0,1.28,1.04,-0.34,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,29.8,"Huey and Pianka 2007, Muchlinski et al. 1995, Pianka 1986, "
+Gekkoninae,Christinus guentheri,18.8,20.3,20.5,oct_apr,-32.0,1.30,0.82,-0.22,female SVL,yes,Nocturnal,air,Omnivorous,Oviparous,VU,NA,20.3,Greer 1989
+Gekkoninae,Christinus marmoratus,16.4,24.0,19.2,oct_apr,-34.0,0.85,0.49,-0.92,female SVL,no,Nocturnal,air,Omnivorous,Oviparous,NE,NE,24.0,"Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987, Angilletta and Werner 1998, Blouin-Demers and Nadeau 2005"
+Gekkoninae,Colopus wahlbergii,21.0,25.1,21.0,all,-20.0,0.69,0.61,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.1,"Huey and Pianka 2007, Pianka 1986"
+Gekkoninae,Cyrtodactylus fraenatus,23.4,25.2,23.4,all,7.2,1.28,1.14,0.20,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.2,Meek et al. 2005
+Gekkoninae,Cyrtodactylus martinstolli,17.5,15.0,22.3,mar_sep,26.9,1.04,0.85,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,15.0,Schleich and Kastle 2002
+Gekkoninae,Cyrtodactylus soba,23.6,25.6,23.6,all,7.4,1.35,1.25,0.17,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.6,Meek et al. 2005
+Gekkoninae,Geckoella triedrus,25.4,23.4,25.4,all,7.0,0.71,0.47,-0.48,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,NT,unknown,23.4,Meek et al. 2005
+Gekkoninae,Gehyra punctata,23.0,27.6,27.2,oct_apr,-25.0,0.76,0.15,-0.48,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.6,"Heatwole and Taylor 1987, Angilletta and Werner 1998: 20.6"
+Gekkoninae,Gehyra variegata,19.0,27.7,22.1,oct_apr,-29.0,0.87,0.43,-0.48,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.7,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987, Angilletta and Werner 1998, Kitchener et al. 1988"
+Gekkoninae,Hemidactylus angulatus,26.3,30.9,26.3,all,10.0,0.87,0.56,-0.59,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,30.9,Henderson and Powell 2009
+Gekkoninae,Hemidactylus depressus,25.9,27.3,25.9,all,7.0,1.09,0.90,NA,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,LC,stable,27.3,Meek et al. 2005
+Gekkoninae,Hemidactylus flaviviridis,21.5,27.2,25.1,mar_sep,25.0,1.22,0.72,-0.36,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,27.2,Zari 1997
+Gekkoninae,Hemidactylus frenatus,25.0,27.0,25.0,all,4.0,0.80,0.51,-0.71,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,27.0,"Schleich and Kastle 2002 , Huey et al. 1989, Savage 2002, Werner 1980"
+Gekkoninae,Hemidactylus mabouia,23.0,29.3,23.0,all,-7.0,1.15,0.57,-0.62,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,29.3,Vitt 1995
+Gekkoninae,Hemidactylus turcicus,18.9,29.6,22.2,mar_sep,31.0,0.69,0.36,-0.38,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,increasing,29.6,"Huey et al. 1989, "
+Gekkoninae,Heteronotia binoei,21.8,31.2,24.3,oct_apr,-25.0,0.56,0.41,-0.68,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,31.2,"Pianka 1986, Greer 1989, Werner and Whitaker 1978, Heatwole and Taylor 1987"
+Gekkoninae,Lepidodactylus gardineri,27.1,28.4,27.1,all,18.0,0.53,0.45,NA,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,NE,NE,28.4,Zug 1991
+Gekkoninae,Lepidodactylus lugubris,25.3,29.5,25.3,all,-8.0,0.47,0.20,-0.84,female SVL,no,Nocturnal,air,Omnivorous,Oviparous,NE,NE,29.5,Werner 1980
+Gekkoninae,Lygodactylus capensis,21.0,36.0,21.0,all,-17.0,0.27,-0.20,-1.08,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.0,Pianka 1986
+Gekkoninae,Lygodactylus klugei,22.9,34.0,22.9,all,-10.9,-0.01,-0.18,-1.08,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.0,"Vitt 1995, Rocha et al. 2009"
+Gekkoninae,Mediodactylus amictophole,16.3,34.7,21.5,mar_sep,33.5,0.15,0.02,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,34.7,"Meiri, own data"
+Gekkoninae,Mediodactylus kotschyi,13.4,26.3,17.0,mar_sep,38.6,0.59,0.20,-0.83,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,LC,unknown,26.3,"Arnold 1987, Meiri, own data"
+Gekkoninae,Pachydactylus capensis,16.8,25.4,20.4,oct_apr,-28.0,0.82,0.60,-0.54,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.4,"Huey and Pianka 2007, Pianka 1986"
+Gekkoninae,Pachydactylus rangei,16.3,15.0,17.9,oct_apr,-29.0,1.01,0.86,-0.34,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,15.0,Huey and Pianka 2007
+Gekkoninae,Pachydactylus rugosus,19.2,25.6,23.0,oct_apr,-29.0,0.76,0.59,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,25.6,"Huey and Pianka 2007, Pianka 1986"
+Gekkoninae,Phelsuma astriata,25.9,29.4,25.9,all,-5.0,0.67,0.44,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,29.4,Crawford and Thorpe 1979
+Gekkoninae,Phelsuma laticauda,25.0,22.3,25.0,all,-14.0,0.76,0.18,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,22.3,Seifan et al. 2010
+Gekkoninae,Phelsuma madagascariensis,24.6,31.6,24.6,all,-16.0,1.50,1.10,-0.16,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,decreasing,31.6,Crawford and Thorpe 1979
+Gekkoninae,Pseudoceramodactylus khobarensis,26.3,30.0,29.5,mar_sep,25.0,0.71,0.54,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,30.0,Arnold 1984
+Gekkoninae,Ptenopus carpi,18.9,16.5,18.9,all,-20.6,0.68,0.51,NA,mean species SVL,no,Nocturnal,air,NA,Oviparous,NE,NE,16.5,"Werner and Whitaker 1978, Avery 1982"
+Gekkoninae,Ptenopus garrulus,18.7,21.9,22.1,oct_apr,-27.0,0.72,0.35,-0.48,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,21.9,"Pianka 1986, Werner and Whitaker 1978, Avery 1982, Brain 1962"
+Gekkoninae,Rhoptropus afer,19.0,31.5,19.0,all,-21.0,0.56,0.32,NA,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.5,"Werner and Whitaker 1978, Brain 1962"
+Gekkoninae,Stenodactylus doriae,23.0,28.2,26.4,mar_sep,25.0,1.06,0.73,-0.20,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,28.2,Arnold 1984
+Gekkoninae,Stenodactylus leptocosymbotus,25.9,26.8,25.9,all,22.0,1.01,0.86,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,26.8,Arnold 1984
+Gekkoninae,Stenodactylus petrii,22.8,20.6,24.9,mar_sep,26.0,0.87,0.63,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,20.6,"Meiri, own data"
+Gekkoninae,Stenodactylus sthenodactylus,22.7,21.2,24.2,mar_sep,25.0,0.67,0.43,-0.56,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,21.2,"Meiri, own data"
+Gekkoninae,Tropiocolotes nattereri,20.0,31.8,22.7,mar_sep,29.0,-0.16,-0.38,-1.08,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,31.8,"Meiri, own data"
+Gerrhosauridae,Gerrhosaurus flavigularis,20.9,33.3,20.9,all,-15.0,1.90,1.68,0.37,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.3,"Curry-Lindahl 1979, Avery 1982, Truter 2011, Brattstrom 196"
+Gerrhosauridae,Gerrhosaurus major,23.3,31.7,23.3,all,-7.0,2.56,2.31,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,31.7,"Muchlinski et al. 1995, Bowker 1984, Truter 2011"
+Gerrhosauridae,Gerrhosaurus nigrolineatus,22.0,34.2,22.0,all,-14.0,2.20,1.21,0.35,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.2,"Bowker 1984, Truter 2011"
+Gymnophthalmidae,Alopoglossus angulatus,25.2,26.0,25.2,all,-4.0,0.72,0.52,-0.96,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,26.0,Vitt and Zani 1996
+Gymnophthalmidae,Alopoglossus atriventris,24.3,26.2,24.3,all,-4.0,0.52,0.38,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,26.2,"Anaya-Rojas et al. 2010, Vitt and Zani 1996"
+Gymnophthalmidae,Anadia brevifrontalis,16.2,21.5,16.2,all,8.6,1.41,0.88,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,21.5,Swain et al. 1980
+Gymnophthalmidae,Arthrosaura reticulata,25.2,26.7,25.2,all,-4.0,0.93,0.61,-0.68,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,26.7,Vitt and Zani 1996
+Gymnophthalmidae,Bachia heteropa,24.8,28.9,24.8,all,7.0,0.26,-0.32,NA,mean species SVL,no,Diurnal,earth,Carnivorous,Oviparous,NE,NE,28.9,Bentz et al. 2011
+Gymnophthalmidae,Cercosaura eigenmanni,24.4,28.6,24.4,all,-13.0,0.49,0.30,-0.88,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.6,"Anaya-Rojas et al. 2010, "
+Gymnophthalmidae,Cercosaura manicata,19.4,29.7,19.4,all,,0.97,0.76,-0.51,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.7,"Fitch 1968, "
+Gymnophthalmidae,Cercosaura oshaughnessyi,22.0,29.5,22.0,all,-1.0,0.46,-0.06,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.5,"Fitch 1968, Vitt and Zani 1996"
+Gymnophthalmidae,Micrablepharus atticolus,23.7,34.6,23.7,all,-16.0,0.22,0.07,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.6,Vieira et al. 2000
+Gymnophthalmidae,Micrablepharus maximiliani,24.2,29.1,24.2,all,-19.0,0.15,0.00,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.1,Mesquita et al. 2006
+Gymnophthalmidae,Potamites ecpleopus,22.1,27.2,22.1,all,-6.0,1.18,0.65,-0.80,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,27.2,"Anaya-Rojas et al. 2010, Fitch 1968, Vitt and Zani 1996, Rocha et al. 2009, Vitt and Avila-Pires 1998"
+Gymnophthalmidae,Potamites juruazensis,22.2,26.3,22.2,all,-10.0,0.64,0.54,NA,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,26.3,Vitt and Avila-Pires 1998
+Gymnophthalmidae,Proctoporus sucullucu,9.5,22.6,9.5,all,-14.0,0.59,0.32,-0.60,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,22.6,"Tiffany Doan, own data"
+Gymnophthalmidae,Proctoporus unsaacae,9.0,23.1,9.0,all,-13.0,0.47,0.21,-0.83,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,23.1,"Tiffany Doan, own data"
+Gymnophthalmidae,Ptychoglossus bicolor,22.3,23.5,22.3,all,3.0,0.76,0.59,-0.45,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,unknown,23.5,Anaya-Rojas et al. 2010
+Gymnophthalmidae,Tretioscincus agilis,26.3,28.2,26.3,all,2.0,0.74,0.14,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.2,Fitch 1968
+Helodermatidae,Heloderma horridum,23.9,29.5,23.9,all,21.0,3.48,3.00,1.42,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,LC,unknown,29.5,Pianka and King 2004
+Helodermatidae,Heloderma suspectum,18.6,28.6,23.8,mar_sep,32.0,2.98,2.73,1.66,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NT,decreasing,28.6,"Jones and Lovich 2009, Degenhardt et al. 1996, Avery 1982, Pianka and King 2004, Brattstrom 1965"
+Hoplocercidae,Enyalioides laticeps,24.3,25.0,24.3,all,-2.0,2.09,1.64,0.26,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.0,Vitt and Zani 1996
+Iguanidae,Amblyrhynchus cristatus,21.0,31.7,21.0,all,-0.6,3.87,3.15,1.77,female SVL,yes,Diurnal,water,Herbivorous,Oviparous,VU,unknown,31.7,"Curry-Lindahl 1979, Avery 1982, Brattstrom 1965"
+Iguanidae,Brachylophus vitiensis,25.1,32.0,25.1,all,-17.0,2.75,2.57,1.32,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,CR,NA,32.0,Gibbons 1984
+Iguanidae,Conolophus pallidus,23.1,34.5,23.1,all,-0.8,3.72,3.20,1.65,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,VU,NA,34.5,"Brattstrom 1965, Christian et al. 1985"
+Iguanidae,Conolophus subcristatus,22.9,35.2,22.9,all,-0.5,3.80,3.38,1.64,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,VU,NA,35.2,Snell and Christian 1985
+Iguanidae,Ctenosaura hemilopha,22.4,37.1,24.7,mar_sep,24.0,3.44,2.35,NA,female SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,37.1,Soule 1963
+Iguanidae,Ctenosaura similis,24.2,36.5,24.2,all,14.0,3.70,3.09,0.83,female SVL,no,Diurnal,air,Herbivorous,Oviparous,LC,stable,36.5,Savage 2002
+Iguanidae,Cyclura carinata,25.9,37.7,25.9,all,22.0,3.75,2.71,1.35,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,CR,decreasing,37.7,Auffenberg 1982
+Iguanidae,Cyclura nubila,25.3,38.6,25.3,all,21.0,4.25,3.19,1.68,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,VU,NA,38.6,"Henderson and Powell 2009, Christian et al. 1986"
+Iguanidae,Cyclura pinguis,26.5,35.3,26.5,all,19.0,3.87,3.61,1.61,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,CR,NA,35.3,Carey 1975
+Iguanidae,Dipsosaurus dorsalis,19.2,39.6,23.7,mar_sep,32.0,2.20,1.82,0.67,female SVL,no,Diurnal,air,Herbivorous,Oviparous,LC,stable,39.6,"Muchlinski et al. 1995, Pianka 1986, Curry-Lindahl 1979, Cunningham 1966, Brattstrom 1965"
+Iguanidae,Iguana delicatissima,25.3,38.0,25.3,all,17.0,3.54,3.27,1.27,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,EN,decreasing,38.0,Henderson and Powell 2009
+Iguanidae,Iguana iguana,24.1,34.8,24.1,all,-6.0,3.91,3.14,1.32,female SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,34.8,"Savage 2002, Brattstrom 1965"
+Iguanidae,Sauromalus ater,18.6,37.1,23.0,mar_sep,33.0,2.60,2.25,0.81,female SVL,no,Diurnal,air,Herbivorous,Oviparous,LC,stable,37.1,"Sinervo et al. 2010 (obesus), Brattstrom 1965 (obesus)"
+Iguanidae,Sauromalus varius,22.0,36.0,24.6,mar_sep,29.0,3.22,3.05,1.27,female SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,36.0,Case 1982
+Lacertidae,Acanthodactylus aegyptius,20.44,32.7,23.58,mar_sep,30.2,0.52,0.22,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.7,"Meiri, own data"
+Lacertidae,Acanthodactylus beershebensis,19.3,34.1,22.0,mar_sep,31.0,1.22,0.84,-0.42,female SVL,no,Diurnal,air,Carnivorous,Oviparous,CR,decreasing,34.1,"Duvdevani and Borut 1974, Meiri, own data"
+Lacertidae,Acanthodactylus boskianus,21.7,36.2,24.8,mar_sep,26.0,1.29,0.71,-0.14,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.2,"Perez-Mellado 1992, Duvdevani and Borut 1974, Verwaijen and Van Damme 2007, Perry et al. 1990, Meiri, own data"
+Lacertidae,Acanthodactylus erythrurus,14.8,33.0,18.3,mar_sep,37.0,1.14,0.88,-0.23,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.0,"Belliure 2006, Busack 1976, Verwaijen and Van Damme 2007"
+Lacertidae,Acanthodactylus longipes,25.3,34.3,25.3,all,22.0,0.81,0.38,-0.52,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.3,Perez-Mellado 1992
+Lacertidae,Acanthodactylus opheodurus,21.8,33.1,26.4,mar_sep,26.0,0.75,0.62,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.1,"Meiri, own data"
+Lacertidae,Acanthodactylus pardalis,19.4,35.3,22.2,mar_sep,31.0,1.02,0.73,-0.18,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,decreasing,35.3,Schleich et al. 1996
+Lacertidae,Acanthodactylus schmidti,23.3,38.4,27.7,mar_sep,25.0,1.42,1.23,-0.02,mean species SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,38.4,"Arnold 1984, Anderson 1963"
+Lacertidae,Acanthodactylus schreiberi,18.3,38.0,21.3,mar_sep,34.0,1.27,0.89,0.04,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,38.0,"Duvdevani and Borut 1974, Perry et al. 1990, Verwaijen and Van Damme 2007, Meiri, own data"
+Lacertidae,Acanthodactylus scutellatus,22.5,35.7,25.7,mar_sep,26.0,1.15,0.53,-0.46,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.7,"Perez-Mellado 1992, Duvdevani and Borut 1974, Verwaijen and Van Damme 2007, Perry et al. 1990, Meiri, own data"
+Lacertidae,Algyroides moreoticus,15.5,32.4,18.9,mar_sep,38.0,0.47,0.34,-0.68,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,decreasing,32.4,"Panayiotis Pafilis, own data"
+Lacertidae,Algyroides nigropunctatus,11.2,32.3,15.1,mar_sep,42.0,0.90,0.56,-0.58,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,32.3,Arnold 1987
+Lacertidae,Anatololacerta anatolica,12.8,32.9,16.7,mar_sep,39.0,0.99,0.55,-0.55,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.9,"Panayiotis Pafilis, own data"
+Lacertidae,Anatololacerta oertzeni,14.7,31.7,18.5,mar_sep,37.0,1.01,0.76,-0.42,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,31.7,"Panayiotis Pafilis, own data"
+Lacertidae,Archaeolacerta bedriagae,14.6,32.4,17.4,mar_sep,41.0,1.14,0.92,-0.12,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NT,decreasing,32.4,Bauwens et al. 1990
+Lacertidae,Atlantolacerta andreanskyi,14.4,31.4,18.4,mar_sep,32.0,0.59,0.36,-0.57,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,stable,31.4,"Busack 1987, Schleich et al. 1996"
+Lacertidae,Dalmatolacerta oxycephala,11.1,33.1,15.2,mar_sep,43.0,0.90,0.61,-0.50,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,33.1,"Arnold 1987, Verwaijen and Van Damme 2007"
+Lacertidae,Dinarolacerta mosorensis,10.0,34.0,14.0,mar_sep,43.0,1.07,0.79,-0.39,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,decreasing,34.0,Arnold 1987
+Lacertidae,Eremias arguta,7.1,30.2,17.1,apr_aug,47.0,1.36,0.94,-0.42,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.2,Tertyshnikov 1976
+Lacertidae,Eremias pleskei,8.0,38.8,13.7,mar_sep,39.0,0.70,0.58,-0.48,mean species SVL,no,Diurnal,air,Omnivorous,Oviparous,CR,decreasing,38.8,"Cloudsley-Thompson 1971, Curry-Lindahl 1979"
+Lacertidae,Eremias strauchi,10.7,40.3,16.4,mar_sep,38.0,1.07,0.81,-0.26,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,decreasing,40.3,Cloudsley-Thompson 1971
+Lacertidae,Gallotia atlantica,19.1,33.4,20.1,mar_sep,29.0,1.42,0.74,-0.18,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,33.4,Salvador 2008
+Lacertidae,Gallotia bravoana,20.6,36.0,21.6,mar_sep,27.5,2.21,1.57,0.31,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,CR,increasing,36.0,Salvador 2007
+Lacertidae,Gallotia caesaris,18.1,35.5,19.3,mar_sep,28.0,1.49,0.96,-0.05,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,35.5,Salvador 2007
+Lacertidae,Gallotia galloti,17.9,32.6,19.0,mar_sep,28.0,1.84,1.19,0.07,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,LC,stable,32.6,Salvador 2009
+Lacertidae,Gallotia simonyi,18.3,34.4,19.3,mar_sep,28.0,3.43,1.96,0.50,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,CR,stable,34.4,Salvador 2007
+Lacertidae,Gallotia stehlini,19.0,33.6,20.1,mar_sep,28.0,3.04,2.15,0.29,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,LC,stable,33.6,Salvador 2007
+Lacertidae,Heliobolus lugubris,20.7,38.2,20.7,all,-22.0,0.81,0.65,-0.84,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.2,"Huey and Pianka 2007, Pianka 1986, Huey and Pianka 1977, Verwaijen and Van Damme 2007"
+Lacertidae,Heliobolus spekii,24.4,36.8,24.4,all,2.0,0.70,0.32,-0.52,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.8,Bowker 1984 
+Lacertidae,Hellenolacerta graeca,15.1,32.8,18.4,mar_sep,38.0,1.15,0.79,-0.25,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,decreasing,32.8,Arnold 1987
+Lacertidae,Iberolacerta aranica,8.9,29.2,12.4,mar_sep,43.0,0.84,0.64,-0.39,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,29.2,Arribas 2009
+Lacertidae,Iberolacerta cyreni,12.2,28.2,16.1,mar_sep,41.0,1.24,0.99,-0.45,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,28.2,Monasterio et al. 2009
+Lacertidae,Iberolacerta horvathi,9.1,31.6,15.1,apr_aug,45.0,0.81,0.70,-0.42,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,stable,31.6,Arnold 1987
+Lacertidae,Iberolacerta monticola,11.5,31.5,14.7,mar_sep,43.0,1.14,0.83,-0.47,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,decreasing,31.5,"Arnold 1987, Verwaijen and Van Damme 2007"
+Lacertidae,Ichnotropis squamulosa,21.3,36.5,21.3,all,-20.0,1.02,0.62,-0.23,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.5,"Huey and Pianka 2007, Pianka 1986, Huey and Pianka 1977, Verwaijen and Van Damme 2007"
+Lacertidae,Lacerta agilis,4.5,32.2,13.8,apr_aug,52.0,1.53,1.03,-0.51,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,32.2,"Verwaijen and Van Damme 2007, Tertyshnikov 1976"
+Lacertidae,Lacerta schreiberi,12.7,31.1,15.9,mar_sep,41.0,1.74,1.46,-0.26,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,decreasing,31.1,"Martin and Lopez 2010, Verwaijen and Van Damme 2007"
+Lacertidae,Lacerta trilineata,11.5,30.3,16.0,mar_sep,40.0,2.07,1.52,-0.02,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,30.3,"Panayiotis Pafilis, own data"
+Lacertidae,Lacerta viridis,10.3,33.9,15.9,apr_aug,45.0,1.96,1.39,-0.19,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,33.9,Arnold 1987
+Lacertidae,Latastia longicaudata,25.6,37.8,25.6,all,11.0,1.48,1.16,-0.08,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.8,Bowker 1984 
+Lacertidae,Meroles anchietae,12.8,31.1,12.8,all,-23.0,0.59,0.31,-0.34,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,31.1,Brain 1962
+Lacertidae,Meroles cuneirostris,16.2,33.6,17.9,oct_apr,-29.0,0.66,0.44,-0.33,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.6,Brain 1962
+Lacertidae,Meroles suborbitalis,17.4,36.8,20.8,oct_apr,-29.0,0.92,0.61,-0.34,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.8,"Huey and Pianka 2007, Pianka 1986, Curry-Lindahl 1979, Huey and Pianka 1977, Verwaijen and Van Damme 2007, Brain 1962, Brattstrom 1965"
+Lacertidae,Mesalina adramitana,25.2,37.7,25.2,all,21.0,0.36,0.15,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.7,Arnold 1984
+Lacertidae,Mesalina brevirostris,18.6,35.5,23.7,mar_sep,32.0,0.70,0.34,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,35.5,Arnold 1984
+Lacertidae,Mesalina guttulata,19.6,31.3,22.9,mar_sep,30.0,0.90,0.35,-0.60,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.3,"Perez-Mellado 1992, Perry et al. 1990, Meiri, own data"
+Lacertidae,Mesalina olivieri,18.9,30.2,21.9,mar_sep,31.0,0.52,0.21,-0.55,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.2,"Perez-Mellado 1992, Meiri, own data"
+Lacertidae,Nucras intertexta,20.3,38.9,20.3,all,-23.0,1.28,0.95,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.9,"Pianka 1986, Huey and Pianka 1977, Verwaijen and Van Damme 2007"
+Lacertidae,Nucras tessellata,16.7,39.6,19.8,oct_apr,-31.0,1.28,0.92,-0.10,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,39.6,"Pianka 1986, Huey and Pianka 1977, Verwaijen and Van Damme 2007"
+Lacertidae,Ophisops elegans,14.1,31.3,18.9,mar_sep,36.0,0.90,0.40,-0.65,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.3,"Schleich et al. 1996, Verwaijen and Van Damme 2007, Meiri, own data"
+Lacertidae,Pedioplanis lineoocellata,16.8,37.5,20.0,oct_apr,-30.0,0.85,0.62,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.5,"Huey and Pianka 2007, Pianka 1986, Curry-Lindahl 1979, Huey and Pianka 1977, Verwaijen and Van Damme 2007, Brattstrom 1965"
+Lacertidae,Pedioplanis namaquensis,16.9,38.0,20.5,oct_apr,-30.0,0.62,0.47,-0.64,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.0,"Huey and Pianka 2007, Verwaijen and Van Damme 2007, Pianka 1986, Curry-Lindahl 1979, Huey and Pianka 1977, Brattstrom 1965"
+Lacertidae,Phoenicolacerta laevis,15.0,30.4,19.9,mar_sep,35.0,1.18,0.80,-0.41,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,30.4,"Meiri, own data"
+Lacertidae,Phoenicolacerta troodica,18.0,33.5,20.9,mar_sep,35.1,0.81,0.71,-0.39,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.5,"Panayiotis Pafilis, own data"
+Lacertidae,Podarcis bocagei,11.9,32.3,14.6,mar_sep,43.0,0.90,0.54,-0.55,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.3,Arnold 1987
+Lacertidae,Podarcis carbonelli,14.1,33.3,17.1,mar_sep,40.0,0.81,0.52,-0.65,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,33.3,"Sa-Sousa 2008, Bowker et al. 2010"
+Lacertidae,Podarcis cretensis,17.1,33.2,19.8,mar_sep,35.0,0.93,0.63,-0.34,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,33.2,"Panayiotis Pafilis, own data"
+Lacertidae,Podarcis erhardii,13.6,32.9,17.3,mar_sep,39.0,1.14,0.73,-0.28,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.9,"Panayiotis Pafilis, own data, Meiri, own data"
+Lacertidae,Podarcis filfolensis,17.8,32.8,20.1,mar_sep,36.0,1.17,0.75,-0.43,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,32.8,Cascio 2010
+Lacertidae,Podarcis gaigeae,16.6,33.3,19.8,mar_sep,39.0,1.36,0.77,-0.28,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,VU,unknown,33.3,"Panayiotis Pafilis, own data"
+Lacertidae,Podarcis hispanicus,13.1,31.9,16.4,mar_sep,41.0,0.97,0.54,-0.50,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,31.9,"Arnold 1987, Verwaijen and Van Damme 2007"
+Lacertidae,Podarcis lilfordi,16.2,32.3,18.8,mar_sep,40.0,1.09,0.69,-0.13,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,EN,decreasing,32.3,Salvador 2008
+Lacertidae,Podarcis liolepis,17.2,34.2,20.5,mar_sep,39.5,1.07,0.67,-0.39,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.2,Castilla and Bauwens 1991
+Lacertidae,Podarcis melisellensis,10.4,32.5,14.4,mar_sep,44.0,0.97,0.69,-0.44,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.5,"Arnold 1987, Verwaijen and Van Damme 2007"
+Lacertidae,Podarcis milensis,17.3,33.0,20.1,mar_sep,37.0,0.99,0.48,-0.42,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,VU,stable,33.0,"Arnold 1987, Adamopoulou and Valakos 2005"
+Lacertidae,Podarcis muralis,10.4,32.2,15.7,apr_aug,45.0,1.04,0.71,-0.45,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,32.2,"Rasilla 2008, Monasterio et al. 2009, Verwaijen and Van Damme 2007, Arnold 1987, Blouin-Demers and Nadeau 2005"
+Lacertidae,Podarcis peloponnesiacus,15.5,33.0,18.8,mar_sep,37.0,1.15,0.86,-0.26,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.0,"Arnold 1987, Verwaijen and Van Damme 2007"
+Lacertidae,Podarcis pityusensis,16.2,34.2,19.0,mar_sep,39.0,1.10,0.65,-0.23,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NT,stable,34.2,Arnold 1987
+Lacertidae,Podarcis siculus,12.7,34.5,16.3,mar_sep,42.0,1.22,0.74,-0.23,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,increasing,34.5,"Salvador 2006, Curry-Lindahl 1979, Arnold 1987"
+Lacertidae,Podarcis tauricus,11.8,32.8,16.2,mar_sep,43.0,1.22,0.74,-0.33,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.8,Arnold 1987
+Lacertidae,Podarcis tiliguerta,14.7,32.5,17.6,mar_sep,41.0,1.18,0.63,-0.35,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,32.5,"Verwaijen and Van Damme 2007, Van Damme et al. 1989"
+Lacertidae,Podarcis vaucheri,15.9,30.6,19.6,mar_sep,35.0,0.70,0.50,-0.52,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,30.6,Salvador and Busack 2009
+Lacertidae,Psammodromus algirus,14.9,32.8,18.5,mar_sep,37.0,1.27,0.83,-0.35,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,32.8,"Verwaijen and Van Damme 2007, Salvador 2010"
+Lacertidae,Psammodromus hispanicus,13.4,31.4,16.7,mar_sep,40.0,0.62,0.43,-0.64,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,31.4,Verwaijen and Van Damme 2007
+Lacertidae,Takydromus septentrionalis,14.3,30.4,19.1,mar_sep,31.0,1.07,0.72,-0.50,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.4,Xiang et al. 1996
+Lacertidae,Takydromus sexlineatus,22.6,31.5,22.6,all,14.0,0.90,0.61,-0.77,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,31.5,Verwaijen and Van Damme 2007
+Lacertidae,Teira dugesii,16.7,33.8,17.8,mar_sep,36.0,1.09,0.72,-0.15,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,33.8,Crisp et al. 1979
+Lacertidae,Timon lepidus,12.6,30.4,16.1,mar_sep,41.0,2.58,1.88,0.17,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NT,decreasing,30.4,Busack and Visnaw 1989
+Lacertidae,Zootoca vivipara,0.0,30.5,10.7,apr_aug,56.0,0.99,0.66,-0.84,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,decreasing,30.5,"Verwaijen and Van Damme 2007, Blouin-Demers and Nadeau 2005"
+Leiocephalidae,Leiocephalus barahonensis,24.1,36.1,24.1,all,18.0,1.26,0.77,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.1,Henderson and Powell 2009
+Leiocephalidae,Leiocephalus carinatus,24.8,34.4,24.8,all,22.0,1.83,1.38,0.14,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,unknown,34.4,Henderson and Powell 2009
+Leiocephalidae,Leiocephalus schreibersii,24.0,36.3,24.0,all,20.0,1.56,0.84,0.03,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,36.3,"Henderson and Powell 2009, Nelson et al. 2001, Jenssen et al. 1989"
+Leiocephalidae,Leiocephalus semilineatus,23.8,36.6,23.8,all,18.0,0.69,0.41,-0.24,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.6,Nelson et al. 2001
+Leiocephalidae,Leiocephalus stictigaster,25.1,34.5,25.1,all,22.0,1.48,0.74,-0.35,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.5,Henderson and Powell 2009
+Leiosauridae,Enyalius bilineatus,20.5,25.0,20.5,all,-18.6,1.36,0.97,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.0,"Guarino Colli, own data"
+Leiosauridae,Pristidactylus scapulatus,9.4,27.0,13.0,oct_apr,-38.0,1.42,1.17,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.0,Labra et al. 2008
+Leiosauridae,Pristidactylus torquatus,10.3,25.9,12.9,oct_apr,-39.0,1.42,1.23,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,25.9,"Labra et al. 2008, Labra 1995"
+Leiosauridae,Pristidactylus valeriae,14.5,27.0,16.5,oct_apr,-31.0,1.03,0.88,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,DD,NA,27.0,Labra et al. 2008
+Leiosauridae,Pristidactylus volcanensis,9.1,28.2,10.0,oct_apr,-34.0,1.26,0.62,NA,mean species mass,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.2,"Labra et al. 2008, Labra 1995"
+Liolaemidae,Liolaemus abaucan,8.7,34.3,11.2,oct_apr,-27.0,0.94,0.83,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.3,"Espinoza et al. 2004, Cruz et al. 2011, Medina et al. 2012"
+Liolaemidae,Liolaemus albiceps,6.3,32.9,9.1,oct_apr,-24.0,1.43,1.22,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,32.9,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus andinus,6.6,30.6,6.6,all,-23.0,1.39,1.31,-0.20,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,30.6,Espinoza et al. 2004
+Liolaemidae,Liolaemus austromendocinus,11.0,35.0,14.6,oct_apr,-37.0,1.57,1.35,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,35.0,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus bellii,3.2,34.2,6.6,oct_apr,-33.0,1.43,0.91,-0.15,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,34.2,"Rodrigues-Serrano et al. 2009, Espinoza et al. 2004, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus bibronii,6.3,30.9,10.7,nov_mar,-45.0,1.04,0.67,-0.25,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.9,"Espinoza et al. 2004, Labra et al. 2008, Pincheira-Donoso, own data, Ibarguengoytia et al. 2010, Medina et al. 2012"
+Liolaemidae,Liolaemus bisignatus,16.0,32.8,17.8,oct_apr,-27.0,1.45,0.77,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,32.8,"Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus bitaeniatus,14.4,32.1,17.4,oct_apr,-26.0,0.87,0.86,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.1,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus boulengeri,10.6,31.8,14.4,oct_apr,-42.0,1.18,0.84,-0.35,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.8,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus buergeri,6.4,35.2,9.7,oct_apr,-35.0,1.66,1.28,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,35.2,"Espinoza et al. 2004, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus calchaqui,18.8,34.0,21.9,oct_apr,-27.0,0.83,0.76,NA,mean species mass,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.0,Cruz et al. 2011
+Liolaemidae,Liolaemus canqueli,10.3,33.6,15.5,nov_mar,-45.0,1.52,1.24,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,33.6,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus chacoensis,18.8,33.1,22.6,oct_apr,-29.0,0.71,0.42,-0.33,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.1,"Cruz et al. 2011, Moreno Azocar et al. 2012"
+Liolaemidae,Liolaemus chaltin,8.7,31.8,8.7,all,-22.0,0.80,0.70,NA,mean species SVL,no,Diurnal,air,Omnivorous,Oviparous,DD,unknown,31.8,"Espinoza et al. 2004, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus chiliensis,8.2,35.0,11.7,oct_apr,-36.0,1.59,1.33,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.0,"Rodrigues-Serrano et al. 2009, Labra et al. 2008, Carothers et al. 1998, Medina et al. 2012, "
+Liolaemidae,Liolaemus crepuscularis,13.8,35.4,17.1,oct_apr,-27.1,0.92,0.92,NA,mean species SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,35.4,Cruz et al. 2011
+Liolaemidae,Liolaemus curis,4.0,32.9,7.1,oct_apr,-35.0,1.56,1.32,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,DD,NA,32.9,"Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus cuyanus,15.7,35.0,19.7,oct_apr,-30.0,1.57,1.19,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.0,"Espinoza et al. 2004, Cruz et al. 2011, Medina et al. 2012, Moreno Azocar et al. 2012"
+Liolaemidae,Liolaemus cyanogaster,9.0,32.9,11.9,oct_apr,-39.0,1.06,0.82,-0.40,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.9,"Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus darwinii,13.8,36.4,17.9,oct_apr,-35.0,1.02,0.75,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.4,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus dicktracyi,10.0,35.9,13.1,oct_apr,-29.0,1.40,1.25,NA,mean species SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,35.9,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus dorbignyi,6.6,32.7,6.6,all,-23.0,1.54,1.09,0.06,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,32.7,"Espinoza et al. 2004, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus duellmani,9.0,36.4,12.9,oct_apr,-37.0,1.27,1.25,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,DD,unknown,36.4,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus elongatus,7.4,32.4,10.9,oct_apr,-39.0,1.44,1.16,-0.45,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,32.4,"Labra et al. 2008, Ibarguengoytia et al. 2010, Ibarguengoytia et al. 2007, Ibarguengoytia 2005, Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus espinozai,10.6,34.6,13.7,oct_apr,-27.1,0.89,0.77,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,34.6,"Cruz et al. 2011, Moreno Azocar et al. 2012"
+Liolaemidae,Liolaemus fabiani,13.0,31.3,13.0,all,-23.0,1.38,1.01,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,31.3,"Rodrigues-Serrano et al. 2009, Labra et al. 2008, Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus fitzingerii,7.6,32.9,12.6,nov_mar,-47.0,1.64,1.29,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,32.9,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus fuscus,7.8,34.9,11.2,oct_apr,-34.0,0.67,0.38,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,DD,NA,34.9,"Carothers et al. 1998, Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Fuentes and Jaksic 1979, Medina et al. 2012"
+Liolaemidae,Liolaemus gracilis,12.6,36.9,16.6,oct_apr,-37.0,0.78,0.59,-0.43,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.9,"Labra et al. 2008, Espinoza et al. 2004"
+Liolaemidae,Liolaemus grosseorum,13.0,37.3,17.2,oct_apr,-37.0,0.74,0.67,-0.37,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.3,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus hellmichi,16.1,29.1,16.1,all,-22.0,0.83,0.58,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,29.1,"Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus huacahuasicus,6.0,31.8,8.8,oct_apr,-27.0,1.15,0.86,-0.30,female SVL,no,Diurnal,air,Herbivorous,Viviparous,VU,NA,31.8,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus irregularis,6.9,35.7,9.5,oct_apr,-24.0,1.37,1.11,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,35.7,"Espinoza et al. 2004, Cruz et al. 2011, Medina et al. 2012"
+Liolaemidae,Liolaemus jamesi,4.6,29.7,4.6,all,-21.0,1.51,1.34,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,29.7,"Rodrigues-Serrano et al. 2009, Labra et al. 2008, Marquez et al. 1989, Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus kingii,8.7,27.9,13.8,nov_mar,-47.0,1.52,1.22,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,27.9,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus koslowskyi,19.2,35.2,23.4,oct_apr,-28.0,1.25,0.77,-0.52,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.2,"Espinoza et al. 2004, Labra et al. 2008, Cruz et al. 2011, Medina et al. 2012"
+Liolaemidae,Liolaemus kriegi,10.0,33.8,13.5,oct_apr,-39.0,1.70,1.51,0.14,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,33.8,Labra et al. 2008
+Liolaemidae,Liolaemus laurenti,14.5,35.2,18.3,oct_apr,-29.0,1.09,0.76,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.2,"Espinoza et al. 2004, Cruz et al. 2011, Medina et al. 2012"
+Liolaemidae,Liolaemus lavillai,9.5,35.4,12.0,oct_apr,-25.0,0.93,0.71,NA,mean species SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,35.4,Cruz et al. 2011
+Liolaemidae,Liolaemus lemniscatus,8.5,34.9,11.7,oct_apr,-36.0,0.74,0.54,-0.52,female SVL,no,Diurnal,air,Carnivorous,Oviparous,DD,NA,34.9,"Fuentes and Jaksic 1979, Carothers et al. 1998, Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus leopardinus,1.2,34.3,4.3,oct_apr,-34.0,1.45,1.43,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,DD,NA,34.3,"Rodrigues-Serrano et al. 2009, Labra et al. 2008, Carothers et al. 1998, Medina et al. 2012"
+Liolaemidae,Liolaemus lineomaculatus,7.9,26.2,12.4,nov_mar,-47.0,1.00,0.72,-0.35,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,26.2,Medina et al. 2012
+Liolaemidae,Liolaemus lorenzmuelleri,2.6,34.7,4.6,oct_apr,-29.0,1.61,1.22,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,DD,NA,34.7,"Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus lutzae,22.9,33.1,22.9,all,-22.8,1.36,0.90,-0.06,female SVL,no,Diurnal,air,Herbivorous,Oviparous,VU,decreasing,33.1,"Labra et al. 2008, Rocha et al. 2009, Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus magellanicus,5.1,25.2,8.9,nov_mar,-49.0,1.06,0.80,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,25.2,"Rodrigues-Serrano et al. 2009, Labra et al. 2008, Espinoza et al. 2004, Pincheira-Donoso, own data, Ibarguengoytia et al. 2010, Medina et al. 2012"
+Liolaemidae,Liolaemus melanops,13.6,36.6,17.4,oct_apr,-41.0,1.50,1.02,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.6,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus monticola,7.2,31.6,10.6,oct_apr,-34.0,1.36,0.98,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,31.6,"Fuentes and Jaksic 1979, Carothers et al. 1998, Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012, "
+Liolaemidae,Liolaemus multicolor,7.9,31.6,7.9,all,-23.0,1.28,1.13,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,31.6,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus multimaculatus,14.5,32.1,18.0,oct_apr,-38.0,1.08,0.94,-0.15,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.1,Labra et al. 2008
+Liolaemidae,Liolaemus nigromaculatus,14.9,33.8,16.6,oct_apr,-27.0,1.42,0.77,NA,female SVL,no,Diurnal,air,Herbivorous,Oviparous,LC,unknown,33.8,"Fuentes and Jaksic 1979, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Pincheira-Donoso, own data, Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus nigroviridis,9.0,34.9,12.4,oct_apr,-29.0,1.35,0.86,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,34.9,"Fuentes and Jaksic 1979, Carothers et al. 1998, Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012 (nogroroseus and nigroviridis), "
+Liolaemidae,Liolaemus nitidus,7.2,35.2,10.6,oct_apr,-33.0,1.59,1.26,NA,female SVL,no,Diurnal,air,Herbivorous,Oviparous,DD,NA,35.2,"Fuentes and Jaksic 1979, Carothers et al. 1998, Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012 "
+Liolaemidae,Liolaemus occipitalis,18.2,32.4,19.9,oct_apr,-31.2,1.06,0.67,-0.10,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,decreasing,32.4,"Labra et al. 2008, Rocha et al. 2009, Medina et al. 2012"
+Liolaemidae,Liolaemus olongasta,11.1,34.4,14.6,oct_apr,-31.0,0.98,0.94,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,34.4,"Labra et al. 2008, Espinoza et al. 2004, Canovas et al. 2006, Medina et al. 2012"
+Liolaemidae,Liolaemus orientalis,10.2,35.2,10.2,all,-21.0,1.52,1.35,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,35.2,Espinoza et al. 2004
+Liolaemidae,Liolaemus ornatus,7.4,31.7,7.4,all,-19.0,1.06,0.81,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,31.7,"Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Marquez et al. 1989, Medina et al. 2012"
+Liolaemidae,Liolaemus pagaburoi,12.1,31.7,14.7,oct_apr,-27.0,0.76,0.62,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,31.7,Espinoza et al. 2004
+Liolaemidae,Liolaemus petrophilus,10.0,34.4,14.1,oct_apr,-43.0,1.52,1.38,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,34.4,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus pictus,10.1,32.1,12.5,oct_apr,-39.0,1.57,0.85,-0.22,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.1,"Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus platei,10.1,35.7,12.8,oct_apr,-30.0,1.06,0.52,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,35.7,"Fuentes and Jaksic 1979, Espinoza et al. 2004, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012 "
+Liolaemidae,Liolaemus pseudoanomalus,16.6,33.7,20.7,oct_apr,-29.0,1.00,0.87,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.7,"Labra et al. 2008, Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus pseudolemniscatus,13.5,34.3,15.6,oct_apr,-31.0,0.65,0.44,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.3,"Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus puna,8.4,33.3,10.4,oct_apr,-24.0,0.74,0.45,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,33.3,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus quilmes,10.7,34.2,13.6,oct_apr,-27.0,1.36,0.75,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.2,"Espinoza et al. 2004, Cruz et al. 2011, Medina et al. 2012"
+Liolaemidae,Liolaemus ramirezae,9.9,32.2,12.5,oct_apr,-26.0,0.77,0.62,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.2,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus robertmertensi,19.1,36.3,23.3,oct_apr,-28.0,0.89,0.57,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.3,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus rothi,9.3,36.3,13.6,oct_apr,-42.0,1.57,1.31,-0.25,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.3,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus ruibali,5.8,28.7,8.4,oct_apr,-32.0,0.97,0.74,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,28.7,"Espinoza et al. 2004, Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus salinicola,13.4,36.7,16.9,oct_apr,-28.0,1.16,0.76,-0.15,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.7,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus sarmientoi,5.6,26.0,9.3,nov_mar,-52.0,1.49,1.23,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,26.0,"Pincheira-Donoso, own data, Ibarguengoytia et al. 2010, Medina et al. 2012"
+Liolaemidae,Liolaemus scapularis,11.7,36.2,14.7,oct_apr,-27.0,1.16,0.70,-0.15,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.2,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus schroederi,8.4,33.5,12.1,oct_apr,-35.0,0.99,0.77,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,33.5,"Fuentes and Jaksic 1979, Rodrigues-Serrano et al. 2009, Espinoza et al. 2004, Labra et al. 2008, Carothers et al. 1998, Medina et al. 2012"
+Liolaemidae,Liolaemus signifer,8.4,32.5,8.4,all,-18.0,1.62,1.36,-0.20,female SVL,no,Diurnal,air,Omnivorous,Viviparous,LC,unknown,32.5,"Espinoza et al. 2004, Medina et al. 2012: 33-34"
+Liolaemidae,Liolaemus tenuis,8.5,35.9,12.0,oct_apr,-34.0,0.93,0.71,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.9,"Carothers et al. 1998, Rodrigues-Serrano et al. 2009, Labra et al. 2008, Medina et al. 2012, Moreno Azocar et al. 2012"
+Liolaemidae,Liolaemus umbrifer,8.1,33.1,10.8,oct_apr,-27.0,1.36,1.20,NA,mean species SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,33.1,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus uspallatensis,5.5,35.7,8.6,oct_apr,-33.0,0.94,0.90,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.7,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Liolaemus walkeri,8.6,24.0,8.6,all,-14.0,0.90,0.44,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,DD,NA,24.0,"Labra et al. 2008, Medina et al. 2012"
+Liolaemidae,Liolaemus wiegmannii,15.9,33.7,19.4,oct_apr,-33.0,0.96,0.64,-0.65,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.7,Labra et al. 2008
+Liolaemidae,Liolaemus xanthoviridis,12.5,33.9,16.3,oct_apr,-44.0,1.53,1.18,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,DD,unknown,33.9,"Espinoza et al. 2004, Medina et al. 2012"
+Liolaemidae,Phymaturus antofagastensis,6.4,33.3,8.7,oct_apr,-27.0,1.61,1.44,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,33.3,"Cruz et al. 2009, Espinoza et al. 2004"
+Liolaemidae,Phymaturus dorsimaculatus,8.2,22.5,11.6,oct_apr,-37.7,1.50,1.50,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,22.5,Cruz et al. 2009
+Liolaemidae,Phymaturus extrilidus,12.35,33.5,12.4,oct_apr,-30.9,1.66,1.52,NA,mean species SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,33.5,Lobo et al. 2012
+Liolaemidae,Phymaturus indistinctus,9.4,32.9,14.5,nov_mar,-46.0,1.61,1.38,NA,mean species SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,32.9,"Cruz et al. 2009, Espinoza et al. 2004"
+Liolaemidae,Phymaturus palluma,6.7,33.3,8.3,oct_apr,-35.0,1.75,1.52,0.64,female SVL,no,Diurnal,air,Herbivorous,Viviparous,LC,unknown,33.3,"Cruz et al. 2009, Espinoza et al. 2004"
+Liolaemidae,Phymaturus patagonicus,11.0,32.0,14.9,oct_apr,-44.0,1.73,1.50,0.01,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,32.0,"Espinoza et al. 2004, Labra et al. 2008, Ibarguengoytia 2005, Cruz et al. 2009"
+Liolaemidae,Phymaturus punae,6.6,28.7,9.2,oct_apr,-30.0,1.80,1.50,0.58,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,28.7,Ibarguengoytia et al. 2008
+Liolaemidae,Phymaturus somuncurensis,10.8,32.8,15.1,oct_apr,-42.0,1.61,1.35,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,32.8,Espinoza et al. 2004
+Liolaemidae,Phymaturus tenebrosus,7.8,32.0,11.1,oct_apr,-40.9,1.75,1.58,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,32.0,"Cruz et al. 2011, Ibarguengoytia et al. 2010, Ibarguengoytia et al. 2008, Cruz et al. 2009"
+Liolaemidae,Phymaturus vociferator,6.9,22.5,9.6,oct_apr,-37.0,1.65,1.49,NA,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,22.5,"Labra et al. 2008, Ibarguengoytia et al. 2008"
+Liolaemidae,Phymaturus zapalensis,8.4,29.7,12.0,oct_apr,-40.0,1.69,1.41,0.53,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,29.7,"Espinoza et al. 2004, Ibarguengoytia et al. 2008, Cruz et al. 2009"
+Opluridae,Oplurus cuvieri,24.7,36.2,24.7,all,-17.0,2.18,1.86,0.19,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.2,"Muchlinski et al. 1995, Randriamahazo and Mori 2001"
+Phrynosomatidae,Callisaurus draconoides,18.2,39.3,22.8,mar_sep,33.0,1.60,1.13,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.3,"Soule 1963, Huey and Pianka 2007, Pianka 1986, Degenhardt et al. 1996, Cunningham 1966, Brattstrom 1965"
+Phrynosomatidae,Cophosaurus texanus,17.4,36.8,21.4,mar_sep,30.0,1.36,0.82,-0.18,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.8,"Degenhardt et al. 1996, Curry-Lindahl 1979, Brattstrom 1965"
+Phrynosomatidae,Holbrookia maculata,14.9,36.3,19.9,mar_sep,34.0,1.16,0.79,-0.32,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.3,"Degenhardt et al. 1996, Curry-Lindahl 1979, Brattstrom 1965"
+Phrynosomatidae,Holbrookia propinqua,21.6,37.9,25.7,mar_sep,28.0,0.94,0.73,-0.07,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,37.9,Judd 1975
+Phrynosomatidae,Petrosaurus mearnsi,17.4,36.0,19.5,mar_sep,31.0,1.57,1.18,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,36.0,Brattstrom 1965
+Phrynosomatidae,Petrosaurus thalassinus,20.9,36.0,24.2,mar_sep,27.0,2.15,1.43,0.06,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,36.0,"Soule 1963, Brattstrom 1965"
+Phrynosomatidae,Phrynosoma asio,23.1,32.4,23.1,all,16.0,1.75,1.59,0.17,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.4,"Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Phrynosoma blainvillii,15.4,34.9,18.0,mar_sep,35.0,1.61,1.17,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.9,"Cowles and Bogert 1944, also cited in Woolrich-Pina et al. 2012"
+Phrynosomatidae,Phrynosoma cornutum,16.8,37.1,22.0,mar_sep,31.0,1.80,1.18,-0.32,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,37.1,"Degenhardt et al. 1996, Brattstrom 1965, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Phrynosoma coronatum,17.7,35.5,20.7,mar_sep,33.0,1.65,1.29,0.14,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,35.5,"Cunningham 1966, Brattstrom 1965, Woolrich-Pina et al. 2012, Lemm 2006"
+Phrynosomatidae,Phrynosoma douglassii,6.8,33.8,11.5,mar_sep,44.0,1.76,1.11,-0.17,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,33.8,"Degenhardt et al. 1996, Blouin-Demers and Nadeau 2005, Christian 1988, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Phrynosoma hernandesi,8.8,33.0,13.9,mar_sep,41.0,1.76,1.44,-0.07,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,33.0,Jones and Lovich 2009
+Phrynosomatidae,Phrynosoma mcallii,21.3,37.4,25.6,mar_sep,33.0,1.60,1.06,0.10,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,decreasing,37.4,"Curry-Lindahl 1979, Brattstrom 1965, Woolrich-Pina et al. 2012, Brattstrom 1965, Lemm 2006"
+Phrynosomatidae,Phrynosoma modestum,16.4,28.7,20.4,mar_sep,30.0,1.10,0.87,-0.43,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,28.7,"Degenhardt et al. 1996, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012 "
+Phrynosomatidae,Phrynosoma orbiculare,15.8,37.9,18.3,mar_sep,24.0,1.46,1.18,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,37.9,"Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Phrynosoma platyrhinos,12.5,35.5,18.4,mar_sep,38.0,1.44,1.24,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,35.5,"Pianka 1986, Brattstrom 1965, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Phrynosoma solare,19.8,34.7,24.9,mar_sep,29.0,1.68,1.45,0.12,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.7,Degenhardt et al. 1996
+Phrynosomatidae,Sceloporus aeneus,15.8,31.4,15.8,all,20.0,0.91,0.61,-0.21,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,31.4,"Andrews 1998, Andrews et al. 1999, Lemos-Espinal et al. 2002, Dixon and Lemos-Espinal 2010, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus arenicolus,16.6,33.4,21.3,mar_sep,33.0,1.08,0.78,-0.24,female SVL,no,Diurnal,air,Carnivorous,Oviparous,VU,decreasing,33.4,Degenhardt et al. 1996
+Phrynosomatidae,Sceloporus bicanthalis,14.0,29.7,14.0,all,19.0,0.94,0.71,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,29.7,"Andrews 1998, Andrews et al. 1999, Woolrich-Pina et al. 2012, "
+Phrynosomatidae,Sceloporus clarkii,18.7,34.0,22.9,mar_sep,29.0,1.92,1.41,0.12,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,34.0,Jones and Lovich 2009
+Phrynosomatidae,Sceloporus consobrinus,17.7,34.9,21.7,mar_sep,30.0,1.20,0.99,-0.26,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.9,"Bogert 1949, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus gadoviae,22.3,33.3,22.3,all,18.0,1.18,0.74,-0.16,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.3,"Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus graciosus,8.3,34.2,13.4,mar_sep,41.0,1.36,0.80,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.2,"Jones and Lovich 2009, Andrews 1998, Cunningham 1966, Degenhardt et al. 1996, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus grammicus,18.1,32.4,21.7,mar_sep,24.0,1.25,0.69,-0.32,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,32.4,"Andrews 1998, van Berkum 1988, Dixon and Lemos-Espinal 2010, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012 (citing Bogert 1949), Lemos-Espinal and Ballinger 1995 "
+Phrynosomatidae,Sceloporus grandaevus,23.3,35.7,25.5,mar_sep,24.0,1.25,1.05,NA,mean species SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,35.7,"Curry-Lindahl 1979, Soule 1963, Brattstrom 1965"
+Phrynosomatidae,Sceloporus horridus,22.1,36.6,22.1,all,22.0,1.69,1.27,-0.21,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.6,"Lemos-Espinal et al. 2001, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus jarrovii,17.0,32.4,19.8,mar_sep,27.0,1.57,1.14,0.04,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,32.4,"Degenhardt et al. 1996, Sinervo et al. 2010 (own data), Brattstrom 1965, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus magister,16.2,34.8,21.7,mar_sep,33.0,1.91,1.40,0.28,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.8,"Jones and Lovich 2009, Huey and Pianka 2007, Andrews 1998, Pianka 1986, Degenhardt et al. 1996, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus malachiticus,22.5,31.0,22.5,all,14.0,1.48,1.09,0.06,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,31.0,"Andrews 1998, van Berkum 1988, Savage 2002, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus merriami,18.7,34.6,22.9,mar_sep,29.0,1.02,0.64,-0.26,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.6,"Andrews 1998, Brattstrom 1965, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus mucronatus,15.9,30.3,15.9,all,19.0,1.65,1.27,-0.11,female SVL,no,Diurnal,air,Omnivorous,Viviparous,LC,stable,30.3,"Sinervo et al. 2010 (own data), Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus occidentalis,10.2,33.2,14.8,mar_sep,40.0,1.46,1.13,-0.02,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.2,"Andrews 1998, Cunningham 1966, Vitt 1974, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus ochoterenae,21.6,33.9,21.6,all,18.0,0.94,0.58,-0.26,female SVL,no,Diurnal,air,NA,Oviparous,LC,stable,33.9,"Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus olivaceus,19.9,33.8,24.5,mar_sep,29.0,1.75,1.39,-0.16,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.8,"Andrews 1998, Brattstrom 1965"
+Phrynosomatidae,Sceloporus orcutti,19.2,31.4,21.8,mar_sep,30.0,1.68,1.39,0.21,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,31.4,"Andrews 1998, Muchlinski et al. 1995, Soule 1963, Cunningham 1966, Brattstrom 1965"
+Phrynosomatidae,Sceloporus palaciosi,12.5,29.0,12.5,all,19.0,1.05,0.61,NA,female SVL,no,Diurnal,air,NA,Viviparous,LC,stable,29.0,"Lemos-Espinal et al. 2002, Guizado-Rodriguez et al. 2011"
+Phrynosomatidae,Sceloporus poinsettii,17.2,32.1,20.2,mar_sep,29.0,1.87,1.47,0.17,female SVL,no,Diurnal,air,Omnivorous,Viviparous,LC,stable,32.1,"Andrews 1998, Sinervo et al. 2010 (own data), Degenhardt et al. 1996, Brattstrom 1965, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012 (citing Bogert 1949)"
+Phrynosomatidae,Sceloporus scalaris,17.6,33.5,20.0,mar_sep,24.0,1.21,0.74,-0.37,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.5,"Andrews 1998, Degenhardt et al. 1996, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus serrifer,21.4,31.0,21.4,all,23.0,1.95,1.48,0.08,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,31.0,Sinervo et al. 2010 (own data)
+Phrynosomatidae,Sceloporus siniferus,23.0,36.2,23.0,all,17.0,1.10,0.65,NA,female SVL,no,Diurnal,air,NA,Oviparous,LC,stable,36.2,Lemos-Espinal et al. 2001
+Phrynosomatidae,Sceloporus slevini,15.7,32.6,18.6,mar_sep,28.0,1.08,0.66,-0.37,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,32.6,Jones and Lovich 2009
+Phrynosomatidae,Sceloporus spinosus,17.0,33.5,17.0,all,21.0,1.77,1.27,0.00,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.5,"Woolrich-Pina et al. 2012, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus squamosus,24.4,35.3,24.4,all,14.0,0.89,0.67,-0.56,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.3,"Andrews 1998, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus torquatus,17.1,33.0,17.1,all,21.0,1.90,1.39,0.06,female SVL,no,Diurnal,air,Omnivorous,Viviparous,LC,stable,33.0,Sinervo et al. 2010
+Phrynosomatidae,Sceloporus undulatus,14.5,32.5,19.6,mar_sep,35.0,1.39,0.95,-0.10,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.5,"Jones and Lovich 2009, Andrews 1998, Degenhardt et al. 1996, Brattstrom 1965, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012"
+Phrynosomatidae,Sceloporus vandenburgianus,16.2,37.5,19.8,mar_sep,34.0,1.00,0.86,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,37.5,Brattstrom 1965
+Phrynosomatidae,Sceloporus variabilis,21.7,32.9,21.7,all,20.0,1.20,0.79,-0.10,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.9,"Andrews 1998, van Berkum 1988, Lemos-Espinal et al. 2001 citing Benabib and Congdon 1992, Savage 2002, Brattstrom 1965, Lemos-Espinal et al. 1997, Woolrich-Pina et al. 2012 (citing Bogerts 1949)"
+Phrynosomatidae,Sceloporus virgatus,15.8,34.0,18.5,mar_sep,29.0,1.10,0.80,-0.29,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.0,"Jones and Lovich 2009, Andrews 1998, Degenhardt et al. 1996, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Sceloporus woodi,22.3,36.2,24.9,mar_sep,28.0,1.00,0.80,-0.32,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,decreasing,36.2,"Andrews 1998, Curry-Lindahl 1979, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Phrynosomatidae,Uma exsul,19.7,36.9,22.4,mar_sep,26.0,1.50,1.02,0.17,female SVL,no,Diurnal,air,Carnivorous,Oviparous,EN,decreasing,36.9,"Sinervo et al. 2010 (own data), Pough et al. 1978"
+Phrynosomatidae,Uma notata,21.7,38.5,25.4,mar_sep,32.0,1.73,1.23,0.36,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NT,decreasing,38.5,"Curry-Lindahl 1979, Brattstrom 1965, Lemm 2006"
+Phrynosomatidae,Uma paraphygas,19.1,35.5,22.6,mar_sep,27.0,1.32,0.60,0.06,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NT,unknown,35.5,Sinervo et al. 2010 (own data)
+Phrynosomatidae,Uma scoparia,19.4,36.7,23.2,mar_sep,35.0,1.65,1.28,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,36.7,"Jones and Lovich 2009, Huey and Pianka 2007, Pianka 1986, Curry-Lindahl 1979, Brattstrom 1965"
+Phrynosomatidae,Urosaurus auriculatus,23.9,36.3,23.9,all,19.0,1.15,0.64,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,EN,decreasing,36.3,"Curry-Lindahl 1979, Brattstrom 1965"
+Phrynosomatidae,Urosaurus clarionensis,24.7,36.4,24.7,all,18.0,0.91,0.73,0.06,mean species SVL,yes,Diurnal,air,Carnivorous,Oviparous,VU,unknown,36.4,Brattstrom 1965
+Phrynosomatidae,Urosaurus graciosus,19.8,36.6,23.9,mar_sep,34.0,1.05,0.71,-0.16,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.6,"Jones and Lovich 2009, Huey and Pianka 2007, Pianka 1986"
+Phrynosomatidae,Urosaurus nigricaudus,19.6,34.9,22.8,mar_sep,28.0,0.72,0.46,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,34.9,"Curry-Lindahl 1979, Soule 1963, Brattstrom 1965 (microscutatus)"
+Phrynosomatidae,Urosaurus ornatus,15.7,35.8,21.5,mar_sep,33.0,1.07,0.60,-0.33,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,35.8,"Pianka 1986, Degenhardt et al. 1996, Curry-Lindahl 1979, Brattstrom 1965"
+Phrynosomatidae,Uta palmeri,23.3,38.0,26.1,mar_sep,29.0,1.28,0.92,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,VU,stable,38.0,Ferguson 1971
+Phrynosomatidae,Uta stansburiana,14.7,36.0,20.2,mar_sep,35.0,1.20,0.59,-0.29,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.0,"Soule 1963, Pianka 1986, Curry-Lindahl 1979, Cunningham 1966, Brattstrom 1965, Ferguson 1971"
+Phrynosomatidae,Uta stejnegeri,16.6,33.2,21.1,mar_sep,31.0,0.91,0.60,-0.26,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.2,Brattstrom 1965
+Phyllodactylidae,Gymnodactylus amarali,25.1,30.8,25.1,all,-12.5,0.57,0.19,-0.68,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,30.8,"Mesquita et al. 2006, Colli et al. 2003, Rocha et al. 2009"
+Phyllodactylidae,Gymnodactylus geckoides,23.6,31.9,23.6,all,-8.1,0.57,0.27,-0.65,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,31.9,"Colli et al. 2003, Vitt 1995"
+Phyllodactylidae,Homonota darwinii,10.1,23.0,14.2,oct_apr,-44.0,0.57,0.13,-0.60,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,23.0,Ibarguengoytia et al. 2007
+Phyllodactylidae,Homonota gaudichaudii,13.4,24.5,15.6,oct_apr,-27.0,0.38,0.08,-1.04,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,24.5,Labra et al. 2008
+Phyllodactylidae,Homonota underwoodi,16.4,23.9,20.7,oct_apr,-31.0,0.48,0.25,NA,mean species SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,23.9,"Werner et al. 1996, Aguilar and Cruz 2010"
+Phyllodactylidae,Phyllodactylus kofordi,22.0,21.7,22.0,all,-5.0,0.35,0.13,-0.82,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,21.7,"Werner et al. 1996, Angilletta and Werner 1998"
+Phyllodactylidae,Phyllodactylus lanei,24.1,27.5,24.1,all,19.0,1.05,0.76,-0.57,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,stable,27.5,Mautz 1982
+Phyllodactylidae,Phyllodactylus microphyllus,18.6,23.2,18.6,all,-8.0,0.64,0.36,-0.51,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,23.2,"Werner et al. 1996, Angilletta and Werner 1998"
+Phyllodactylidae,Phyllodactylus reissii,16.9,21.3,16.9,all,-5.0,0.96,0.63,-0.57,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,unknown,21.3,"Werner et al. 1996, Angilletta and Werner 1998"
+Phyllodactylidae,Phyllodactylus tuberculosus,21.2,22.7,21.2,all,19.0,1.32,0.99,-0.51,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,22.7,Brattstrom 1965
+Phyllodactylidae,Phyllopezus pollicaris,24.2,27.4,24.2,all,-18.0,1.25,0.91,-0.17,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,27.4,"Vitt 1995, Recoder et al. 2012"
+Phyllodactylidae,Ptyodactylus guttatus,20.5,27.6,24.1,mar_sep,29.0,1.20,0.82,-0.30,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,27.6,"Werner and Goldblatt 1978, Meiri, own data"
+Phyllodactylidae,Ptyodactylus hasselquistii,23.5,30.0,27.1,mar_sep,24.0,1.38,0.77,-0.04,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,30.0,Arad 1995
+Phyllodactylidae,Ptyodactylus puiseuxi,17.8,31.5,21.5,mar_sep,33.0,1.17,0.78,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.5,"Meiri, own data"
+Phyllodactylidae,Tarentola boettgeri,18.7,19.8,19.7,mar_sep,28.0,0.95,0.66,-0.29,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,LC,stable,19.8,Brown 1996
+Phyllodactylidae,Tarentola chazaliae,21.2,22.0,21.4,mar_sep,26.0,0.82,0.55,-0.62,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,22.0,Schleich et al. 1996
+Phyllodactylidae,Tarentola delalandii,17.7,23.0,19.0,mar_sep,28.0,1.10,0.91,-0.48,female SVL,yes,Cathemeral,air,Carnivorous,Oviparous,LC,stable,23.0,Salvador 2009
+Phyllodactylidae,Tarentola mauritanica,15.9,25.2,19.3,mar_sep,37.0,1.13,0.76,-0.68,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,LC,stable,25.2,"Schleich et al. 1996, Gil et al., 1994, Arad et al. 1997"
+Phyllodactylidae,Thecadactylus rapicauda,24.9,27.0,24.9,all,0.0,1.60,1.43,-0.01,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.0,"Vitt and Zani 1997, Henderson and Powell 2009, Savage 2002, Vitt and Zani 1996, Rocha et al. 2009"
+Polychrotidae,Anolis acutus,26.1,30.2,26.1,all,18.0,0.80,0.23,-0.72,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.2,"Henderson and Powell 2009, Ruibal and Philibosian 1974"
+Polychrotidae,Anolis aeneus,26.3,31.6,26.3,all,6.0,1.02,0.33,-0.60,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.6,"Henderson and Powell 2009, Losos 2009"
+Polychrotidae,Anolis allisoni,25.2,33.1,25.2,all,21.0,1.31,0.58,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.1,"Henderson and Powell 2009, Ruibal 1961, Brattstrom 1965"
+Polychrotidae,Anolis allogus,24.7,28.6,24.7,all,21.0,0.72,0.21,-0.81,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,28.6,"Henderson and Powell 2009, Losos 2009, Schettino et al. 2010, Ruibal 1961, Clark 1973, Brattstrom 1965"
+Polychrotidae,Anolis alutaceus,24.3,28.9,24.3,all,22.0,0.37,-0.08,-1.11,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.9,Schettino et al. 2010
+Polychrotidae,Anolis angusticeps,24.8,30.8,24.8,all,22.0,0.50,0.07,-1.08,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.8,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis auratus,24.0,32.3,24.0,all,5.0,0.59,0.36,-0.77,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.3,"Vitt and de Carvalho 1995, Rocha et al. 2009"
+Polychrotidae,Anolis bahorucoensis,23.0,25.4,23.0,all,18.0,0.45,0.05,-0.85,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.4,"Henderson and Powell 2009, Cast et al. 2000, Sifers et al. 2001"
+Polychrotidae,Anolis barbatus,24.2,29.8,24.2,all,22.0,1.99,1.57,0.36,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,NE,NE,29.8,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis barbouri,22.6,25.2,22.6,all,18.0,0.55,0.30,-0.95,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.2,Henderson and Powell 2009
+Polychrotidae,Anolis barkeri,23.7,24.2,23.7,all,18.0,1.32,0.83,-0.07,female SVL,no,Diurnal,water,Carnivorous,Oviparous,VU,decreasing,24.2,"Birt et al. 2001, Birt et al. 2001"
+Polychrotidae,Anolis bartschi,24.3,26.1,24.3,all,22.0,1.02,0.64,-0.72,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,26.1,Henderson and Powell 2009
+Polychrotidae,Anolis bimaculatus,25.8,32.7,25.8,all,17.0,1.99,0.68,-0.43,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,32.7,"Henderson and Powell 2009, Losos 2009"
+Polychrotidae,Anolis bonairensis,27.3,33.4,27.3,all,14.0,0.94,0.54,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.4,Bennett and Gorman 1979
+Polychrotidae,Anolis brasiliensis,24.8,30.6,24.8,all,-12.1,0.94,0.77,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.6,Vitt et al. 2008
+Polychrotidae,Anolis brevirostris,23.8,30.6,23.8,all,18.0,0.50,0.20,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.6,Henderson and Powell 2009
+Polychrotidae,Anolis capito,24.0,28.8,24.0,all,13.0,1.31,1.11,-0.46,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.8,Vitt and Zani 2005
+Polychrotidae,Anolis carolinensis,18.4,28.2,23.6,mar_sep,32.0,0.94,0.40,-0.64,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,28.2,"van Berkum 1988, Brattstrom 196"
+Polychrotidae,Anolis chrysolepis,24.9,29.0,24.9,all,1.0,1.12,0.76,-0.41,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.0,"Fitch 1968, Vitt et al. 2001, Vitt and Zani 1996, Rocha et al. 2009"
+Polychrotidae,Anolis coelestinus,24.0,28.9,24.0,all,18.0,1.09,0.56,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.9,"Henderson and Powell 2009, Sifers et al. 2001"
+Polychrotidae,Anolis conspersus,26.4,31.1,26.4,all,19.0,0.96,0.18,-0.62,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,31.1,Losos et al. 1993
+Polychrotidae,Anolis cooki,26.0,30.3,26.0,all,18.0,0.85,0.29,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.3,"Henderson and Powell 2009, Hertz et al. 1993, Huey and Webster 1976, Blouin-Demers and Nadeau 2005"
+Polychrotidae,Anolis cristatellus,24.6,28.4,24.6,all,20.0,0.99,0.45,-0.62,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,28.4,"Hertz et al. 1993, Fitch 1989, Huey and Webster 1976, Rand 1964, Blouin-Demers and Nadeau 2005, Hertz 1983"
+Polychrotidae,Anolis cupreus,24.2,27.9,24.2,all,13.0,0.59,0.16,-0.88,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.9,"van Berkum 1988, Savage 2002, Clark 1973"
+Polychrotidae,Anolis cybotes,23.9,29.7,23.9,all,19.0,1.04,0.38,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.7,"Henderson and Powell 2009, Cast et al. 2000, Sifers et al. 2001, see Hertz 1983, Hertz 1980"
+Polychrotidae,Anolis distichus,23.9,29.0,23.9,all,20.0,0.62,0.24,-0.81,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.0,"Henderson and Powell 2009, Cast et al. 2000, Sifers et al. 2001, Fitch 1989"
+Polychrotidae,Anolis evermanni,23.5,24.5,23.5,all,18.0,0.99,0.36,-0.75,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,24.5,"Henderson and Powell 2009, Rand 1964, Hertz 1983"
+Polychrotidae,Anolis fuscoauratus,24.2,28.5,24.2,all,-1.0,0.47,0.25,-1.03,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.5,"Vitt and Zani 1996, Rocha et al. 2009"
+Polychrotidae,Anolis gingivinus,26.9,29.6,26.9,all,18.0,0.89,0.37,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,29.6,Henderson and Powell 2009
+Polychrotidae,Anolis grahami,24.6,31.2,24.6,all,18.0,0.94,0.28,-0.85,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,unknown,31.2,Henderson and Powell 2009
+Polychrotidae,Anolis gundlachi,23.5,24.3,23.5,all,18.0,0.96,0.27,-0.92,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,24.3,"Henderson and Powell 2009, Hertz et al. 1993, Huey and Webster 1976, Blouin-Demers and Nadeau 2005, Rand 1964, Hertz 1983"
+Polychrotidae,Anolis homolechis,24.7,30.2,24.7,all,22.0,0.85,0.10,-0.99,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.2,"Henderson and Powell 2009, Schettino et al. 2010, Ruibal 1961, see Hertz 1983, Brattstrom 1965"
+Polychrotidae,Anolis humilis,24.4,24.0,24.7,all,9.0,0.42,0.08,-0.98,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,24.0,"Savage 2002, Vitt et al. 2002"
+Polychrotidae,Anolis intermedius,20.8,25.5,20.8,all,10.1,0.52,0.30,-0.88,female SVL,no,Diurnal,air,NA,Oviparous,NE,NE,25.5,"van Berkum 1988, Savage 2002, Clark 1973"
+Polychrotidae,Anolis jubar,25.0,31.7,25.0,all,21.0,0.70,0.24,NA,female SVL,yes,Diurnal,air,NA,Oviparous,NE,NE,31.7,Henderson and Powell 2009
+Polychrotidae,Anolis krugi,23.8,28.7,23.8,all,18.0,0.55,0.04,-1.03,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.7,Rand 1964
+Polychrotidae,Anolis lemurinus,24.5,21.0,24.5,all,15.0,1.01,0.74,-0.49,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,21.0,Savage 2002
+Polychrotidae,Anolis limifrons,23.8,27.6,23.8,all,11.0,0.45,0.19,-1.09,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.6,"Ballinger et al. 1970, van Berkum 1988, Savage 2002, Clark 1973"
+Polychrotidae,Anolis lineatopus,24.3,29.3,24.3,all,18.0,0.91,0.32,-0.68,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.3,"Henderson and Powell 2009, Rand 1967, Rand 1967b"
+Polychrotidae,Anolis lionotus,23.7,26.2,23.7,all,11.0,0.99,0.71,-0.57,female SVL,no,Diurnal,water,Carnivorous,Oviparous,LC,unknown,26.2,Campbell 1973
+Polychrotidae,Anolis litoralis,24.4,33.4,24.4,all,20.1,0.37,-0.03,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.4,Henderson and Powell 2009
+Polychrotidae,Anolis longiceps,26.4,32.2,26.4,all,18.0,1.07,NA,NA,NA,yes,Diurnal,air,Carnivorous,Oviparous,VU,stable,32.2,"Henderson and Powell 2009, Powell 1999"
+Polychrotidae,Anolis longitibialis,24.2,32.2,24.2,all,20.0,0.89,0.61,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.2,Henderson and Powell 2009
+Polychrotidae,Anolis loysiana,24.1,29.0,24.1,all,21.7,0.47,0.03,-1.03,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.0,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis lucius,24.7,28.0,24.7,all,22.0,0.85,0.47,-0.46,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.0,"Henderson and Powell 2009, Ruibal 1961, Clark 1973, Brattstrom 1965"
+Polychrotidae,Anolis luteogularis,24.8,29.4,24.8,all,22.0,2.14,1.66,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,29.4,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis marcanoi,23.4,35.7,23.4,all,18.0,0.76,0.62,NA,mean species mass,yes,Diurnal,air,NA,Oviparous,NE,NE,35.7,Henderson and Powell 2009
+Polychrotidae,Anolis marmoratus,25.5,29.9,25.5,all,5.0,1.10,0.39,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.9,Huey and Webster 1975
+Polychrotidae,Anolis maynardi,26.2,31.8,26.2,all,20.0,0.96,0.45,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.8,Herrel et al. 2011
+Polychrotidae,Anolis mestrei,24.4,27.8,24.4,all,23.0,0.66,0.23,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.8,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis monensis,25.5,30.9,25.5,all,18.0,0.66,0.22,-0.75,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,30.9,Henderson and Powell 2009
+Polychrotidae,Anolis nebulosus,22.3,30.5,22.3,all,22.0,0.50,0.10,-0.88,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,30.5,Clark 1973
+Polychrotidae,Anolis oculatus,24.0,27.4,24.0,all,15.0,1.28,0.47,-0.60,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,27.4,"Henderson and Powell 2009, Brooks 1968"
+Polychrotidae,Anolis olssoni,24.2,31.9,24.2,all,19.0,0.50,0.17,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,31.9,Henderson and Powell 2009
+Polychrotidae,Anolis onca,26.7,33.1,26.7,all,11.0,1.10,0.62,-0.35,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.1,Ugueto and Rivas 2010
+Polychrotidae,Anolis opalinus,24.4,28.1,24.4,all,18.0,0.57,0.21,-0.79,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.1,Rand 1967
+Polychrotidae,Anolis ortonii,24.8,31.2,24.8,all,-6.0,0.59,0.29,-0.78,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.2,Vitt and Zani 1996
+Polychrotidae,Anolis pentaprion,24.5,28.0,24.5,all,13.0,1.02,0.62,-0.57,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.0,Brattstrom 1965
+Polychrotidae,Anolis poecilopus,24.6,26.5,24.6,all,8.0,0.92,0.65,-0.32,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,26.5,Campbell 1973
+Polychrotidae,Anolis pogus,26.8,28.3,26.8,all,18.0,0.61,0.15,NA,female SVL,yes,Diurnal,earth,Carnivorous,Oviparous,VU,unknown,28.3,Henderson and Powell 2009
+Polychrotidae,Anolis polylepis,23.8,26.7,23.8,all,9.0,0.64,0.30,-0.81,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,26.7,"Savage 2002, Clark 1973"
+Polychrotidae,Anolis poncensis,25.3,32.6,25.3,all,18.0,0.37,0.00,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.6,Rand 1964
+Polychrotidae,Anolis porcatus,24.5,32.1,24.5,all,22.0,1.25,0.54,-0.63,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,32.1,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis proboscis,15.8,23.9,15.8,all,0.0,0.94,0.88,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,EN,unknown,23.9,Losos et al. 2012
+Polychrotidae,Anolis pulchellus,24.8,32.7,24.8,all,18.0,0.46,0.01,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.7,Rand 1964
+Polychrotidae,Anolis punctatus,24.5,28.7,24.5,all,-5.0,1.17,0.92,-0.41,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.7,"Vitt and Zani 1996, Rocha et al. 2009, Vitt et al. 2003"
+Polychrotidae,Anolis quadriocellifer,25.2,30.9,25.2,all,22.0,0.55,0.19,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.9,Henderson and Powell 2009
+Polychrotidae,Anolis richardii,26.4,29.1,26.4,all,12.0,1.74,0.88,-0.23,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,29.1,"Henderson and Powell 2009, Losos 2009"
+Polychrotidae,Anolis roquet,25.1,26.5,25.1,all,15.0,1.12,0.48,-0.62,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,26.5,Henderson and Powell 2009
+Polychrotidae,Anolis sabanus,25.1,29.4,25.1,all,18.0,1.17,0.39,-0.57,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,29.4,Schall and Staats 2002
+Polychrotidae,Anolis sagrei,25.1,30.7,25.1,all,19.0,0.94,0.36,-1.05,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.7,"Henderson and Powell 2009, Losos 2009, Ruibal 1961, Losos et al. 1993, Brattstrom 1965"
+Polychrotidae,Anolis scypheus,24.8,27.4,24.8,all,-3.4,1.07,1.11,-0.32,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.4,"Avila-Pires 1995, Vitt et al. 2001, Vitt et al. 2002"
+Polychrotidae,Anolis semilineatus,23.8,31.5,23.8,all,19.0,0.34,0.01,-0.95,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,unknown,31.5,Henderson and Powell 2009
+Polychrotidae,Anolis sericeus,24.5,32.5,24.5,all,17.0,0.47,0.16,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.5,Savage 2002
+Polychrotidae,Anolis shrevei,15.8,29.2,15.8,all,19.0,0.66,0.37,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.2,Henderson and Powell 2009
+Polychrotidae,Anolis smaragdinus,25.3,34.2,26.4,mar_sep,24.0,0.74,0.44,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.2,Henderson and Powell 2009
+Polychrotidae,Anolis stratulus,24.9,30.0,24.9,all,18.0,0.68,0.12,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.0,Rand 1964
+Polychrotidae,Anolis tandai,27.7,25.74,25.74,all,-6.83,0.87,0.8,-0.36,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.74,Vitt et al. 2001
+Polychrotidae,Anolis taylori,27.7,30.0,27.7,all,17.0,0.99,0.59,-0.15,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,30.0,Mautz 1982
+Polychrotidae,Anolis townsendi,23.6,30.9,23.6,all,6.0,0.84,0.25,NA,female SVL,yes,Diurnal,air,NA,Oviparous,NE,NE,30.9,Savage 2002
+Polychrotidae,Anolis trachyderma,24.6,27.9,24.6,all,-4.0,0.68,0.50,-0.62,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.9,"Vitt and Zani 1996, Rocha et al. 2009, Vitt et al. 2002"
+Polychrotidae,Anolis transversalis,24.9,27.6,24.9,all,-4.0,1.28,0.99,0.07,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.6,Vitt et al. 2003
+Polychrotidae,Anolis tropidolepis,18.0,20.0,18.0,all,10.0,0.64,0.44,-0.72,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,20.0,"van Berkum 1988, Savage 2002"
+Polychrotidae,Anolis uniformis,24.5,28.0,24.5,all,17.0,0.15,0.03,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.0,Birt et al. 2001
+Polychrotidae,Anolis vermiculatus,24.4,27.2,24.4,all,23.0,1.69,0.99,-0.23,female SVL,yes,Diurnal,water,Omnivorous,Oviparous,NE,NE,27.2,"Henderson and Powell 2009, Schettino et al. 2010"
+Polychrotidae,Anolis wattsi,26.2,33.7,26.2,all,17.0,0.61,0.23,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.7,"Losos 2009, "
+Polychrotidae,Polychrus acutirostris,23.8,35.0,23.8,all,-17.0,1.81,1.49,-0.08,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.0,Vitt 1995
+Pygopodidae,Delma butleri,21.0,31.7,24.4,oct_apr,-27.0,0.68,0.63,0.09,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,31.7,Pianka 2011
+Pygopodidae,Delma fraseri,18.0,31.7,20.6,oct_apr,-31.0,0.90,0.76,0.21,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,LC,unknown,31.7,"Pianka 1986, Hailey and Elliot 1995"
+Pygopodidae,Delma nasuta,24.5,29.8,24.5,all,-22.0,0.77,0.58,0.24,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,29.8,Pianka 2011
+Pygopodidae,Lialis burtonis,21.5,29.0,23.6,oct_apr,-25.0,1.36,1.11,0.46,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,29.0,"Pianka 1986, Pianka 2011"
+Pygopodidae,Pygopus nigriceps,21.9,24.8,25.0,oct_apr,-24.0,1.19,1.03,0.49,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,24.8,"Pianka 1986, Pianka 2011"
+Scincidae,Ablepharus rueppellii,19.43,32.7,21.2,mar_sep,32.2,0.42,-0.09,-0.92,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,32.7,"Meiri, own data"
+Scincidae,Acontias meleagris,16.4,21.8,18.9,oct_apr,-33.0,1.47,0.88,0.16,female SVL,no,Cathemeral,earth,Carnivorous,Viviparous,NE,NE,21.8,Withers 1981
+Scincidae,Asymblepharus himalayanus,2.5,27.5,16.4,mar_sep,35.5,0.77,0.44,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,27.5,"Ouboter 1986, Schleich and Kastle 2002"
+Scincidae,Asymblepharus sikimmensis,15.7,29.0,19.0,mar_sep,27.0,0.51,0.32,-1.00,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.0,Ouboter 1986
+Scincidae,Bassiana duperreyi,12.8,27.3,16.2,oct_apr,-37.0,1.02,0.74,-0.70,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.3,Greer 1989
+Scincidae,Bassiana trilineata,16.6,27.2,19.8,oct_apr,-33.0,0.87,0.71,-0.50,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,27.2,"Heatwole and Taylor 1987, Shine 1983"
+Scincidae,Bellatorias major,17.3,31.4,20.4,oct_apr,-30.0,3.25,2.77,0.96,female SVL,no,Diurnal,earth,Omnivorous,Viviparous,NE,NE,31.4,Heatwole and Taylor 1987
+Scincidae,Carlia fusca,25.4,30.8,25.4,all,-1.0,0.77,0.35,-0.70,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.8,"Brattstrom 1965, Wilhoft 1961"
+Scincidae,Carlia longipes,25.1,30.8,25.1,all,-14.0,0.89,0.58,-0.86,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.8,"Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Carlia rhomboidalis,22.7,28.9,22.7,all,-19.0,0.64,0.34,-1.00,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.9,"Greer 1989, Heatwole and Taylor 1987, Wilhoft 1961, Brattstrom 1965"
+Scincidae,Carlia schmeltzii,22.4,30.8,22.4,all,-21.0,0.81,0.22,-0.56,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.8,"Wilhoft, 1961 (as Leiolopisma fusca; id fide Whittikar, 1993a-b)"
+Scincidae,Carlia vivax,20.9,30.5,20.9,all,-22.0,0.36,0.25,-0.73,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.5,Singh et al. 2002
+Scincidae,Chalcides bedriagai,14.0,28.5,17.4,mar_sep,39.0,1.30,0.94,-0.58,female SVL,no,Diurnal,earth,Carnivorous,Viviparous,NT,decreasing,28.5,"Hailey et al. 1987, Hailey and Elliot 1995"
+Scincidae,Chalcides guentheri,18.8,29.0,23.4,mar_sep,32.0,1.03,0.67,-0.34,female SVL,no,Diurnal,air,Carnivorous,Viviparous,VU,decreasing,29.0,"Meiri, own data"
+Scincidae,Chalcides ocellatus,20.0,32.8,23.5,mar_sep,29.0,2.34,1.70,0.07,female SVL,no,Cathemeral,air,Omnivorous,Viviparous,NE,NE,32.8,"Schleich et al. 1996, Cascio 2010, Hailey and Elliot 1995, Meiri, own data"
+Scincidae,Chalcides sepsoides,20.4,26.6,23.1,mar_sep,29.0,0.90,0.80,-0.27,female SVL,no,Cathemeral,earth,Omnivorous,Viviparous,LC,stable,26.6,"Meiri, own data"
+Scincidae,Chalcidoseps thwaitesi,23.7,25.3,23.7,all,7.4,1.23,0.87,-0.39,female SVL,yes,Diurnal,earth,Carnivorous,Oviparous,NE,NE,25.3,Meek et al. 2005
+Scincidae,Corucia zebrata,25.7,29.9,25.7,all,-8.0,3.09,2.87,1.89,female SVL,yes,Nocturnal,air,Herbivorous,Viviparous,NE,NE,29.9,Mann and Meek 2004
+Scincidae,Cryptoblepharus buchananii,21.2,32.6,24.0,oct_apr,-28.7,0.34,0.13,-0.79,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.6,Pianka and Harp 2011
+Scincidae,Cryptoblepharus plagiocephalus,22.3,32.6,25.3,oct_apr,-24.0,0.27,0.01,-1.24,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.6,"Huey and Pianka 2007, Pianka 1986"
+Scincidae,Ctenotus ariadnae,22.1,36.1,27.6,oct_apr,-25.0,0.71,0.71,-0.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.1,"Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus atlas,18.7,35.6,21.4,oct_apr,-30.0,0.83,0.71,-0.31,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.6,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987, Bennett and John-Alder 1986"
+Scincidae,Ctenotus brooksi,20.7,30.9,22.5,oct_apr,-27.0,0.54,0.24,-0.67,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.9,"Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus calurus,22.5,36.0,29.4,oct_apr,-24.0,0.36,0.12,-0.56,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,NE,NE,36.0,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus colletti,22.9,36.3,29.0,oct_apr,-24.0,0.21,0.11,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.3,"Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus dux,21.5,32.2,27.4,oct_apr,-25.0,0.73,0.54,NA,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.2,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus grandis,23.7,34.8,23.7,all,-23.0,1.61,1.21,-0.18,mean species SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.8,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus helenae,23.5,33.3,23.5,all,-23.0,1.35,1.03,-0.18,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.3,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus leae,20.0,37.9,23.7,oct_apr,-28.0,0.66,0.59,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,37.9,"Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus leonhardii,22.2,38.0,27.2,oct_apr,-25.0,1.00,0.75,-0.40,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,38.0,"Huey and Pianka 2007, Hutchinson 1993, Pianka 1986, Greer 1989, Heatwole and Taylor 1987, "
+Scincidae,Ctenotus pantherinus,22.9,33.6,27.4,oct_apr,-24.0,1.66,1.00,-0.18,female SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,33.6,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus piankai,23.8,36.1,23.8,all,-22.0,0.62,0.46,-0.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.1,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus quattuordecimlineatus,23.3,35.9,23.3,all,-23.0,0.85,0.59,-0.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.9,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus regius,20.1,36.4,24.5,oct_apr,-28.0,1.07,0.62,-0.40,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.4,"Greer 1989, Heatwole and Taylor 1987, Huey and Bennett 1987, Bennett and John-Alder 1986"
+Scincidae,Ctenotus robustus,21.1,34.7,21.5,oct_apr,-25.0,1.65,1.31,-0.12,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.7,"Greer 1989, Heatwole and Taylor 1987, Bennett and John-Alder 1986, "
+Scincidae,Ctenotus schomburgkii,20.8,33.4,24.0,oct_apr,-27.0,0.54,0.12,-0.82,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.4,"Huey and Pianka 2007, Pianka 1986, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Ctenotus taeniolatus,19.4,30.2,21.1,oct_apr,-26.0,1.17,0.82,-0.36,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.2,"Greer 1989, Heatwole and Taylor 1987, Fischer and Lindenmayer 2005"
+Scincidae,Cyclodomorphus branchialis,19.7,34.7,23.4,oct_apr,-29.0,1.59,1.21,NA,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,NE,NE,34.7,Pianka 1986
+Scincidae,Cyclodomorphus casuarinae,10.5,29.9,12.3,oct_apr,-42.0,2.11,1.63,0.16,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,NE,NE,29.9,"Shea 1995, Heatwole and Taylor 1987"
+Scincidae,Cyclodomorphus melanops,21.9,34.8,26.1,oct_apr,-25.0,1.72,1.26,0.07,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,NE,NE,34.8,Pianka 2011
+Scincidae,Egernia cunninghami,14.6,31.6,17.8,oct_apr,-34.0,2.62,2.23,0.70,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,31.6,"Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Egernia depressa,23.0,34.0,28.7,oct_apr,-25.0,1.55,1.40,0.53,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,34.0,"Huey and Pianka 2007, Pianka 1986"
+Scincidae,Egernia stokesii,20.5,32.7,25.0,oct_apr,-28.0,2.35,2.17,0.94,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,32.7,"Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Egernia striolata,18.7,31.5,21.7,oct_apr,-28.0,1.58,1.43,0.37,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,31.5,"Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Emoia cyanura,26.1,33.6,26.1,all,-8.0,0.73,0.26,-0.82,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.6,"McElroy 2007, Zug 1991"
+Scincidae,Emoia nigra,26.0,31.6,26.0,all,-8.0,1.68,1.37,-0.18,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.6,Zug 1991
+Scincidae,Emoia trossula,24.3,30.8,24.3,all,-17.0,1.45,1.18,-0.22,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.8,Zug 1991
+Scincidae,Eremiascincus fasciolatus,22.4,28.1,26.5,oct_apr,-24.0,1.30,0.81,-0.20,female SVL,no,Nocturnal,earth,Carnivorous,Oviparous,NE,NE,28.1,"Huey and Bennett 1987, Hailey and Elliot 1995"
+Scincidae,Eremiascincus richardsonii,21.8,26.2,25.2,oct_apr,-26.0,1.67,1.10,-0.26,female SVL,no,Nocturnal,earth,Carnivorous,Oviparous,NE,NE,26.2,"Pianka 1986, Pianka 2011, Hailey and Elliot 1995"
+Scincidae,Eulamprus brachyosoma,22.0,26.6,22.0,all,-21.0,0.95,0.84,-0.24,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,26.6,Schwarzkopf et al. 2010
+Scincidae,Eulamprus heatwolei,14.4,29.2,17.8,oct_apr,-34.0,1.33,1.17,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,increasing,29.2,Greer 1989
+Scincidae,Eulamprus kosciuskoi,13.0,29.6,16.2,oct_apr,-34.0,1.11,0.81,NA,female SVL,no,Diurnal,water,Carnivorous,Viviparous,NE,NE,29.6,"Greer 1989, Heatwole and Taylor 1987, Huey and Bennett 1987, Bennett and John-Alder 1986, "
+Scincidae,Eulamprus quoyii,17.9,29.1,20.4,oct_apr,-29.0,1.67,1.37,0.00,female SVL,no,Diurnal,water,Omnivorous,Viviparous,NE,NE,29.1,"Veron and Heatwole 1970, Heatwole and Taylor 1987, Huey and Bennett 1987"
+Scincidae,Eulamprus tenuis,19.1,27.0,21.0,oct_apr,-25.0,1.11,0.96,NA,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,NE,NE,27.0,Heatwole and Taylor 1987
+Scincidae,Eulamprus tympanum,12.8,28.8,16.1,oct_apr,-37.0,1.33,1.16,-0.12,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,28.8,"Greer 1989, Heatwole and Taylor 1987, Huey and Bennett 1987, Shine 1983"
+Scincidae,Eumeces schneideri,16.3,32.6,21.1,mar_sep,33.0,2.20,1.84,0.57,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,32.6,"Meiri, own data"
+Scincidae,Eutropis multifasciata,23.3,32.3,23.3,all,16.0,1.80,1.30,-0.02,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.3,"Brattstrom 1965, Inger 1959, Brooks 1968, Alcala 1966"
+Scincidae,Eutropis rudis,25.6,32.8,25.6,all,3.0,1.59,1.03,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.8,"Inger 1959, Brooks 1968, Alcala 1966, Brattstrom 1965"
+Scincidae,Gnypetoscincus queenslandiae,22.5,32.7,22.5,all,-17.0,1.11,0.83,-0.36,female SVL,no,Cathemeral,earth,Carnivorous,Viviparous,NE,NE,32.7,Heatwole and Taylor 1987
+Scincidae,Hemiergis decresiensis,15.7,22.6,18.6,oct_apr,-33.0,0.48,0.27,NA,female SVL,no,Diurnal,earth,Carnivorous,Viviparous,LC,unknown,22.6,"Greer 1989, Heatwole and Taylor 1987, Huey and Bennett 1987, Fischer and Lindenmayer 2005, Bennett and John-Alder 1986, Hailey and Elliot 1995"
+Scincidae,Hemiergis peronii,16.8,25.0,19.8,oct_apr,-33.0,0.48,0.23,-0.71,female SVL,no,Nocturnal,earth,Carnivorous,Viviparous,NE,NE,25.0,"Greer 1989, Heatwole and Taylor 1987, Huey and Bennett 1987, Bennett and John-Alder 1986, Hailey and Elliot 1995"
+Scincidae,Insulasaurus arborens,26.5,22.9,26.5,all,10.8,0.76,0.49,-0.78,female SVL,yes,Diurnal,air,NA,Oviparous,DD,unknown,22.9,Alcala and Brown 1966
+Scincidae,Lamprolepis smaragdina,25.3,30.3,25.3,all,-4.0,1.54,1.17,-0.08,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,30.3,Alcala 1966
+Scincidae,Lampropholis delicata,17.7,26.1,19.0,oct_apr,-29.0,0.49,0.05,-1.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,26.1,"Heatwole and Taylor 1987, Fischer and Lindenmayer 2005"
+Scincidae,Lampropholis guichenoti,14.6,30.3,17.6,oct_apr,-34.0,0.42,0.06,-1.00,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.3,"Greer 1989,Fischer and Lindenmayer 2005, Michael et al. 2011, Shine 1983"
+Scincidae,Lankascincus fallax,22.9,22.5,22.9,all,7.7,0.49,0.01,-1.05,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,22.5,Meek et al. 2005
+Scincidae,Lerista bipes,24.3,31.2,24.3,all,-22.0,0.31,0.05,-0.71,female SVL,no,Nocturnal,earth,Carnivorous,Oviparous,NE,NE,31.2,"Pianka 1986, Hailey and Elliot 1995"
+Scincidae,Lerista bougainvillii,14.2,29.8,17.2,oct_apr,-36.0,0.91,0.56,-0.61,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,NE,NE,29.8,"Heatwole and Taylor 1987, Hailey and Elliot 1995"
+Scincidae,Lerista punctatovittata,18.5,30.4,22.3,oct_apr,-30.0,0.79,0.68,-0.27,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,NE,NE,30.4,Henle 1989
+Scincidae,Lerista xanthura,21.0,27.7,26.9,oct_apr,-27.0,0.15,-0.01,-0.75,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,NE,NE,27.7,Henle 1989
+Scincidae,Liopholis inornata,20.5,30.1,23.6,oct_apr,-28.0,1.11,0.87,-0.20,female SVL,no,Cathemeral,earth,Omnivorous,Viviparous,LC,stable,30.1,Pianka 1986
+Scincidae,Liopholis kintorei,23.4,25.2,29.5,oct_apr,-24.0,2.31,2.24,0.93,female SVL,no,Nocturnal,earth,Herbivorous,Viviparous,VU,NA,25.2,"Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Liopholis modesta,17.3,27.7,20.6,oct_apr,-29.0,1.49,1.35,0.12,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,27.7,Greer 1989
+Scincidae,Liopholis multiscutata,16.8,33.5,20.1,oct_apr,-33.0,1.28,1.05,-0.18,female SVL,no,Diurnal,earth,Carnivorous,Viviparous,NE,NE,33.5,Heatwole and Taylor 1987
+Scincidae,Liopholis slateri,20.9,33.5,25.4,oct_apr,-25.0,1.29,1.11,NA,mean species SVL,no,Cathemeral,earth,Carnivorous,Viviparous,NE,NE,33.5,Heatwole and Taylor 1987
+Scincidae,Liopholis striata,22.7,30.4,29.1,oct_apr,-24.0,1.49,1.13,0.08,female SVL,no,Cathemeral,earth,Carnivorous,Viviparous,LC,stable,30.4,"Huey and Pianka 2007, Pianka 1986"
+Scincidae,Liopholis whitii,15.5,33.0,18.1,oct_apr,-34.0,1.50,1.15,0.05,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,33.0,"Greer 1989, Heatwole and Taylor 1987, Huey and Bennett 1987, Fischer and Lindenmayer 2005, Bennett and John-Alder 1986"
+Scincidae,Lobulia stellaris,20.1,24.7,20.1,all,-5.0,0.71,0.59,-0.50,female SVL,yes,Diurnal,air,NA,Viviparous,NE,NE,24.7,Greer et al. 2005
+Scincidae,Lobulia subalpina,17.6,34.2,17.6,all,-8.0,0.95,0.70,-0.36,female SVL,yes,Diurnal,air,NA,Viviparous,NE,NE,34.2,Greer et al. 2005
+Scincidae,Lygisaurus foliorum,19.2,31.1,21.7,oct_apr,-26.0,0.15,-0.16,-1.33,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.1,Singh et al. 2002
+Scincidae,Lygosoma sundevalli,22.2,32.7,22.2,all,-13.0,1.80,1.23,-0.67,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,stable,32.7,Bowker 1984 
+Scincidae,Mabuya agilis,22.2,33.0,22.2,all,-20.1,1.28,0.80,-0.26,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,33.0,Rocha et al. 2009
+Scincidae,Mabuya bistriata,25.8,32.9,25.8,all,-4.0,1.45,1.23,-0.11,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,unknown,32.9,Vitt and Blackburn 1991
+Scincidae,Mabuya dorsivittata,19.2,32.9,19.2,all,-19.0,1.19,0.83,NA,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,32.9,"Guarino Colli, own data"
+Scincidae,Mabuya frenata,23.6,31.7,23.6,all,-15.0,1.20,0.89,-0.56,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,31.7,Rocha et al. 2009
+Scincidae,Mabuya guaporicola,23.9,33.4,23.9,all,-15.0,1.30,0.67,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,33.4,Mesquita et al. 2000
+Scincidae,Mabuya heathi,24.2,34.6,24.2,all,-8.3,1.22,0.89,-0.28,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,34.6,Vitt 1995
+Scincidae,Mabuya mabouya,25.2,34.2,25.2,all,5.0,1.54,1.12,-0.16,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,34.2,"Henderson and Powell 2009, Fitch 1968"
+Scincidae,Mabuya macrorhyncha,22.6,31.9,22.6,all,-16.7,1.11,0.80,-0.33,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,31.9,Rocha et al. 2009
+Scincidae,Mabuya nigropunctata,22.6,33.3,22.6,all,-7.0,1.50,1.12,-0.02,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,33.3,"Mesquita et al. 2006, Vitt and Zani 1996, Rocha et al. 2009"
+Scincidae,Mabuya sloanii,25.8,33.1,25.8,all,19.0,1.32,1.17,NA,female SVL,yes,Diurnal,air,Omnivorous,Viviparous,NE,NE,33.1,Brooks 1968
+Scincidae,Menetia greyii,21.5,33.0,24.0,oct_apr,-25.0,0.05,-0.27,-1.42,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.0,Pianka 1986
+Scincidae,Morethia boulengeri,21.0,31.5,22.8,oct_apr,-25.0,0.54,0.28,-1.03,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,31.5,Henle 1989
+Scincidae,Morethia butleri,19.4,33.6,22.0,oct_apr,-29.0,0.54,0.39,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.6,"Pianka 1986, Pianka 2011"
+Scincidae,Nannoscincus maccoyi,12.6,17.8,15.1,oct_apr,-37.0,0.59,0.39,-0.70,female SVL,no,Cathemeral,earth,Carnivorous,Oviparous,NE,NE,17.8,"Michael and Lindenmayer 2010, Hutchinson 1993, Greer 1989, Fischer and Lindenmayer 2005, Shine 1983"
+Scincidae,Niveoscincus coventryi,12.5,27.0,16.0,oct_apr,-36.0,0.47,0.15,-1.10,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,27.0,"Greer 1989, Shine 1983"
+Scincidae,Niveoscincus greeni,8.6,27.4,11.0,oct_apr,-42.0,0.93,0.71,-0.33,female SVL,yes,Diurnal,air,Carnivorous,Viviparous,NE,NE,27.4,"Greer 1989, Greer 1982"
+Scincidae,Niveoscincus metallicus,11.0,32.2,13.2,oct_apr,-41.0,0.85,0.43,-0.84,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.2,Heatwole and Taylor 1987
+Scincidae,Niveoscincus pretiosus,10.1,28.2,12.2,oct_apr,-42.0,0.83,0.42,-0.67,female SVL,yes,Diurnal,air,Carnivorous,Viviparous,NE,NE,28.2,"Greer 1989, Heatwole and Taylor 1987, Greer 1982"
+Scincidae,Oligosoma grande,8.0,23.6,12.3,nov_mar,-45.0,1.57,1.26,0.12,female SVL,yes,Diurnal,air,Omnivorous,Viviparous,VU,NA,23.6,Cree 1994
+Scincidae,Oligosoma lichenigera,18.8,25.9,20.5,oct_apr,-32.0,1.02,0.66,NA,female SVL,yes,Cathemeral,air,Carnivorous,Oviparous,VU,NA,25.9,Greer 1989
+Scincidae,Oligosoma maccanni,7.8,28.9,14.8,oct_apr,-44.7,0.93,0.65,-0.55,female SVL,yes,Diurnal,air,Omnivorous,Viviparous,NE,NE,28.9,Cree and Hare 2010
+Scincidae,Oligosoma otagense,8.5,25.9,12.6,nov_mar,-45.0,1.73,1.53,0.15,female SVL,yes,Diurnal,air,Omnivorous,Viviparous,EN,decreasing,25.9,"Connolly and Cree 2008, Cree 1994"
+Scincidae,Oligosoma suteri,15.3,15.0,17.5,oct_apr,-36.0,1.66,1.12,-0.10,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,LC,increasing,15.0,Towns 1975
+Scincidae,Oligosoma zelandicum,12.0,25.2,14.4,oct_apr,-40.0,0.89,0.52,-0.56,female SVL,yes,Diurnal,air,Carnivorous,Viviparous,LC,stable,25.2,Morris 1974
+Scincidae,Ophiomorus latastii,17.8,20.9,22.7,mar_sep,32.0,0.44,0.36,NA,mean species SVL,no,Cathemeral,earth,Carnivorous,Viviparous,DD,unknown,20.9,"Meiri, own data"
+Scincidae,Ophiomorus punctatissimus,15.5,29.8,18.9,mar_sep,38.0,0.39,0.23,-0.57,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,unknown,29.8,"Panayiotis Pafilis, own data"
+Scincidae,Ophiomorus streeti,22.6,29.0,27.3,mar_sep,28.0,0.84,0.64,NA,mean species SVL,no,Nocturnal,earth,Carnivorous,Viviparous,LC,stable,29.0,Rathor 1970
+Scincidae,Panaspis wahlbergi,22.0,33.0,22.0,all,-9.0,0.71,0.16,-1.32,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.0,Bowker 1984 
+Scincidae,Papuascincus stanleyanus,19.8,29.0,19.8,all,-6.0,0.62,0.47,-0.67,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.0,Allison 1982
+Scincidae,Pinoyscincus jagori,25.7,23.1,25.7,all,12.0,1.47,0.93,-0.46,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,stable,23.1,Alcala and Brown 1966
+Scincidae,Plestiodon anthracinus,14.4,30.0,19.7,mar_sep,35.0,0.83,0.64,-0.92,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,30.0,"Brattstrom 1965, Youssef et al. 2008"
+Scincidae,Plestiodon copei,13.7,28.7,13.7,all,19.0,0.91,0.78,-0.63,female SVL,no,Diurnal,air,NA,Viviparous,LC,stable,28.7,Lemos-Espinal et al. 1997
+Scincidae,Plestiodon egregius,20.0,30.4,23.8,mar_sep,31.0,0.22,-0.12,-0.88,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,decreasing,30.4,"Mount 1961, Youssef et al. 2008, Hailey and Elliot 1995"
+Scincidae,Plestiodon elegans,16.2,31.0,20.3,mar_sep,27.0,1.40,0.93,-0.56,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.0,Youssef et al. 2008
+Scincidae,Plestiodon fasciatus,14.1,32.3,20.1,mar_sep,37.0,1.12,0.79,-0.64,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,32.3,"Fitch 1956, Mount 1961, Youssef et al. 2008, Werner and Whitaker 1978, Brattstrom 1965"
+Scincidae,Plestiodon gilberti,14.4,29.2,17.7,mar_sep,36.0,1.55,1.11,-0.24,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,29.2,"Brattstrom 1965, Youssef et al. 2008"
+Scincidae,Plestiodon inexpectatus,17.2,33.2,21.6,mar_sep,33.0,1.17,0.85,-0.79,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.2,"Youssef et al. 2008, Brattstrom 1965"
+Scincidae,Plestiodon laticeps,15.6,31.5,20.7,mar_sep,35.0,1.83,1.32,-0.39,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,31.5,Sinervo et al. 2010
+Scincidae,Plestiodon latiscutatus,1.4,29.8,10.1,apr_aug,46.0,1.28,0.83,-0.56,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.8,Borkin et al. 2004 in Sinervo et al. 2010
+Scincidae,Plestiodon obsoletus,15.4,33.0,20.7,mar_sep,33.0,1.83,1.55,-0.04,female SVL,no,Diurnal,earth,Carnivorous,Oviparous,LC,stable,33.0,"Fitch 1956, Mount 1961, Youssef et al. 2008, Degenhardt et al. 1996, Fitch 1955, Brattstrom 1965"
+Scincidae,Plestiodon septentrionalis,12.6,29.2,20.3,mar_sep,39.0,1.19,0.88,-0.68,female SVL,no,Nocturnal,earth,Carnivorous,Oviparous,LC,stable,29.2,"Fitch 1956, Brattstrom 1965"
+Scincidae,Plestiodon skiltonianus,8.9,27.6,14.1,mar_sep,42.0,1.12,0.70,-0.61,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,27.6,"Youssef et al. 2008, Cunningham 1966, Brattstrom 1965 "
+Scincidae,Plestiodon tetragrammus,19.9,28.0,25.0,mar_sep,29.0,0.95,0.67,-0.73,mean species SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,28.0,Brattstrom 1965
+Scincidae,Pseudemoia entrecasteauxii,12.9,31.9,16.1,oct_apr,-37.0,0.73,0.44,-0.70,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,31.9,"Greer 1989, Shine 1983"
+Scincidae,Pseudemoia spenceri,12.2,31.8,15.6,oct_apr,-37.0,0.73,0.54,-0.62,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,31.8,"Greer 1989, Heatwole and Taylor 1987: 31 in lab gradient, Fischer and Lindenmayer 2005, Shine 1983"
+Scincidae,Saiphos equalis,16.1,18.0,19.4,oct_apr,-31.0,0.65,0.42,-0.84,female SVL,no,Nocturnal,earth,Carnivorous,Viviparous,NE,NE,18.0,Wu et al. 2009
+Scincidae,Scelotes gronovii,17.6,23.0,19.9,oct_apr,-33.0,0.35,0.33,NA,mean species SVL,no,Cathemeral,earth,Carnivorous,Viviparous,LR/nt,not specified,23.0,Withers 1981
+Scincidae,Scincella cherriei,24.7,26.0,24.7,all,14.0,0.79,0.44,-0.92,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,26.0,Savage 2002
+Scincidae,Scincella lateralis,16.7,28.9,22.2,mar_sep,34.0,0.59,0.22,-1.00,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,28.9,"Fitch 1956, Hailey and Elliot 1995, Brattstrom 1965"
+Scincidae,Scincella modesta,11.7,28.5,21.2,mar_sep,30.0,0.76,0.41,-1.00,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.5,Brattstrom 1965
+Scincidae,Scincus mitranus,24.6,35.7,24.6,all,22.0,1.74,1.33,-0.10,female SVL,no,Diurnal,earth,Omnivorous,Viviparous,NE,NE,35.7,"Al-Johany et al. 1999, Arnold 1984"
+Scincidae,Sphenomorphus sabanus,26.3,25.8,26.3,all,5.0,0.62,0.36,NA,mean species SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,25.8,"Inger 1959, Alcala and Brown 1966, Brattstrom 1965"
+Scincidae,Tiliqua multifasciata,24.4,33.4,24.4,all,-22.0,2.87,2.52,0.83,female SVL,no,Cathemeral,air,Herbivorous,Viviparous,NE,NE,33.4,"Pianka 1986, Pianka 2011"
+Scincidae,Tiliqua nigrolutea,12.8,34.8,16.0,oct_apr,-37.0,3.16,2.81,1.48,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,34.8,Heatwole and Taylor 1987
+Scincidae,Tiliqua occipitalis,18.8,33.2,20.7,oct_apr,-30.0,2.96,2.74,1.37,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,33.2,"Light et al. 1966, Greer 1989, Heatwole and Taylor 1987"
+Scincidae,Tiliqua rugosa,18.0,33.6,20.8,oct_apr,-31.0,3.09,2.67,1.79,female SVL,no,Diurnal,air,Herbivorous,Viviparous,NE,NE,33.6,"Light et al. 1966, MacMillen et al. 1989, Greer 1989, Heatwole and Taylor 1987, Bennett and John-Alder 1986"
+Scincidae,Tiliqua scincoides,21.3,33.2,21.7,oct_apr,-24.0,3.21,2.93,1.17,female SVL,no,Diurnal,air,Omnivorous,Viviparous,NE,NE,33.2,"Koenig et al. 2001, Heatwole and Taylor 1987"
+Scincidae,Trachylepis atlantica,26.9,32.2,26.9,all,-3.9,1.38,0.93,NA,female SVL,yes,Diurnal,air,Herbivorous,NA,NE,NE,32.2,Rocha et al. 2009
+Scincidae,Trachylepis brevicollis,24.9,34.1,24.9,all,7.0,2.16,1.56,-0.10,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,NE,NE,34.1,"Zari 1991, Bowker 1984 "
+Scincidae,Trachylepis capensis,16.9,32.5,19.8,oct_apr,-28.0,1.75,1.22,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,32.5,Brownlie and Loveridge 1983
+Scincidae,Trachylepis maculilabris,24.7,36.5,24.7,all,5.0,1.30,0.88,-0.67,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.5,Curry-Lindahl 1979
+Scincidae,Trachylepis mlanjensis,18.2,31.8,18.2,all,15.1,0.98,0.76,NA,mean species SVL,no,Diurnal,air,NA,Viviparous,NE,NE,31.8,Patterson 1992 (as M. striata puntatissimus)
+Scincidae,Trachylepis occidentalis,17.6,36.1,21.2,oct_apr,-30.0,1.53,0.98,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.1,"Huey and Pianka 2007, Vitt and Pianka 1977, Pianka 1986, Huey and Pianka 1977"
+Scincidae,Trachylepis punctatissima,17.6,34.8,20.5,oct_apr,-25.0,1.43,0.81,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,34.8,Huey and Pianka 2007
+Scincidae,Trachylepis quinquetaeniata,25.1,35.3,25.1,all,13.0,1.91,1.05,-0.27,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.3,Curry-Lindahl 1979
+Scincidae,Trachylepis sechellensis,26.0,34.7,26.0,all,-5.0,1.43,1.07,-0.16,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,34.7,"Cheke 1984, Crawford and Thorpe 1979"
+Scincidae,Trachylepis sparsa,19.4,34.3,23.6,oct_apr,-28.0,1.44,1.08,-0.45,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,34.3,"Huey and Pianka 2007, Vitt and Pianka 1977"
+Scincidae,Trachylepis spilogaster,18.7,34.2,22.6,oct_apr,-28.0,1.23,0.94,-0.58,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,34.2,"Vitt and Pianka 1977, Pianka 1986, Huey and Pianka 1977"
+Scincidae,Trachylepis striata,22.2,36.5,22.2,all,-7.0,1.50,0.99,-0.56,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,36.5,"Pianka 1986, Curry-Lindahl 1979, Huey and Pianka 1977, Brooks 1968, Brattstrom 1965"
+Scincidae,Trachylepis varia,20.8,28.1,20.8,all,-12.0,1.55,0.67,-0.82,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,28.1,Hebrard et al. 1982
+Scincidae,Trachylepis variegata,17.0,34.1,20.2,oct_apr,-30.0,0.54,0.01,NA,female SVL,no,Diurnal,air,Carnivorous,Viviparous,NE,NE,34.1,"Huey and Pianka 2007, Vitt and Pianka 1977, Pianka 1986, Huey and Pianka 1977"
+Scincidae,Trachylepis vittata,17.0,34.0,20.8,mar_sep,34.0,1.26,0.72,-0.42,female SVL,no,Diurnal,air,Carnivorous,Viviparous,LC,stable,34.0,"Schleich et al. 1996, meiri, own data"
+Scincidae,Tribolonotus gracilis,25.0,24.6,25.0,all,-4.0,1.37,1.24,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,24.6,Cogger 1972
+Sphaerodactylidae,Aristelliger cochranae,26.4,30.7,26.4,all,18.0,0.79,0.32,-0.66,female SVL,yes,Cathemeral,air,Carnivorous,Oviparous,NE,NE,30.7,"Henderson and Powell 2009, Powell 1999"
+Sphaerodactylidae,Gonatodes antillensis,27.4,27.0,27.4,all,12.0,0.13,0.05,-0.83,mean species SVL,no,Nocturnal,air,Carnivorous,Oviparous,NE,NE,27.0,Bennett and Gorman 1979
+Sphaerodactylidae,Gonatodes concinnatus,25.6,28.0,25.6,all,1.0,0.55,0.26,-0.90,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.0,"Fitch 1968, Vitt and Zani 1996"
+Sphaerodactylidae,Gonatodes daudini,26.7,23.1,26.7,all,13.0,-0.13,-0.28,NA,mean species SVL,yes,Diurnal,air,Carnivorous,Oviparous,CR,stable,23.1,Bentz et al. 2011
+Sphaerodactylidae,Gonatodes hasemani,24.9,30.6,24.9,all,-8.0,0.38,0.20,-0.63,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,30.6,"Miranda et al. 2010, Rocha et al. 2009"
+Sphaerodactylidae,Gonatodes humeralis,25.4,29.4,25.4,all,-4.0,0.41,-0.01,-0.98,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,29.4,"Miranda et al. 2010, Vitt and Zani 1996, Rocha et al. 2009"
+Sphaerodactylidae,Pristurus carteri,25.0,32.2,25.0,all,19.0,1.06,0.80,NA,mean species SVL,no,Cathemeral,air,Carnivorous,Oviparous,NE,NE,32.2,"Avery 1982, Arnold 1993"
+Sphaerodactylidae,Pristurus celerrimus,25.6,35.4,28.8,mar_sep,24.0,0.20,0.10,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.4,Arnold 1993
+Sphaerodactylidae,Sphaerodactylus kirbyi,26.7,25.3,26.7,all,13.0,-0.22,-0.44,-1.09,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,VU,unknown,25.3,Bentz et al. 2011
+Sphaerodactylidae,Sphaerodactylus sputator,26.4,28.1,26.4,all,18.0,0.20,0.18,NA,female SVL,yes,Cathemeral,air,Carnivorous,Oviparous,NE,NE,28.1,Henderson and Powell 2009
+Sphaerodactylidae,Teratoscincus przewalskii,7.5,20.2,15.8,mar_sep,42.0,1.34,1.04,NA,female SVL,no,Nocturnal,air,Carnivorous,Oviparous,LC,unknown,20.2,Autumn et al. 1994
+Teiidae,Ameiva ameiva,24.1,37.8,24.1,all,-6.0,2.48,1.72,0.20,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.8,"Henderson and Powell 2009, Curry-Lindahl 1979, Fitch 1968, Vitt and de Carvalho 1995, Fitch 1968, Vitt 1995, Rocha et al. 2009, Sales et al. 2011, Brattstrom 1965, Mesquita et al. 2006"
+Teiidae,Ameiva atrigularis,24.03,38.6,24.03,all,10.4,2.34,1.96,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.6,Ugueto and Harvey 2011
+Teiidae,Ameiva bifrontata,24.8,38.8,24.8,all,3.0,1.81,1.32,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.8,Schall 1973
+Teiidae,Ameiva chrysolaema,24.8,37.1,24.8,all,19.0,2.11,1.24,NA,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,LC,stable,37.1,"Henderson and Powell 2009, Sproston et al. 1999"
+Teiidae,Ameiva corax,27.0,33.7,27.0,all,18.0,1.85,1.45,NA,female SVL,yes,Diurnal,air,Omnivorous,NA,VU,unknown,33.7,Henderson and Powell 2009
+Teiidae,Ameiva exsul,25.2,37.9,25.2,all,18.0,2.42,1.39,0.09,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,37.9,Sinervo et al. 2010
+Teiidae,Ameiva festiva,24.5,36.7,24.5,all,11.0,1.97,1.29,0.13,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,36.7,"van Berkum 1988, Savage 2002, Vitt and Zani 1996, Hirth 1965"
+Teiidae,Ameiva fuscata,24.0,36.0,24.0,all,15.0,2.71,1.76,0.56,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.0,"Henderson and Powell 2009, Brooks 1968"
+Teiidae,Ameiva leberi,24.5,38.1,24.5,all,18.0,1.82,1.62,NA,female SVL,yes,Diurnal,air,Carnivorous,NA,NE,NE,38.1,Sproston et al. 1999
+Teiidae,Ameiva leptophrys,25.3,36.4,25.3,all,8.0,1.86,1.54,0.30,female SVL,no,Diurnal,air,Carnivorous,NA,NE,NE,36.4,Savage 2002
+Teiidae,Ameiva plei,26.9,36.6,26.9,all,18.0,2.27,1.27,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,36.6,Henderson and Powell 2009
+Teiidae,Ameiva pluvianotata,25.6,37.8,25.6,all,17.0,2.18,1.84,NA,female SVL,yes,Diurnal,air,Omnivorous,NA,NE,NE,37.8,Hirth 1965
+Teiidae,Ameiva quadrilineata,23.6,37.5,23.6,all,9.0,1.30,0.97,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,37.5,"Savage 2002, Curry-Lindahl 1979, Hirth 1963, Brattstrom 1965, Hirth 1965"
+Teiidae,Ameiva taeniura,24.3,37.2,24.3,all,19.0,1.54,1.16,NA,mean species SVL,yes,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.2,"Henderson and Powell 2009, Sproston et al. 1999"
+Teiidae,Ameiva undulata,23.6,38.3,23.6,all,17.0,1.91,1.36,0.04,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.3,Savage 2002
+Teiidae,Aspidoscelis burti,20.1,39.5,25.2,mar_sep,30.0,1.93,1.50,-0.02,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.5,Jones and Lovich 2009
+Teiidae,Aspidoscelis ceralbensis,23.2,40.4,25.5,mar_sep,24.0,1.40,0.88,-0.02,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,LC,stable,40.4,"Soule 1963, Woolrich-Pina et al. 2011, Brattstrom 1965"
+Teiidae,Aspidoscelis communis,25.3,36.2,25.3,all,19.0,1.88,1.42,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.2,Woolrich-Pina et al. 2011
+Teiidae,Aspidoscelis deppei,24.8,41.3,24.8,all,16.0,1.37,0.93,-0.13,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,41.3,"Kennedy 1968, Savage 2002, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis dixoni,15.9,40.0,21.6,mar_sep,31.0,1.60,1.24,0.02,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,stable,40.0,Degenhardt et al. 1996
+Teiidae,Aspidoscelis exsanguis,14.1,39.2,17.6,mar_sep,32.0,1.49,1.18,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.2,"Jones and Lovich 2009, Degenhardt et al. 1996, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis flagellicaudus,14.1,40.0,18.2,mar_sep,34.0,1.49,1.28,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,40.0,"Jones and Lovich 2009, Degenhardt et al. 1996, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis gularis,19.1,36.9,23.8,mar_sep,29.0,1.66,1.13,-0.05,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,36.9,"Degenhardt et al. 1996, Curry-Lindahl 1979, Siever and Paulissen 1996, Woolrich-Pina et al. 2011, Brattstrom 1965"
+Teiidae,Aspidoscelis guttatus,25.5,39.3,25.5,all,18.0,1.97,1.37,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.3,"Kennedy 1968, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis hyperythrus,20.2,39.2,22.3,mar_sep,28.0,1.03,0.74,-0.22,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,39.2,"Soule 1963, , Curry-Lindahl 1979, Woolrich-Pina et al. 2011, Brattstrom 1965"
+Teiidae,Aspidoscelis inornata,15.9,39.1,20.7,mar_sep,29.8,1.27,0.66,-0.09,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,39.1,"Jones and Lovich 2009, Degenhardt et al. 1996, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis laredoensis,22.0,39.5,26.4,mar_sep,27.0,1.33,0.96,-0.07,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.5,"Sievert and Paulissen 1996: 34-35.3 mean preferred temperature, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis lineattissimus,24.8,33.8,24.8,all,20.0,1.55,1.16,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,33.8,"Navarro-Garcia et al. 2008, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis marmoratus,17.5,38.5,21.8,mar_sep,30.0,1.56,1.19,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.5,Punzo 2001
+Teiidae,Aspidoscelis neomexicanus,13.2,39.4,16.7,mar_sep,33.0,1.27,0.94,0.01,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.4,"Degenhardt et al. 1996, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis scalaris,18.1,37.6,21.8,mar_sep,27.5,1.77,1.15,-0.05,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.6,Barbault 1977
+Teiidae,Aspidoscelis sexlineata,14.9,38.8,19.9,mar_sep,35.3,1.35,0.93,-0.09,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,38.8,"Fitch 1956, Degenhardt et al. 1996, Woolrich-Pina et al. 2011, Brattstrom 1965"
+Teiidae,Aspidoscelis tesselata,15.3,39.9,20.5,mar_sep,33.0,1.56,1.12,0.29,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.9,"Degenhardt et al. 1996 (grahami), Woolrich-Pina et al. 2011, Punzo 2001, Brattstrom 1965"
+Teiidae,Aspidoscelis tigris,15.5,39.2,20.5,mar_sep,34.0,1.90,1.19,-0.13,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,39.2,"van Berkum 1988, Pianka 1986, Degenhardt et al. 1996, Woolrich-Pina et al. 2011, Cunningham 1966, Brattstrom 1965, Lemos-Espinal et al. 1997"
+Teiidae,Aspidoscelis uniparens,15.0,38.9,17.9,mar_sep,32.0,1.27,0.85,-0.22,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,38.9,"Jones and Lovich 2009, Woolrich-Pina et al. 2011"
+Teiidae,Aspidoscelis velox,10.3,38.4,15.2,mar_sep,36.0,1.28,1.07,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,38.4,"Jones and Lovich 2009, Woolrich-Pina et al. 2011"
+Teiidae,Callopistes maculatus,11.7,38.0,14.2,oct_apr,-30.0,2.21,1.67,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,DD,NA,38.0,"Labra et al. 2008, Muchlinski et al. 1995"
+Teiidae,Cnemidophorus abaetensis,22.2,37.5,22.2,all,-12.0,1.03,0.58,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.5,"Ariani et al. 2012, Menezes and Rocha 2011, Dias and Rocha 2004, Rocha et al. 2009"
+Teiidae,Cnemidophorus arubensis,27.3,39.4,27.3,all,13.0,1.80,1.15,NA,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,NE,NE,39.4,Shall 1973
+Teiidae,Cnemidophorus cryptus,26.4,39.2,26.4,all,-1.8,1.03,0.90,-0.11,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,39.2,"Mesquita and Colli 2003, Rocha et al. 2009, Ariani et al. 2012"
+Teiidae,Cnemidophorus gramivagus,26.9,37.7,26.9,all,5.0,1.67,0.91,-0.07,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,stable,37.7,"Mesquita and Colli 2003, Rocha et al. 2009, Ariani et al. 2012"
+Teiidae,Cnemidophorus jalapensis,24.6,37.0,24.6,all,-10.4,0.69,0.50,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.0,Ariani et al. 2012
+Teiidae,Cnemidophorus lacertoides,21.5,35.1,21.5,all,-18.0,1.12,0.94,-0.32,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.1,"Menezes and Rocha 2011, Ariani et al. 2011"
+Teiidae,Cnemidophorus lemniscatus,24.4,38.2,24.4,all,6.0,1.64,0.87,-0.35,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,38.2,"Mesquita and Colli 2003, Vitt and de Carvalho 1995, Rocha et al. 2009, Brattstrom 1965, Ariani et al. 2012"
+Teiidae,Cnemidophorus littoralis,23.1,37.6,23.1,all,-22.8,1.20,0.84,NA,female SVL,no,Diurnal,air,Carnivorous,NA,NE,NE,37.6,"Menezes and Rocha 2011, Rocha et al. 2009, Ariani et al. 2012"
+Teiidae,Cnemidophorus mumbuca,24.9,38.3,24.9,all,-10.5,0.76,0.70,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.3,"Mesquita et al. 2006, Rocha et al. 2009, Ariani et al. 2012 "
+Teiidae,Cnemidophorus murinus,27.5,39.4,27.5,all,12.0,2.10,1.44,0.30,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,NE,NE,39.4,"Bennett and Gorman 1979, Schall and Dearing 1994, Ariani et al. 2012"
+Teiidae,Cnemidophorus ocellifer,23.5,37.3,23.5,all,-19.0,1.72,0.86,-0.30,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.3,"Dias and Rocha 2004, Mesquita and Colli 2003, Vitt 1995, Rocha et al. 2009, Ariani et al. 2012 "
+Teiidae,Cnemidophorus parecis,22.3,38.2,22.3,all,-12.5,1.33,1.18,0.09,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,38.2,"Mesquita and Colli 2003, Rocha et al. 2009, Ariani et al. 2012"
+Teiidae,Cnemidophorus vanzoi,25.4,41.0,25.4,all,14.0,1.86,1.30,0.27,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,VU,NA,41.0,Henderson and Powell 2009
+Teiidae,Crocodilurus amazonicus,25.9,31.2,25.9,all,-3.0,3.04,2.35,1.05,female SVL,no,Diurnal,water,Carnivorous,Oviparous,LC,unknown,31.2,"Rocha et al. 2009, Mesquita et al. 2006"
+Teiidae,Dicrodon guttulatum,21.3,32.2,21.3,all,-4.0,1.83,1.72,NA,mean species SVL,no,Diurnal,air,Herbivorous,NA,NE,NE,32.2,van Leeuwen et al. 2011
+Teiidae,Dracaena guianensis,25.9,32.2,25.9,all,-4.0,3.39,3.19,1.60,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,32.2,Mesquita et al. 2006
+Teiidae,Kentropyx altamazonica,21.4,35.4,21.4,all,-7.0,1.65,1.25,-0.15,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,35.4,"Vitt et al. 2001, Rocha et al. 2009"
+Teiidae,Kentropyx calcarata,25.3,35.9,25.3,all,-5.0,1.71,1.35,-0.07,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.9,"Fitch 1968, Vitt 1991, Rocha et al. 2009"
+Teiidae,Kentropyx pelviceps,24.1,34.0,24.1,all,-5.0,1.83,1.51,0.06,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.0,Vitt and Zani 1996
+Teiidae,Kentropyx striata,25.6,37.0,25.6,all,4.0,1.80,1.19,-0.30,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.0,"Vitt and de Carvalho 1992, Vitt and de Carvalho 1995, Rocha et al. 2009"
+Teiidae,Tupinambis merianae,22.4,35.0,22.4,all,-16.0,3.65,3.08,0.99,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,stable,35.0,Vitt 1995
+Teiidae,Tupinambis quadrilineatus,24.7,37.2,24.7,all,-12.1,2.81,2.50,1.30,mean species SVL,no,Diurnal,air,Herbivorous,Oviparous,NE,NE,37.2,Mesquita et al. 2006
+Teiidae,Tupinambis teguixin,24.0,34.1,24.0,all,-6.0,3.65,3.11,1.17,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.1,"Vitt and de Carvalho 1995, Vitt and Zani 1996"
+Trogonophiidae,Diplometopon zarudnyi,25.0,31.5,29.4,mar_sep,27.0,0.81,0.67,NA,mean species SVL,no,Nocturnal,earth,Carnivorous,NA,NE,NE,31.5,Al-Johany 1999
+Trogonophiidae,Trogonophis wiegmanni,15.9,22.0,19.6,mar_sep,34.0,1.15,0.46,-0.41,female SVL,no,Cathemeral,earth,Carnivorous,Viviparous,LC,unknown,22.0,"Lopez et al. 2002, Blouin-Demers and Nadeau 2005, Avery 1982, Hailey and Elliot 1995"
+Tropiduridae,Eurolophosaurus divaricatus,24.3,38.0,24.3,all,-11.1,1.29,1.23,NA,mean species SVL,no,Diurnal,air,Herbivorous,NA,NE,NE,38.0,"Gomes et al. 2004, Rocha et al. 2009"
+Tropiduridae,Eurolophosaurus nanuzae,20.2,34.1,20.2,all,-18.0,0.89,0.62,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NT,unknown,34.1,Kiefer et al. 2005
+Tropiduridae,Microlophus albemarlensis,22.9,33.1,22.9,all,-1.0,1.75,1.03,NA,female SVL,yes,Diurnal,air,Omnivorous,Oviparous,NE,NE,33.1,"Curry-Lindahl 1979, Huey 1974"
+Tropiduridae,Microlophus atacamensis,15.1,28.8,16.3,oct_apr,-25.0,1.74,1.32,0.28,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,28.8,"Labra et al. 2008, Vidal et al. 2002"
+Tropiduridae,Microlophus heterolepis,16.7,32.4,16.7,all,-11.0,1.80,1.18,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,32.4,"Labra et al. 2008, Vidal et al. 2002"
+Tropiduridae,Microlophus peruvianus,16.5,36.3,16.5,all,-12.0,1.89,1.05,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,36.3,Huey 1974
+Tropiduridae,Microlophus quadrivittatus,16.7,35.0,16.7,all,-21.0,1.75,1.26,0.37,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.0,Labra et al. 2008
+Tropiduridae,Microlophus theresioides,4.7,34.7,4.7,all,-20.0,1.65,1.21,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.7,Labra et al. 2008
+Tropiduridae,Plica plica,24.1,30.7,24.1,all,-3.0,2.18,1.76,0.46,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,30.7,"Vitt 1991, Kiefer et al. 2005, Kohlsdorf and Navas 2006"
+Tropiduridae,Plica umbra,24.6,28.7,24.6,all,-4.0,1.48,1.28,0.21,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,28.7,"Vitt and Zani 1996, Kiefer et al. 2005, Kohlsdorf and Navas 2006, Rocha et al. 2009"
+Tropiduridae,Tropidurus etheridgei,21.7,35.8,21.7,all,-21.0,1.65,0.99,-0.17,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.8,Cruz et al. 1998
+Tropiduridae,Tropidurus hispidus,26.9,34.1,26.9,all,4.0,1.79,1.20,0.03,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,34.1,"Vitt and de Carvalho 1995, Kiefer et al. 2005, Vitt 1995, Rocha et al. 2009"
+Tropiduridae,Tropidurus hygomi,22.5,35.4,22.5,all,-11.3,1.20,0.74,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,35.4,Rocha et al. 2009
+Tropiduridae,Tropidurus insulanus,24.0,34.5,24.0,all,-9.0,1.29,1.00,NA,female SVL,no,Diurnal,air,NA,Oviparous,NE,NE,34.5,"Kohlsdorf and Navas 2006, Rocha et al. 2009"
+Tropiduridae,Tropidurus itambere,20.5,32.5,20.5,all,-18.3,1.41,0.90,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.5,"Rocha et al. 2009, Kiefer et al. 2005, Kohlsdorf and Navas 2006"
+Tropiduridae,Tropidurus melanopleurus,17.1,32.4,17.1,all,-19.0,1.58,0.93,NA,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.4,Perez-Mellado and de la Riva 1993
+Tropiduridae,Tropidurus montanus,20.8,33.2,20.8,all,-17.0,1.37,1.03,-0.10,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,33.2,"Rocha et al. 2009, Kiefer et al. 2005"
+Tropiduridae,Tropidurus oreadicus,26.5,35.1,26.5,all,-4.0,1.67,1.11,NA,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,35.1,"Rocha et al. 2009, Kiefer et al. 2005, Mesquita et al. 2006"
+Tropiduridae,Tropidurus psammonastes,25.7,37.6,25.7,all,-10.0,1.41,1.09,-0.21,female SVL,no,Diurnal,air,Herbivorous,Oviparous,DD,unknown,37.6,Rocha et al. 2009
+Tropiduridae,Tropidurus semitaeniatus,24.3,37.1,24.3,all,-9.0,1.48,1.06,-0.58,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,37.1,"Vitt 1995, Kiefer et al. 2005, Rocha et al. 2009"
+Tropiduridae,Tropidurus spinulosus,23.7,32.3,23.7,all,-18.0,1.89,1.35,0.18,female SVL,no,Diurnal,air,Omnivorous,Oviparous,NE,NE,32.3,"Cruz 1998, Kiefer et al. 2005, Kohlsdorf and Navas 2006"
+Tropiduridae,Tropidurus torquatus,24.2,33.5,24.2,all,-9.0,1.84,1.08,-0.19,female SVL,no,Diurnal,air,Omnivorous,Oviparous,LC,unknown,33.5,"Rocha et al. 2009, Kiefer et al. 2005"
+Tropiduridae,Uracentron flaviceps,24.8,31.2,24.8,all,-2.0,1.80,1.36,0.21,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.2,"Vitt and Zani 1996, Kiefer et al. 2005, Kohlsdorf and Navas 2006"
+Tropiduridae,Uranoscodon superciliosus,25.6,27.9,25.6,all,-3.0,2.10,1.70,0.14,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,27.9,"Kiefer et al. 2005, Rocha et al. 2009, Kohlsdorf and Navas 2006"
+Varanidae,Varanus albigularis,22.4,32.3,22.4,all,-10.0,4.18,3.48,1.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,32.3,Bowker 1984 (as V. Exanthematicus) 
+Varanidae,Varanus bengalensis,21.7,34.0,21.7,all,21.0,4.26,3.07,0.97,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,decreasing,34.0,"Rathnayake et al. 2003, Schleich and Kastle 2002, King and Green 1993, Pianka and King 2004"
+Varanidae,Varanus brevicauda,24.0,34.5,24.0,all,-23.0,1.49,1.04,-0.15,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.5,Pianka 1994
+Varanidae,Varanus caudolineatus,22.3,37.6,26.8,oct_apr,-26.0,1.57,1.13,0.14,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.6,"King and Green 1993, Pianka 1986, Greer 1989, Pianka 1994, Rathnayake et al. 2003"
+Varanidae,Varanus eremius,22.2,37.9,27.3,oct_apr,-25.0,2.03,1.57,0.38,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.9,"Huey and Pianka 2007, King and Green 1993, Pianka 1986, Pianka and King 2004, Greer 1989, Heatwole and Taylor 1987, Pianka 1994, Rathnayake et al. 2003"
+Varanidae,Varanus exanthematicus,25.5,34.0,25.5,all,10.0,4.00,2.90,0.67,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,34.0,"Muchlinski et al. 1995, King and Green 1993"
+Varanidae,Varanus giganteus,22.6,37.2,27.9,oct_apr,-25.0,4.33,3.61,1.74,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.2,"King and Green 1993, Greer 1989, Heatwole and Taylor 1987, Pianka 1994, Rathnayake et al. 2003"
+Varanidae,Varanus gilleni,22.4,37.4,28.7,oct_apr,-25.0,2.07,1.43,0.40,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.4,"King and Green 1993, Rathnayake et al. 2003, Pianka 1994"
+Varanidae,Varanus gouldii,21.8,31.5,23.8,oct_apr,-25.0,3.84,2.70,0.61,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,31.5,"Light et al. 1966, Huey and Pianka 2007, King and Green 1993, Pianka 1986, Greer 1989, Bartholomew and Tucker 1964, Heatwole and Taylor 1987, Pianka 1994, Rathnayake et al. 2003"
+Varanidae,Varanus griseus,20.7,37.3,24.9,mar_sep,28.0,3.74,2.95,1.08,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,37.3,"King and Green 1993, Rathnayake et al. 2003"
+Varanidae,Varanus indicus,25.4,30.0,25.4,all,-8.0,3.64,2.80,1.22,female SVL,no,Diurnal,water,Carnivorous,Oviparous,LC,unknown,30.0,Smith et al. 2008
+Varanidae,Varanus komodoensis,24.7,35.3,24.7,all,-8.6,5.01,4.52,1.91,female SVL,yes,Diurnal,air,Carnivorous,Oviparous,VU,NA,35.3,"Harlow et al. 2010, Pianka and King 2004, Rathnayake et al. 2003, McNab and Auffenberg 1976"
+Varanidae,Varanus mertensi,26.2,33.4,26.2,all,-17.0,3.43,2.99,1.19,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,33.4,"King and Green 1993, Rathnayake et al. 2003, Christian and Weavers 1996, Blouin-Demers and Nadeau 2005"
+Varanidae,Varanus niloticus,23.2,30.8,23.2,all,-1.0,4.38,3.43,1.24,female SVL,no,Diurnal,water,Carnivorous,Oviparous,NE,NE,30.8,"King and Green 1993, Bowker 1984, Pianka and King 2004"
+Varanidae,Varanus olivaceus,25.7,31.6,25.7,all,16.0,3.96,3.48,1.53,female SVL,yes,Diurnal,air,Herbivorous,Oviparous,VU,decreasing,31.6,Rathnayake et al. 2003
+Varanidae,Varanus panoptes,24.0,34.7,24.0,all,-21.0,3.98,3.12,1.30,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.7,"Rathnayake et al. 2003, Christian and Weavers 1996, Blouin-Demers and Nadeau 2005"
+Varanidae,Varanus rosenbergi,16.0,26.9,19.0,oct_apr,-33.0,3.42,2.80,0.61,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,26.9,"King and Green 1993, Christian and Weavers 1996, Pianka and King 2004, Rathnayake et al. 2003"
+Varanidae,Varanus salvator,23.7,29.5,23.7,all,11.0,4.62,3.43,1.43,female SVL,no,Diurnal,water,Carnivorous,Oviparous,LC,unknown,29.5,"King and Green 1993, Pianka and King 2004, Rathnayake et al. 2003"
+Varanidae,Varanus scalaris,25.9,35.2,25.9,all,-16.0,2.55,2.18,0.52,female SVL,no,Diurnal,air,Carnivorous,Oviparous,LC,unknown,35.2,"Rathnayake et al. 2003, Blouin-Demers and Nadeau 2005, Christian and Bedford 1996"
+Varanidae,Varanus tristis,23.2,34.2,23.2,all,-23.0,2.74,2.35,0.65,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.2,"Huey and Pianka 2007, King and Green 1993, Pianka 1986, Greer 1989, Bartholomew and Tucker 1964, Pianka 1994, Pianka and King 2004, Rathnayake et al. 2003"
+Varanidae,Varanus varius,17.3,34.9,19.6,oct_apr,-30.0,4.03,3.35,1.24,female SVL,no,Diurnal,air,Carnivorous,Oviparous,NE,NE,34.9,"King and Green 1993, Greer 1989, Heatwole and Taylor 1987"
+Xantusiidae,Cricosaura typica,24.3,31.0,24.3,all,20.0,0.09,-0.22,NA,female SVL,yes,Nocturnal,air,Carnivorous,Oviparous,NE,NE,31.0,Henderson and Powell 2009
+Xantusiidae,Lepidophyma smithii,24.7,26.0,24.7,all,16.0,1.45,1.24,-0.39,female mass,no,Cathemeral,air,Herbivorous,Oviparous,NE,NE,26.0,Mautz 1982
+Xantusiidae,Xantusia arizonae,15.2,25.3,16.9,mar_sep,34.0,0.62,0.56,-0.54,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,LC,stable,25.3,Brattstrom 1965
+Xantusiidae,Xantusia henshawi,16.9,20.5,19.8,mar_sep,33.0,0.85,0.67,-0.46,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,LC,stable,20.5,Brattstrom 1965
+Xantusiidae,Xantusia riversiana,15.3,23.5,16.0,mar_sep,33.0,1.51,1.06,-0.29,female SVL,yes,Cathemeral,air,Omnivorous,Viviparous,LC,stable,23.5,Brattstrom 1965
+Xantusiidae,Xantusia vigilis,17.0,29.1,20.3,mar_sep,34.0,0.83,0.14,-0.70,female SVL,no,Cathemeral,air,Carnivorous,Viviparous,LC,stable,29.1,"Huey and Pianka 2007, van Berkum 1988, Pianka 1986, Avery 1982, Brattstrom 1965"
+Xenosauridae,Xenosaurus grandis,22.6,24.2,22.6,all,18.0,1.62,1.37,0.16,female SVL,no,Diurnal,air,Carnivorous,Viviparous,VU,decreasing,24.2,Lemos-Espinal et al. 2003
+Xenosauridae,Xenosaurus newmanorum,21.3,22.9,21.3,all,21.0,1.55,1.28,0.29,female SVL,no,Diurnal,air,Omnivorous,Viviparous,EN,decreasing,22.9,"Lemos-Espinal et al. 1998, Lemos-Espinal et al. 2012 "
+Xenosauridae,Xenosaurus phalaroanthereon,18.8,20.3,18.8,all,16.0,1.59,1.50,0.41,female SVL,no,Nocturnal,air,Carnivorous,Viviparous,DD,stable,20.3,"Lemos-Espinal and Smith 2005, Lemos-Espinal et al. 2012"
+Xenosauridae,Xenosaurus platyceps,19.7,21.9,19.7,all,23.0,1.49,1.30,0.29,female SVL,no,Diurnal,air,Carnivorous,Viviparous,EN,decreasing,21.9,"Lemos-Espinal and Smith 2005, Lemos-Espinal et al. 2012"
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+temperatures are in degrees centigrade,,,,,,,,,,,,,,,,,,,
+seasonal temperatures are the average environmental temperatures across the activity period,,,,,,,,,,,,,,,,,,,
+activity period is moddeled after the latitudinal centroid of species' ranges. See text for details,,,,,,,,,,,,,,,,,,,
+mar = March; apr = April; sep = September; oct = October; all = year round,,,,,,,,,,,,,,,,,,,
+"maximum body mass - calculated based on maximum SVL recorded for the species, and allometric equations as explained in the text",,,,,,,,,,,,,,,,,,,
+"mean female mass - calculated based on mean female SVL, or other measures as explained in the ""basis of female mas"" column, and allometric equations as explained in the text",,,,,,,,,,,,,,,,,,,
+"substrate: air - terrestrial, saxicolous and arboreal species; earth: fossorial and semi-fossorial species; water: semi-aquatic species",,,,,,,,,,,,,,,,,,,
+NA - data unavailable,,,,,,,,,,,,,,,,,,,
+"Red List status & population trend: according to the IUCN, data downloaded June 2012",,,,,,,,,,,,,,,,,,,
