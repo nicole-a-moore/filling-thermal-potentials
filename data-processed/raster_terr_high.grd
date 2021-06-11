@@ -1,6 +1,6 @@
 [general]
 creator=R package 'raster'
-created=2021-04-04 08:51:07
+created=2021-06-01 16:55:01
 [georeference]
 nrows=180
 ncols=360
@@ -12,14 +12,14 @@ projection=+proj=longlat +ellps=WGS84 +datum=WGS84 +towgs84=0,0,0
 [data]
 datatype=FLT4S
 byteorder=little
-nbands=3
+nbands=5
 bandorder=BIL
-minvalue=-30.0114868549364:-46.1571194142901:-46.1571194142901
-maxvalue=41.2124778578657:39.2695526939418:39.2695526939418
+minvalue=-13.1906711139849:-18.1161043092875:-18.1161043092875:-18.3741541311069:-19.8909947515798
+maxvalue=41.2124778578657:39.2695526939418:39.2695526939418:38.9529506421178:39.0174193916959
 nodatavalue=-3.4e+38
 [legend]
 legendtype=
 values=
 color=
 [description]
-layername=seasonal_high_temp:hot_dormancy_6mo:cold_dormancy_6mo
+layername=seasonal_high_temp:hot_dormancy_6mo:cold_dormancy_6mo:hot_acc_temp:hot_acc_temp_dormancy

@@ -1,6 +1,6 @@
 [general]
 creator=R package 'raster'
-created=2021-04-04 08:51:36
+created=2021-06-01 18:41:15
 [georeference]
 nrows=180
 ncols=360
@@ -14,12 +14,12 @@ datatype=FLT4S
 byteorder=little
 nbands=6
 bandorder=BIL
-minvalue=-70.0792940144028:-67.1556261633099:-67.1556261633099:-70.0792940144028:-67.1556261633099:-67.1556261633099
-maxvalue=22.9945316863968:25.7725378365655:25.7725378365655:23.0596915799625:25.8730212888326:25.8730212888326
+minvalue=-57.2280675745436:-33.3219223146194:-33.3219223146194:-34.3868631907649:-32.4963637674668:-55.2243730597392
+maxvalue=22.9945316863968:25.7725378365655:25.7725378365655:25.5722372652055:26.6310665411164:23.0596915799625
 nodatavalue=-3.4e+38
 [legend]
 legendtype=
 values=
 color=
 [description]
-layername=seasonal_low_temp:cold_dormancy_6mo:hot_dormancy_6mo:low_at_min_elev:low_elev_x_cold_dormancy:low_elev_x_hot_dormancy
+layername=seasonal_low_temp:cold_dormancy_6mo:hot_dormancy_6mo:cold_acc_temp:cold_acc_temp_dormancy:low_at_min_elev

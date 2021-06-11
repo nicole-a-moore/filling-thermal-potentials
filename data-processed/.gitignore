@@ -1,0 +1,11 @@
+Te_allspp.rds
+NicheMapR-microclimate.rds
+NicheMapR-microclimate_cold-dormancy.rds
+NicheMapR-microclimate_hot-dormancy.rds
+Te_allspp_nodormancy.rds
+Te_shade_nodormancy.grd
+Te_shade_nodormancy.gri
+Te_sun_nodormancy.grd
+Te_sun_nodormancy.gri
+marine_max-at-min-depth.tif
+marine_min-at-max-depth.tif
