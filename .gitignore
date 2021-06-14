@@ -29,3 +29,5 @@ vignettes/*.pdf
 .DS_Store
 papers
 wc5
+bfg-1.12.3.jar
+bfg-1.14.0.jar

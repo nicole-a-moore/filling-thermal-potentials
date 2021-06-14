@@ -565,27 +565,37 @@ tpref <- tpref %>%
   mutate(genus_species = paste(Genus, Species, sep = "_")) 
   
 
-## 2. for species with multiple measures of Tpref, take the weighted mean
+## 2. for species with multiple measures of Tpref/Tb, take the weighted mean
 ## (if sample size is unknown, exclude from the weighted mean)
 
-dups <- tpref %>%
+dups_tpref <- tpref %>%
   filter(genus_species %in% .$genus_species[duplicated(.$genus_species)]) %>%
-  filter(!is.na(n_tpref)) %>% ## remove unknown sample sizes
+  filter(!is.na(Tpref) & !is.na(n_tpref)) %>% ## remove unknown sample sizes
   group_by(genus_species) %>%
   mutate(ref_Tpref = paste(ref_Tpref, collapse = " "),
          ref_from_ref = paste(ref_from_ref, collapse = " "),
          notes_Tpref = paste(notes_Tpref, collapse = " ")) %>%
   summarise(Tpref = round(weighted.mean(as.numeric(Tpref), n_tpref), 2), ref_Tpref, ref_from_ref,
-            notes_Tpref, limit_type) %>%
+            notes_Tpref, limit_type, Tb, ref_Tb, notes_Tb) %>%
+  ungroup() %>%
+  filter(!duplicated(.))
+
+dups_tb <- tpref %>%
+  filter(genus_species %in% .$genus_species[duplicated(.$genus_species)]) %>%
+  filter(!is.na(n_Tb) & !is.na(Tb)) %>% ## remove unknown sample sizes
+  group_by(genus_species) %>%
+  mutate(notes_Tb = paste(notes_Tb, collapse = " "))  %>%
+  summarise(Tb = round(weighted.mean(as.numeric(Tb), n_Tb), 2), ref_Tb,
+            notes_Tb, limit_type,  Tpref, ref_Tpref, ref_from_ref, notes_Tpref) %>%
   ungroup() %>%
   filter(!duplicated(.))
 
 ## rejoin:
 tprefs_clean <- tpref %>%
   filter(!genus_species %in% .$genus_species[duplicated(.$genus_species)])%>%
-  select(genus_species, Tpref, ref_Tpref, ref_from_ref, notes_Tpref, limit_type) %>% 
-  rbind(., dups) %>%
-  filter(!is.na(Tpref))
+  select(genus_species, Tpref, ref_Tpref, ref_from_ref, notes_Tpref, limit_type, Tb, ref_Tb, notes_Tb) %>% 
+  rbind(., dups_tb, dups_tpref) %>%
+  filter(!is.na(Tpref) | !is.na(Tb))
 
 ## write out:
 write.csv(tprefs_clean, "data-processed/Tpref_clean.csv", row.names = FALSE)
